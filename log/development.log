@@ -1,0 +1,371 @@
+Started GET "/" for ::1 at 2019-09-02 14:11:56 +0300
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "CatShop_development" does not exist
+):
+  
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1111:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-09-02 14:13:41 +0300
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "CatShop_development" does not exist
+):
+  
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1111:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-09-02 14:16:09 +0300
+  
+NameError (undefined local variable or method `to' for #<ActionDispatch::Routing::Mapper:0x00007fecb00ec438>):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-09-02 14:16:41 +0300
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "CatShop_development" does not exist
+):
+  
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1111:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-09-02 14:17:02 +0300
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-09-02 14:17:20 +0300
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-09-02 14:17:23 +0300
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "CatShop_development" does not exist
+):
+  
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1111:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-09-02 14:18:19 +0300
+  
+ArgumentError ('Accueil' is not a supported controller name. This can lead to potential routing problems. See https://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-09-02 14:19:55 +0300
+  
+ArgumentError ('Accueil' is not a supported controller name. This can lead to potential routing problems. See https://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-09-02 14:21:06 +0300
+  
+SyntaxError (/home/dev/Bureau/CatShopGroup2/config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+   root :to'Accueil#index'
+           ^
+/home/dev/Bureau/CatShopGroup2/config/routes.rb:5: syntax error, unexpected end, expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+Started GET "/" for ::1 at 2019-09-02 14:22:04 +0300
+  
+SyntaxError (/home/dev/Bureau/CatShopGroup2/config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+   root :to'Accueil#index'
+           ^
+/home/dev/Bureau/CatShopGroup2/config/routes.rb:5: syntax error, unexpected end, expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+Started GET "/" for ::1 at 2019-09-02 14:22:28 +0300
+  
+SyntaxError (/home/dev/Bureau/CatShopGroup2/config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+   root :to'Accueil#index'
+           ^
+/home/dev/Bureau/CatShopGroup2/config/routes.rb:5: syntax error, unexpected end, expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+Started GET "/" for ::1 at 2019-09-02 14:22:57 +0300
+  
+SyntaxError (/home/dev/Bureau/CatShopGroup2/config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+   root :to 'Accueil#index'
+            ^
+/home/dev/Bureau/CatShopGroup2/config/routes.rb:5: syntax error, unexpected end, expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+Started GET "/" for ::1 at 2019-09-02 14:24:29 +0300
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "CatShop_development" does not exist
+):
+  
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1111:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (778.9ms)[0m  [1m[35mCREATE DATABASE "CatShop_development" ENCODING = 'unicode'[0m
+  [1m[35m (524.4ms)[0m  [1m[35mCREATE DATABASE "CatShop_test" ENCODING = 'unicode'[0m
+  [1m[35m (124.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (105.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (12.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6695254529977101165)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20190902105231)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (77.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (37.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (32.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[36mprimary::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190902105231"]]
+  [1m[35m (13.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-02 11:27:56.346864"], ["updated_at", "2019-09-02 11:27:56.346864"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(6695254529977101165)[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-09-02 14:28:19 +0300
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  Rendered accueil/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 597)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/dev/Bureau/CatShopGroup2/public/packs
+Completed 200 OK in 11549ms (Views: 11536.3ms | ActiveRecord: 0.0ms | Allocations: 1254749)
+
+
