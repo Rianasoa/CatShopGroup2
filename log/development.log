@@ -369,3 +369,41 @@ Processing by AccueilController#index as HTML
 Completed 200 OK in 11549ms (Views: 11536.3ms | ActiveRecord: 0.0ms | Allocations: 1254749)
 
 
+Started GET "/" for ::1 at 2019-09-02 14:52:04 +0300
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/dev/Bureau/CatShopGroup2/app/controllers/accueil_controller.rb:3: `$' without identifiers is not allowed as a global variable name
+/home/dev/Bureau/CatShopGroup2/app/controllers/accueil_controller.rb:3: syntax error, unexpected end-of-input, expecting end
+  end$
+     ^):
+  
+app/controllers/accueil_controller.rb:3: `$' without identifiers is not allowed as a global variable name
+app/controllers/accueil_controller.rb:3: syntax error, unexpected end-of-input, expecting end
+app/controllers/accueil_controller.rb:3: `$' without identifiers is not allowed as a global variable name
+app/controllers/accueil_controller.rb:3: syntax error, unexpected end-of-input, expecting end
+app/controllers/accueil_controller.rb:3: `$' without identifiers is not allowed as a global variable name
+app/controllers/accueil_controller.rb:3: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-09-02 14:52:18 +0300
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  Rendered accueil/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 477)
+Completed 200 OK in 2726ms (Views: 2723.3ms | ActiveRecord: 0.0ms | Allocations: 1246420)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-02 14:52:25 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.6ms | Allocations: 634)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 131.5ms | Allocations: 9058)
+Completed 200 OK in 189ms (Views: 147.8ms | ActiveRecord: 13.5ms | Allocations: 20638)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-02 14:52:27 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.5ms | Allocations: 215)
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 123)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.2ms | Allocations: 1862)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 0.0ms | Allocations: 7211)
+
+
