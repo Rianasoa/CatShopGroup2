@@ -1,4 +1,967 @@
+
   [1m[35m (1221.9ms)[0m  [1m[35mCREATE DATABASE "CatShop_development" ENCODING = 'unicode'[0m
   [1m[35m (824.7ms)[0m  [1m[35mCREATE DATABASE "CatShop_test" ENCODING = 'unicode'[0m
   [1m[35m (61.1ms)[0m  [1m[35mCREATE DATABASE "CatShop_development" ENCODING = 'unicode'[0m
   [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "CatShop_test" ENCODING = 'unicode'[0m
+
+Started GET "/" for ::1 at 2019-09-02 14:11:56 +0300
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "CatShop_development" does not exist
+):
+  
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1111:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-09-02 14:13:41 +0300
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "CatShop_development" does not exist
+):
+  
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1111:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-09-02 14:16:09 +0300
+  
+NameError (undefined local variable or method `to' for #<ActionDispatch::Routing::Mapper:0x00007fecb00ec438>):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-09-02 14:16:41 +0300
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "CatShop_development" does not exist
+):
+  
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1111:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-09-02 14:17:02 +0300
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-09-02 14:17:20 +0300
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-09-02 14:17:23 +0300
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "CatShop_development" does not exist
+):
+  
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1111:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-09-02 14:18:19 +0300
+  
+ArgumentError ('Accueil' is not a supported controller name. This can lead to potential routing problems. See https://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-09-02 14:19:55 +0300
+  
+ArgumentError ('Accueil' is not a supported controller name. This can lead to potential routing problems. See https://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-09-02 14:21:06 +0300
+  
+SyntaxError (/home/dev/Bureau/CatShopGroup2/config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+   root :to'Accueil#index'
+           ^
+/home/dev/Bureau/CatShopGroup2/config/routes.rb:5: syntax error, unexpected end, expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+Started GET "/" for ::1 at 2019-09-02 14:22:04 +0300
+  
+SyntaxError (/home/dev/Bureau/CatShopGroup2/config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+   root :to'Accueil#index'
+           ^
+/home/dev/Bureau/CatShopGroup2/config/routes.rb:5: syntax error, unexpected end, expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+Started GET "/" for ::1 at 2019-09-02 14:22:28 +0300
+  
+SyntaxError (/home/dev/Bureau/CatShopGroup2/config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+   root :to'Accueil#index'
+           ^
+/home/dev/Bureau/CatShopGroup2/config/routes.rb:5: syntax error, unexpected end, expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+Started GET "/" for ::1 at 2019-09-02 14:22:57 +0300
+  
+SyntaxError (/home/dev/Bureau/CatShopGroup2/config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+   root :to 'Accueil#index'
+            ^
+/home/dev/Bureau/CatShopGroup2/config/routes.rb:5: syntax error, unexpected end, expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+config/routes.rb:2: syntax error, unexpected tSTRING_BEG, expecting end
+config/routes.rb:5: syntax error, unexpected end, expecting end-of-input
+Started GET "/" for ::1 at 2019-09-02 14:24:29 +0300
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "CatShop_development" does not exist
+):
+  
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1111:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (778.9ms)[0m  [1m[35mCREATE DATABASE "CatShop_development" ENCODING = 'unicode'[0m
+  [1m[35m (524.4ms)[0m  [1m[35mCREATE DATABASE "CatShop_test" ENCODING = 'unicode'[0m
+  [1m[35m (124.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (105.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (12.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6695254529977101165)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20190902105231)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (77.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (37.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (32.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[36mprimary::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190902105231"]]
+  [1m[35m (13.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-02 11:27:56.346864"], ["updated_at", "2019-09-02 11:27:56.346864"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(6695254529977101165)[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-09-02 14:28:19 +0300
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  Rendered accueil/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 597)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/dev/Bureau/CatShopGroup2/public/packs
+Completed 200 OK in 11549ms (Views: 11536.3ms | ActiveRecord: 0.0ms | Allocations: 1254749)
+
+
+Started GET "/" for ::1 at 2019-09-02 14:52:04 +0300
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/dev/Bureau/CatShopGroup2/app/controllers/accueil_controller.rb:3: `$' without identifiers is not allowed as a global variable name
+/home/dev/Bureau/CatShopGroup2/app/controllers/accueil_controller.rb:3: syntax error, unexpected end-of-input, expecting end
+  end$
+     ^):
+  
+app/controllers/accueil_controller.rb:3: `$' without identifiers is not allowed as a global variable name
+app/controllers/accueil_controller.rb:3: syntax error, unexpected end-of-input, expecting end
+app/controllers/accueil_controller.rb:3: `$' without identifiers is not allowed as a global variable name
+app/controllers/accueil_controller.rb:3: syntax error, unexpected end-of-input, expecting end
+app/controllers/accueil_controller.rb:3: `$' without identifiers is not allowed as a global variable name
+app/controllers/accueil_controller.rb:3: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-09-02 14:52:18 +0300
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  Rendered accueil/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 477)
+Completed 200 OK in 2726ms (Views: 2723.3ms | ActiveRecord: 0.0ms | Allocations: 1246420)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-02 14:52:25 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.6ms | Allocations: 634)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 131.5ms | Allocations: 9058)
+Completed 200 OK in 189ms (Views: 147.8ms | ActiveRecord: 13.5ms | Allocations: 20638)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-02 14:52:27 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.5ms | Allocations: 215)
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 123)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.2ms | Allocations: 1862)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 0.0ms | Allocations: 7211)
+
+
+Started GET "/" for ::1 at 2019-09-02 15:16:59 +0300
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  Rendered accueil/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 597)
+Completed 200 OK in 2621ms (Views: 2607.6ms | ActiveRecord: 0.0ms | Allocations: 1247001)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-02 15:17:04 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.2ms | Allocations: 638)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 19.3ms | Allocations: 4758)
+Completed 200 OK in 118ms (Views: 39.2ms | ActiveRecord: 9.9ms | Allocations: 16012)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-02 15:17:06 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.4ms | Allocations: 215)
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 123)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 12.3ms | Allocations: 1863)
+Completed 200 OK in 38ms (Views: 33.7ms | ActiveRecord: 0.0ms | Allocations: 7218)
+
+
+Started GET "/" for ::1 at 2019-09-02 15:22:28 +0300
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  Rendered accueil/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 597)
+Completed 200 OK in 2650ms (Views: 2635.2ms | ActiveRecord: 0.0ms | Allocations: 1247027)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-02 15:22:33 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.7ms | Allocations: 638)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 16.7ms | Allocations: 4758)
+Completed 200 OK in 69ms (Views: 32.6ms | ActiveRecord: 11.9ms | Allocations: 16007)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-02 15:22:36 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 132)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1047)
+Completed 200 OK in 72ms (Views: 69.9ms | ActiveRecord: 0.0ms | Allocations: 5755)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-09-02 15:22:52 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"a92onEdt3iBZOkSyTMvd4rCBW0S3BaTwpd6Jo9F+03I2QIIJ/aDp8Il02zY1dbJO2LwHCfgG6zpKFoQyCXk6JA==", "user"=>{"email"=>"safidy@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "safidy@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 34ms (ActiveRecord: 2.8ms | Allocations: 2596)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"a92onEdt3iBZOkSyTMvd4rCBW0S3BaTwpd6Jo9F+03I2QIIJ/aDp8Il02zY1dbJO2LwHCfgG6zpKFoQyCXk6JA==", "user"=>{"email"=>"safidy@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 132)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1045)
+Completed 200 OK in 231ms (Views: 23.1ms | ActiveRecord: 0.0ms | Allocations: 6986)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-02 15:22:55 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.8ms | Allocations: 215)
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 123)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 13.6ms | Allocations: 1865)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.0ms | Allocations: 7207)
+
+
+Started POST "/users" for ::1 at 2019-09-02 15:23:30 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"1Ze0kJ/ujBWCpp9CRO2h88UOhR/LIIIotywxShXU1x0QwkvEO/vB9L5ln7sMG+6S3D7QNNumqLsYo+gKnVtDnQ==", "user"=>{"email"=>"safidy@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "safidy@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "safidy@gmail.com"], ["encrypted_password", "$2a$11$affC4mdMHnKke0s7jN09ZeBp4E/VlsrQZysWEbSTNKBLzKDb4hsAa"], ["created_at", "2019-09-02 12:23:30.662009"], ["updated_at", "2019-09-02 12:23:30.662009"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 11.9ms | Allocations: 3294)
+UserMailer#welcome_email: processed outbound mail in 18.1ms
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 576ms (ActiveRecord: 4.2ms | Allocations: 63632)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<User:0x00007fca0da5b868>):
+    4:     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    5:   </head>
+    6:   <body>
+    7:     <h1>Salut <%= @user.name %> et bienvenue chez nous !</h1>
+    8:     <p>
+    9:       Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : <%= @user.email %>.
+   10:     </p>
+  
+app/views/user_mailer/welcome_email.html.erb:7
+app/mailers/user_mailer.rb:12:in `welcome_email'
+app/models/user.rb:9:in `welcome_send'
+Started POST "/users" for ::1 at 2019-09-02 15:24:56 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"1Ze0kJ/ujBWCpp9CRO2h88UOhR/LIIIotywxShXU1x0QwkvEO/vB9L5ln7sMG+6S3D7QNNumqLsYo+gKnVtDnQ==", "user"=>{"email"=>"safidy@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "safidy@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (3.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "safidy@gmail.com"], ["encrypted_password", "$2a$11$hzhaY8WfVurUdZibVjxYRey80Z.s5lzwBv0puKB/DyKXJvIiPvhAy"], ["created_at", "2019-09-02 12:24:56.382674"], ["updated_at", "2019-09-02 12:24:56.382674"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.8ms | Allocations: 140)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 12.1ms | Allocations: 2916)
+UserMailer#welcome_email: processed outbound mail in 20.6ms
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 230ms (ActiveRecord: 5.4ms | Allocations: 11798)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<User:0x00007fca0dcf8440>):
+    1: Salut <%= @user.name %> et bienvenue chez nous !
+    2: ==========================================================
+    3:  
+    4: Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : <%= @user.email %>.
+  
+app/views/user_mailer/welcome_email.text.erb:1
+app/mailers/user_mailer.rb:12:in `welcome_email'
+app/models/user.rb:9:in `welcome_send'
+Started POST "/users" for ::1 at 2019-09-02 15:25:23 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"1Ze0kJ/ujBWCpp9CRO2h88UOhR/LIIIotywxShXU1x0QwkvEO/vB9L5ln7sMG+6S3D7QNNumqLsYo+gKnVtDnQ==", "user"=>{"email"=>"safidy@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "safidy@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "safidy@gmail.com"], ["encrypted_password", "$2a$11$dFDo9b0lMJPQk9OR1YmCF.865QG2291L3Mqj2OVo9.FzaOhMzK8K2"], ["created_at", "2019-09-02 12:25:23.228801"], ["updated_at", "2019-09-02 12:25:23.228801"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 1.1ms | Allocations: 140)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 1.5ms | Allocations: 124)
+UserMailer#welcome_email: processed outbound mail in 37.2ms
+Delivered mail 5d6d0a3344f93_4a722ab8d0a55d94740a@lenovos50.mail (112.7ms)
+Date: Mon, 02 Sep 2019 15:25:23 +0300
+From: catshop@gasikara.mg
+To: safidy@gmail.com
+Message-ID: <5d6d0a3344f93_4a722ab8d0a55d94740a@lenovos50.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d6d0a3341969_4a722ab8d0a55d94739b5";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d6d0a3341969_4a722ab8d0a55d94739b5
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgc2FmaWR5QGdtYWlsLmNvbSBldCBiaWVudmVudWUgY2hleiBub3Vz
+ICENCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT0NCiANClR1IHQnZXMgaW5zY3JpdCBzdXIgbm90
+cmUgc2l0ZSBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IHNhZmlk
+eUBnbWFpbC5jb20uDQogDQogDQrDgCB0csOocyB2aXRlIHN1ciBDYXRTaG9w
+IQ0K
+
+----==_mimepart_5d6d0a3341969_4a722ab8d0a55d94739b5
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut safidy@gmail.com et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : safi=
+dy@gmail.com.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d6d0a3341969_4a722ab8d0a55d94739b5--
+
+  [1m[35m (30.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 405ms (ActiveRecord: 34.7ms | Allocations: 48869)
+
+
+Started GET "/" for ::1 at 2019-09-02 15:25:23 +0300
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/accueil/index.html.erb:2
+  Rendered accueil/index.html.erb within layouts/application (Duration: 1194.2ms | Allocations: 163311)
+Completed 500 Internal Server Error in 1203ms (ActiveRecord: 1.0ms | Allocations: 164568)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `static_pages_secret_path' for #<#<Class:0x00007fca0e777538>:0x00007fca0e7758f0>):
+     9:     </li>
+    10: 
+    11:     <li>
+    12:       <%= link_to "Secret page", static_pages_secret_path %>
+    13:     </li>
+    14: 
+    15:     <li>
+  
+app/views/accueil/index.html.erb:12
+Started GET "/" for ::1 at 2019-09-02 15:26:51 +0300
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/accueil/index.html.erb:2
+  Rendered accueil/index.html.erb within layouts/application (Duration: 1164.3ms | Allocations: 168195)
+Completed 500 Internal Server Error in 1174ms (ActiveRecord: 12.6ms | Allocations: 169550)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `static_pages_secret_path' for #<#<Class:0x00007fca0e949ed8>:0x00007fca0e948650>):
+     9:     </li>
+    10: 
+    11:     <li>
+    12:       <%= link_to "Secret page", static_pages_secret_path %>
+    13:     </li>
+    14: 
+    15:     <li>
+  
+app/views/accueil/index.html.erb:12
+Started GET "/" for ::1 at 2019-09-02 15:34:39 +0300
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/accueil/index.html.erb:2
+  Rendered accueil/index.html.erb within layouts/application (Duration: 1043.5ms | Allocations: 167974)
+Completed 500 Internal Server Error in 1052ms (ActiveRecord: 2.4ms | Allocations: 169329)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `accueil_secret_path' for #<#<Class:0x00007fca0dd39ff8>:0x00007fca0dd3dba8>):
+     9:     </li>
+    10: 
+    11:     <li>
+    12:       <%= link_to "Secret page", accueil_secret_path %>
+    13:     </li>
+    14: 
+    15:     <li>
+  
+app/views/accueil/index.html.erb:12
+Started GET "/" for ::1 at 2019-09-02 15:36:33 +0300
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/accueil/index.html.erb:2
+  Rendered accueil/index.html.erb within layouts/application (Duration: 1084.3ms | Allocations: 163239)
+Completed 500 Internal Server Error in 1093ms (ActiveRecord: 0.9ms | Allocations: 164533)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `static_pages_secret_path' for #<#<Class:0x00007fca0ec5d480>:0x00007fca0ec63bf0>):
+     9:     </li>
+    10: 
+    11:     <li>
+    12:       <%= link_to "Secret page", static_pages_secret_path %>
+    13:     </li>
+    14: 
+    15:     <li>
+  
+app/views/accueil/index.html.erb:12
+Started GET "/users/sign_in" for ::1 at 2019-09-02 15:37:00 +0300
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 1.0ms | Allocations: 1961)
+
+
+Started GET "/" for ::1 at 2019-09-02 15:37:00 +0300
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/accueil/index.html.erb:2
+  Rendered accueil/index.html.erb within layouts/application (Duration: 1050.0ms | Allocations: 163014)
+Completed 500 Internal Server Error in 1054ms (ActiveRecord: 1.1ms | Allocations: 163474)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `static_pages_secret_path' for #<#<Class:0x00007fca0ec5d480>:0x00007fca0dcfa600>):
+     9:     </li>
+    10: 
+    11:     <li>
+    12:       <%= link_to "Secret page", static_pages_secret_path %>
+    13:     </li>
+    14: 
+    15:     <li>
+  
+app/views/accueil/index.html.erb:12
+Started GET "/" for ::1 at 2019-09-02 15:37:07 +0300
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/accueil/index.html.erb:2
+  Rendered accueil/index.html.erb within layouts/application (Duration: 1008.7ms | Allocations: 162970)
+Completed 500 Internal Server Error in 1014ms (ActiveRecord: 1.0ms | Allocations: 163428)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `static_pages_secret_path' for #<#<Class:0x00007fca0ec5d480>:0x00007fca0ea7c7b0>):
+     9:     </li>
+    10: 
+    11:     <li>
+    12:       <%= link_to "Secret page", static_pages_secret_path %>
+    13:     </li>
+    14: 
+    15:     <li>
+  
+app/views/accueil/index.html.erb:12
+Started GET "/" for ::1 at 2019-09-02 15:38:58 +0300
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/accueil/index.html.erb:2
+  Rendered accueil/index.html.erb within layouts/application (Duration: 1111.4ms | Allocations: 168186)
+Completed 500 Internal Server Error in 1122ms (ActiveRecord: 20.6ms | Allocations: 169553)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `cat_secret_path' for #<#<Class:0x00007fca0dece300>:0x00007fca0decc9b0>):
+     9:     </li>
+    10: 
+    11:     <li>
+    12:       <%= link_to "Secret page", cat_secret_path %>
+    13:     </li>
+    14: 
+    15:     <li>
+  
+app/views/accueil/index.html.erb:12
+Started GET "/" for ::1 at 2019-09-02 15:40:13 +0300
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/accueil/index.html.erb:2
+  Rendered accueil/index.html.erb within layouts/application (Duration: 1116.1ms | Allocations: 163243)
+Completed 500 Internal Server Error in 1122ms (ActiveRecord: 0.6ms | Allocations: 164550)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `cat_secret_path' for #<#<Class:0x00007fca0eca3d40>:0x00007fca0eca2490>):
+     9:     </li>
+    10: 
+    11:     <li>
+    12:       <%= link_to "Secret page", cat_secret_path %>
+    13:     </li>
+    14: 
+    15:     <li>
+  
+app/views/accueil/index.html.erb:12
+Started GET "/" for ::1 at 2019-09-02 15:43:50 +0300
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/accueil/index.html.erb:2
+  Rendered accueil/index.html.erb within layouts/application (Duration: 1089.3ms | Allocations: 162972)
+Completed 500 Internal Server Error in 1093ms (ActiveRecord: 0.7ms | Allocations: 163431)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `cat_secret_path' for #<#<Class:0x00007fca0eca3d40>:0x00007fca0dcd2830>):
+     9:     </li>
+    10: 
+    11:     <li>
+    12:       <%= link_to "Secret page", cat_secret_path %>
+    13:     </li>
+    14: 
+    15:     <li>
+  
+app/views/accueil/index.html.erb:12
+Started GET "/" for ::1 at 2019-09-02 15:44:22 +0300
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/accueil/index.html.erb:2
+  Rendered accueil/index.html.erb within layouts/application (Duration: 1148.7ms | Allocations: 167914)
+Completed 500 Internal Server Error in 1153ms (ActiveRecord: 11.0ms | Allocations: 168587)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `cat_secret_path' for #<#<Class:0x00007fca1023a618>:0x00007fca10238d90>):
+     9:     </li>
+    10: 
+    11:     <li>
+    12:       <%= link_to "Secret page", cat_secret_path %>
+    13:     </li>
+    14: 
+    15:     <li>
+  
+app/views/accueil/index.html.erb:12
+Started GET "/" for ::1 at 2019-09-02 15:44:34 +0300
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  Rendered accueil/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1186)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 2514)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <ul>
+  <% if user_signed_in? %>
+    <li>
+      <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+    </li>
+
+    <li>
+      Voici ton email : <%= current_user.email %>
+    </li>
+
+    <li>
+      <%= link_to "Secret page", %>
+    </li>
+
+    <li>
+      <%= link_to "Edit email / password", edit_user_registration_path %>
+    </li>
+
+  <% else %>
+    <li>    
+      <%= link_to "Sign in", new_user_session_path %>
+    </li>
+
+    <li>
+      <%= link_to "Sign up", new_user_registration_path %>
+    </li>
+
+  <% end %>
+</ul>
+):
+1:    <ul>
+2:      <% if user_signed_in? %>
+3:        <li>
+4:          <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+5:        </li>
+6:    
+7:        <li>
+8:          Voici ton email : <%= current_user.email %>
+9:        </li>
+10:    
+11:        <li>
+12:          <%= link_to "Secret page", %>
+13:        </li>
+14:    
+15:        <li>
+16:          <%= link_to "Edit email / password", edit_user_registration_path %>
+17:        </li>
+18:    
+19:      <% else %>
+20:        <li>    
+21:          <%= link_to "Sign in", new_user_session_path %>
+22:        </li>
+23:    
+24:        <li>
+25:          <%= link_to "Sign up", new_user_registration_path %>
+26:        </li>
+27:    
+28:      <% end %>
+29:    </ul>
+  
+app/views/accueil/index.html.erb:12: syntax error, unexpected ')'
+app/views/accueil/index.html.erb:19: syntax error, unexpected else, expecting ')'
+app/views/accueil/index.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/accueil/index.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/accueil/index.html.erb:12: syntax error, unexpected ')'
+app/views/accueil/index.html.erb:19: syntax error, unexpected else, expecting ')'
+app/views/accueil/index.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/accueil/index.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/accueil/index.html.erb:12: syntax error, unexpected ')'
+app/views/accueil/index.html.erb:19: syntax error, unexpected else, expecting ')'
+app/views/accueil/index.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/accueil/index.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/accueil/index.html.erb:12: syntax error, unexpected ')'
+app/views/accueil/index.html.erb:19: syntax error, unexpected else, expecting ')'
+app/views/accueil/index.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/accueil/index.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/accueil/index.html.erb:12: syntax error, unexpected ')'
+app/views/accueil/index.html.erb:19: syntax error, unexpected else, expecting ')'
+app/views/accueil/index.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/accueil/index.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/accueil/index.html.erb:12: syntax error, unexpected ')'
+app/views/accueil/index.html.erb:19: syntax error, unexpected else, expecting ')'
+app/views/accueil/index.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/accueil/index.html.erb:31: syntax error, unexpected end, expecting ')'
+Started GET "/" for ::1 at 2019-09-02 15:45:05 +0300
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/accueil/index.html.erb:2
+  Rendered accueil/index.html.erb within layouts/application (Duration: 1129.4ms | Allocations: 163243)
+Completed 500 Internal Server Error in 1136ms (ActiveRecord: 1.1ms | Allocations: 164548)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `static_pages_secret_path' for #<#<Class:0x00007fca0e9007d8>:0x00007fca0e90aee0>):
+     9:     </li>
+    10: 
+    11:     <li>
+    12:       <%= link_to "Secret page", static_pages_secret_path %>
+    13:     </li>
+    14: 
+    15:     <li>
+  
+app/views/accueil/index.html.erb:12
+Started GET "/" for ::1 at 2019-09-02 15:50:47 +0300
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/accueil/index.html.erb:2
+  Rendered accueil/index.html.erb within layouts/application (Duration: 32.1ms | Allocations: 5979)
+Completed 200 OK in 58ms (Views: 52.1ms | ActiveRecord: 2.1ms | Allocations: 11547)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-09-02 15:50:51 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Zp2oyVZikuV+pnaQ1nHgHPbo60wItVT5IwOU+IuHXmd4tBfNP/iTxFbngpjD1iT46Pbm67dlmj61TWSO4cerow=="}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 44ms (ActiveRecord: 2.8ms | Allocations: 2894)
+
+
+Started GET "/" for ::1 at 2019-09-02 15:50:51 +0300
+Processing by AccueilController#index as HTML
+  Rendering accueil/index.html.erb within layouts/application
+  Rendered accueil/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 163)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 4634)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-02 15:50:52 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.9ms | Allocations: 556)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 16.9ms | Allocations: 1984)
+Completed 200 OK in 44ms (Views: 39.5ms | ActiveRecord: 0.0ms | Allocations: 7756)
