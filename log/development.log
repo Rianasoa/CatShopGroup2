@@ -1,3 +1,9 @@
+
+  [1m[35m (1221.9ms)[0m  [1m[35mCREATE DATABASE "CatShop_development" ENCODING = 'unicode'[0m
+  [1m[35m (824.7ms)[0m  [1m[35mCREATE DATABASE "CatShop_test" ENCODING = 'unicode'[0m
+  [1m[35m (61.1ms)[0m  [1m[35mCREATE DATABASE "CatShop_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "CatShop_test" ENCODING = 'unicode'[0m
+
 Started GET "/" for ::1 at 2019-09-02 14:11:56 +0300
   
 ActiveRecord::NoDatabaseError (FATAL:  database "CatShop_development" does not exist
@@ -959,5 +965,3 @@ Processing by Devise::SessionsController#new as HTML
   Rendered devise/shared/_links.html.erb (Duration: 3.9ms | Allocations: 556)
   Rendered devise/sessions/new.html.erb within layouts/application (Duration: 16.9ms | Allocations: 1984)
 Completed 200 OK in 44ms (Views: 39.5ms | ActiveRecord: 0.0ms | Allocations: 7756)
-
-
