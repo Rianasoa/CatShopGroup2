@@ -1,0 +1,17 @@
+
+<h3>Ta commande a bien été effectuée ;)</h3>
+<br>
+
+<% @user.cart.items.each do |item| %>
+<h2><%=item.title%></h2>
+
+  <%= item.title %>
+  <br>
+  <%= item.price%>
+  <br>
+  <%= item.description%>
+</p>
+<br>
+<% end %>
+
+<h3>A Bientôt</h3>

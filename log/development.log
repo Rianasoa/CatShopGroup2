@@ -6708,3 +6708,263 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 4943)
 
 
+Started GET "/" for ::1 at 2019-09-03 14:46:05 +0300
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+Started GET "/" for ::1 at 2019-09-03 14:46:05 +0300
+  Rendered items/index.html.erb within layouts/application (Duration: 868.0ms | Allocations: 107929)
+Completed 500 Internal Server Error in 949ms (ActiveRecord: 15.6ms | Allocations: 112947)
+
+
+  
+ActionView::Template::Error (undefined method `item_path' for #<#<Class:0x000055d256805df8>:0x000055d256816450>):
+    15:           <img class="card-img-top" <%= image_tag item.image_url%> </br></br>
+    16: 
+    17:         <% end %>
+    18:         <p><a href="<%= item_path(item.id)%>" class="btn btn-info">Show Cat</a></p>
+    19:       </div>
+    20:       
+    21:     <%end%>
+  
+app/views/items/index.html.erb:18
+app/views/items/index.html.erb:10
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (3.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 993.8ms | Allocations: 174220)
+Completed 500 Internal Server Error in 1197ms (ActiveRecord: 3.7ms | Allocations: 230481)
+
+
+  
+ActionView::Template::Error (undefined method `item_path' for #<#<Class:0x000055d256805df8>:0x00007f4068053980>):
+    15:           <img class="card-img-top" <%= image_tag item.image_url%> </br></br>
+    16: 
+    17:         <% end %>
+    18:         <p><a href="<%= item_path(item.id)%>" class="btn btn-info">Show Cat</a></p>
+    19:       </div>
+    20:       
+    21:     <%end%>
+  
+app/views/items/index.html.erb:18
+app/views/items/index.html.erb:10
+Started GET "/" for ::1 at 2019-09-03 14:46:17 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 659.8ms | Allocations: 101922)
+Completed 500 Internal Server Error in 665ms (ActiveRecord: 1.7ms | Allocations: 102377)
+
+
+  
+ActionView::Template::Error (undefined method `item_path' for #<#<Class:0x000055d256805df8>:0x00007f40720992f0>):
+    15:           <img class="card-img-top" <%= image_tag item.image_url%> </br></br>
+    16: 
+    17:         <% end %>
+    18:         <p><a href="<%= item_path(item.id)%>" class="btn btn-info">Show Cat</a></p>
+    19:       </div>
+    20:       
+    21:     <%end%>
+  
+app/views/items/index.html.erb:18
+app/views/items/index.html.erb:10
+Started GET "/" for ::1 at 2019-09-03 14:46:44 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.0ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 684.7ms | Allocations: 106850)
+Completed 500 Internal Server Error in 726ms (ActiveRecord: 20.8ms | Allocations: 110206)
+
+
+  
+ActionView::Template::Error (undefined method `item_path' for #<#<Class:0x00007f4070a48e60>:0x00007f4070f8f478>):
+    15:           <img class="card-img-top" <%= image_tag item.image_url%> </br></br>
+    16: 
+    17:         <% end %>
+    18:         <p><a href="<%= item_path(item.id)%>" class="btn btn-info">Show Cat</a></p>
+    19:       </div>
+    20:       
+    21:     <%end%>
+  
+app/views/items/index.html.erb:18
+app/views/items/index.html.erb:10
+Started GET "/" for ::1 at 2019-09-03 14:47:20 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 47.5ms | Allocations: 6456)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 14117ms (Views: 14077.1ms | ActiveRecord: 14.2ms | Allocations: 1259050)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-03 14:47:44 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"pKSmOHO04WF6zXIKeWNEAbOtCMd4bukNzlYrrCWmy2HvDuM9PzT2dbfh2dIOf/5EzVVWnVI14TwgzT4NMXWhAw==", "id"=>"sign_up"}
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 377)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 302)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 305)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 300)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 303)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 299)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 299)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 301)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 307)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 303)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms | Allocations: 299)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 301)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 295)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 307)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 295)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 298)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:46 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 301)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:47:47 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 310)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-03 14:48:09 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"authenticity_token"=>"pKSmOHO04WF6zXIKeWNEAbOtCMd4bukNzlYrrCWmy2HvDuM9PzT2dbfh2dIOf/5EzVVWnVI14TwgzT4NMXWhAw=="}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 3.3ms | Allocations: 216)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 57.4ms | Allocations: 2371)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6996ms (Views: 6917.0ms | ActiveRecord: 11.0ms | Allocations: 17484)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:48:37 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 16.1ms | Allocations: 736)
+[Webpacker] Compiling…
+Started GET "/users/sign_in" for ::1 at 2019-09-03 14:48:38 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 238)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 9683ms (Views: 9678.5ms | ActiveRecord: 0.0ms | Allocations: 16394)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 12132ms (Views: 12125.8ms | ActiveRecord: 0.0ms | Allocations: 8286)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-03 14:48:53 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 866)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 14201ms (Views: 14195.8ms | ActiveRecord: 0.0ms | Allocations: 7717)
+
+
