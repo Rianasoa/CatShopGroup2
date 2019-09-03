@@ -1,8 +1,10 @@
 class Item < ApplicationRecord
-	validates: title, presence: true, length: {in: 5..10} 
-	validates: description, presence: true, length: {in: 10..50} 
-	validates: price, presence: true
-	validates: image_url, format: {with: /\.(png|jpg)\Z/i}
-	has_many :carts
+	validates :title, presence: true
+	validates :description, presence: true
+	validates :price, presence: true
+
+	has_many :cartItems
+	has_many :carts, through: :cartItems
 	has_many :orders
+	belongs_to :user, optional: true
 end

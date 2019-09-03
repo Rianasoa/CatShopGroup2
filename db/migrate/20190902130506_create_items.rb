@@ -5,7 +5,7 @@ class CreateItems < ActiveRecord::Migration[6.0]
       t.text :description
       t.float :price
       t.string :image_url
-      t.belongs_to :cart, index: true
+      t.belongs_to :user, index: true
 
       t.timestamps
     end
