@@ -29,6 +29,7 @@
   box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.85);
 }
 
+
 .login-container:after {
   content: '';
   display: inline-block;
@@ -214,6 +215,21 @@
     <label for="login-input-password" class="login__label">
       Password
     </label>
+
+  
+
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name, autofocus: true%>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name, autofocus: true%>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
