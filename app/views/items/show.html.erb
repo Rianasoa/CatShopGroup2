@@ -1,0 +1,30 @@
+<div class="container show_event">
+  <div class="col text-center">
+    <h2>Cat n°<%=@item.id%></h2><br>
+  </div>
+
+  <div class="card mx-3">
+    <div class="card-header">
+      <strong><%= @item.title%></strong>
+    </div>
+
+    <div>
+
+      <center><h3>Cat Picture</h3></center>
+        <img class="card-img-top" <%= image_tag @item.image_url%> </br></br>
+    </div>
+  </div>
+
+  <div class="card-body">
+
+     <p class="text-center card-text"><%= @item.description%></p> 
+     <p><strong>Price :</strong> <%= @item.price%></p>
+
+     <%if current_user%>
+      <a href="#" class="btn btn-success">Add cart</a>
+     <%end%>
+    
+  </div>
+
+
+</div>
