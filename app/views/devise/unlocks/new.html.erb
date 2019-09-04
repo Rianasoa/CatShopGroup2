@@ -1,16 +1,81 @@
-<h2>Resend unlock instructions</h2>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign in</title>
+  <style type="text/css">
+ 
+ body{
+
+      background-image: url(https://cdn.pixabay.com/photo/2017/07/25/01/22/cat-2536662_960_720.jpg);
+      background-size:cover;
+      background-repeat:no-repeat;
+
+ }
+.content{
+  padding-top: 30px;
+  margin-left:150px;
+  margin-right: 800px;
+
+
+}
+ .field{
+  position: center;
+   height: 100px;
+  width: 500px;   
+ }
+ .zone{
+    width:1300px;
+    height:100px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+     background-color: transparent;
+     font-size: 50px;
+     color: white;
+     font-family: roboto;
+
+ }
+ h2{
+ margin-left:400px;
+ color: white;
+ font-size: 70px;
+ font-family:roboto; 
+ }
+ .checkbox{
+  font-size: 20px;
+  color: white;
+ }
+ .bouton{
+  width:300px;
+  height:50px;
+  background-color:#FF1493;
+  border: none;
+  font-size: 30px;
+
+ }
+  </style>
+</head>
+<body>
+<div class="content">
+<center><h2 >Resend unlock instructions</h2></center>
 
 <%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    
+    <%= f.email_field :email, autofocus: true, autocomplete: "email",:class=>'zone',:value=>"Enter your Email" %>
   </div>
-
   <div class="actions">
-    <%= f.submit "Resend unlock instructions" %>
+    <%= f.submit "Resend unlock instructions",:class=>"bouton"%>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+</div>
+
+</body>
+</html>
+
