@@ -12,7 +12,7 @@
         <h3><%= item.title.capitalize!%></h3>
         <p class="text-center card-text"><%= item.description[0..80] %>...</p> 
         <% unless item.image_url.nil? %>
-          <img class="card-img-top" <%= image_tag item.image_url%> </br></br>
+          <img class="card-img-top" <%= image_tag item.image_url %> ></br>
 
         <% end %>
         <p><a href="<%= item_path(item.id)%>" class="btn btn-info">Show Cat</a></p>
