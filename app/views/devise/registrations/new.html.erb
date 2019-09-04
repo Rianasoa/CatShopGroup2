@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign in</title>
+  <style type="text/css">
+ 
+ body{
+
+      background-image: url(https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_960_720.jpg);
+      background-size:cover;
+      background-repeat:no-repeat;
+
+ }
+.content{
+  padding-top: 30px;
+  margin-left:150px;
+  margin-right: 800px;
+
+
+}
+ .field{
+  position: center;
+   height: 100px;
+  width: 500px;   
+ }
+ .zone{
+    width:1000px;
+    height:100px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+     background-color: transparent;
+     font-size: 50px;
+     color: white;
+     font-family: roboto;
+
+ }
+ h2{
+ margin-left:400px;
+ color: white;
+ font-size: 70px;
+ font-family:roboto; 
+ }
+ .checkbox{
+  font-size: 20px;
+  color: white;
+ }
+ .bouton{
+  width:150px;
+  height:50px;
+  background-color:#FF1493;
+  border: none;
+  font-size: 30px;
+
+ }
+  </style>
+</head>
+<body>
+<div class="content">
+<center><h2 >Sign up</h2></center>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+  <div class="field">
+<%= f.text_field :first_name, autofocus: true,:class=>'zone',:value=>"First-name..."%>
+  </div>
+  <div class="field">
+<%= f.text_field :last_name, autofocus: true,:class=>'zone',:value=>"Last-name..."%>
+  </div>
+  <div class="field">
+    
+    <%= f.email_field :email, autofocus: true, autocomplete: "email",:class=>'zone',:value=>"Email..." %>
+  </div>
+  <div class="field">
+  <%= f.password_field :password, autocomplete: "new-password",:class=>'zone',:value=>"Password" %>
+  </div>
+  <div class="field">
+  <%= f.password_field :password_confirmation, autocomplete: "new-password",:class=>'zone',:value=>"Password" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up",:class=>"bouton"%>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+</div>
+
+</body>
+</html>
+
