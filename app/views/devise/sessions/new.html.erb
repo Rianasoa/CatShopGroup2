@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign in</title>
+  <style type="text/css">
+ 
+ body{
+
+      background-repeat:no-repeat;
+
+ }
+.content{
+
+  background-image: url(https://cdn.pixabay.com/photo/2018/03/27/17/26/cat-3266675_960_720.jpg);
+  background-size: cover;
+
+  padding-top: 30px;
+  margin-left:500px;
+  margin-right: 500px;
+
+
+}
+ .field{
+  position: center;
+  height: 100px;
+  width: 500px;   
+ }
+ .zone{
+    width:500px;
+    height:50px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background-color: transparent;
+    font-size:30px;
+    color: white;
+    font-family: roboto;
+
+ }
+ h2{
+
+ color: white;
+ font-size: 70px;
+ font-family:roboto; 
+ }
+ .checkbox{
+  font-size: 20px;
+  color: white;
+ }
+ .bouton{
+  width:150px;
+  height:50px;
+  background-color:#FF1493;
+  border: none;
+  font-size: 30px;
+
+ }
+  </style>
+</head>
+<body>
+<div class="content"><center>
+<center><h2 >Log in</h2></center>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    
+    <%= f.email_field :email, autofocus: true, autocomplete: "email",:class=>'zone',:value=>"Email" %>
+  </div></br>
+  
+ 
+
+  <div class="field">
+    
+    <%= f.password_field :password, autocomplete: "current-password",:class=>'zone',:value=>"Password" %>
+  </div></br>
+  </br>
+  
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me ,:class=>"checkbox"%>
+      <%= f.label :remember_me ,:class=>"checkbox"%>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit "Log in",:class=>"bouton"%>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+</div></center>
+
+</body>
+</html>
