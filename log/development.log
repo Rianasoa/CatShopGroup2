@@ -15733,3 +15733,447 @@ Processing by ItemsController#index as HTML
 Completed 200 OK in 5376ms (Views: 5371.7ms | ActiveRecord: 1.1ms | Allocations: 9657)
 
 
+Started GET "/" for ::1 at 2019-09-04 11:00:08 +0300
+  [1m[35m (34.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.0) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.0) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (24.6ms)[0m  [1m[35mCREATE DATABASE "CatShop_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE DATABASE "CatShop_test" ENCODING = 'unicode'[0m
+  [1m[35m (15.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6695254529977101165)[0m
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCarts (20190902111622)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (578.7ms)[0m  [1m[35mCREATE TABLE "carts" ("id" bigserial primary key, "user_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (92.5ms)[0m  [1m[35mCREATE  INDEX  "index_carts_on_user_id" ON "carts"  ("user_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190902111622"]]
+  [1m[35m (100.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateOrders (20190902111637)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (106.7ms)[0m  [1m[35mCREATE TABLE "orders" ("id" bigserial primary key, "user_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (138.0ms)[0m  [1m[35mCREATE  INDEX  "index_orders_on_user_id" ON "orders"  ("user_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190902111637"]]
+  [1m[35m (30.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateItems (20190902130506)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (189.9ms)[0m  [1m[35mCREATE TABLE "items" ("id" bigserial primary key, "title" character varying, "description" text, "price" float, "image_url" character varying, "user_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (85.9ms)[0m  [1m[35mCREATE  INDEX  "index_items_on_user_id" ON "items"  ("user_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190902130506"]]
+  [1m[35m (44.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCartItems (20190903054026)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (114.1ms)[0m  [1m[35mCREATE TABLE "cart_items" ("id" bigserial primary key, "quantity" integer, "cart_id" bigint, "item_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (180.1ms)[0m  [1m[35mCREATE  INDEX  "index_cart_items_on_cart_id" ON "cart_items"  ("cart_id")[0m
+  [1m[35m (195.0ms)[0m  [1m[35mCREATE  INDEX  "index_cart_items_on_item_id" ON "cart_items"  ("item_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190903054026"]]
+  [1m[35m (34.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (62.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6695254529977101165)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (25.2ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Alfie"], ["description", "Russian Blue"], ["price", 83.88], ["image_url", "https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_960_720.jpg"], ["created_at", "2019-09-04 08:02:32.139075"], ["updated_at", "2019-09-04 08:02:32.139075"]]
+  [1m[35m (21.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Charlie"], ["description", "European Shorthair"], ["price", 66.2], ["image_url", "https://cdn.pixabay.com/photo/2017/07/25/01/22/cat-2536662_960_720.jpg"], ["created_at", "2019-09-04 08:02:32.194324"], ["updated_at", "2019-09-04 08:02:32.194324"]]
+  [1m[35m (15.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Sam"], ["description", "Norwegian Forest Cat"], ["price", 41.14], ["image_url", "https://cdn.pixabay.com/photo/2016/07/10/21/47/cat-1508613__340.jpg"], ["created_at", "2019-09-04 08:02:32.219145"], ["updated_at", "2019-09-04 08:02:32.219145"]]
+  [1m[35m (13.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Missy"], ["description", "Oriental Bicolor"], ["price", 20.64], ["image_url", "https://cdn.pixabay.com/photo/2015/05/22/05/52/cat-778315__340.jpg"], ["created_at", "2019-09-04 08:02:32.244071"], ["updated_at", "2019-09-04 08:02:32.244071"]]
+  [1m[35m (13.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Bella"], ["description", "Snowshoe"], ["price", 66.38], ["image_url", "https://cdn.pixabay.com/photo/2016/07/10/21/47/cat-1508613__340.jpg"], ["created_at", "2019-09-04 08:02:32.269308"], ["updated_at", "2019-09-04 08:02:32.269308"]]
+  [1m[35m (17.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Sooty"], ["description", "Napoleon"], ["price", 63.8], ["image_url", "https://cdn.pixabay.com/photo/2015/11/16/22/14/cat-1046544__340.jpg"], ["created_at", "2019-09-04 08:02:32.318227"], ["updated_at", "2019-09-04 08:02:32.318227"]]
+  [1m[35m (15.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (12.8ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Sam"], ["description", "Thai"], ["price", 14.36], ["image_url", "https://cdn.pixabay.com/photo/2017/02/15/12/12/cat-2068462__340.jpg"], ["created_at", "2019-09-04 08:02:32.343738"], ["updated_at", "2019-09-04 08:02:32.343738"]]
+  [1m[35m (18.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Bella"], ["description", "Bombay"], ["price", 19.16], ["image_url", "https://cdn.pixabay.com/photo/2013/04/01/03/45/cat-98359__340.jpg"], ["created_at", "2019-09-04 08:02:32.385572"], ["updated_at", "2019-09-04 08:02:32.385572"]]
+  [1m[35m (13.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Alfie"], ["description", "PerFold Cat (Experimental Breed - WCF)"], ["price", 12.9], ["image_url", "https://cdn.pixabay.com/photo/2018/01/28/12/37/cat-3113513__340.jpg"], ["created_at", "2019-09-04 08:02:32.410400"], ["updated_at", "2019-09-04 08:02:32.410400"]]
+  [1m[35m (23.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Smudge"], ["description", "Foldex Cat"], ["price", 56.16], ["image_url", "https://cdn.pixabay.com/photo/2018/07/08/14/16/cat-3523992__340.jpg"], ["created_at", "2019-09-04 08:02:32.443491"], ["updated_at", "2019-09-04 08:02:32.443491"]]
+  [1m[35m (22.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Milo"], ["description", "Lykoi"], ["price", 30.65], ["image_url", "https://cdn.pixabay.com/photo/2016/12/30/12/16/cat-1940487__340.jpg"], ["created_at", "2019-09-04 08:02:32.476738"], ["updated_at", "2019-09-04 08:02:32.476738"]]
+  [1m[35m (30.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Lily"], ["description", "Bengal"], ["price", 13.42], ["image_url", "https://cdn.pixabay.com/photo/2018/05/30/19/29/cat-3442257__340.jpg"], ["created_at", "2019-09-04 08:02:32.517077"], ["updated_at", "2019-09-04 08:02:32.517077"]]
+  [1m[35m (16.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2019-09-04 11:04:37 +0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 69.7ms | Allocations: 6927)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 15318ms (Views: 14819.3ms | ActiveRecord: 7.8ms | Allocations: 1276706)
+
+
+Started GET "/items/12" for ::1 at 2019-09-04 11:07:14 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mItem Load (1.0ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 19.0ms | Allocations: 353)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4439ms (Views: 4401.3ms | ActiveRecord: 1.4ms | Allocations: 10521)
+
+
+Started GET "/items/12" for ::1 at 2019-09-04 11:08:10 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 332)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4073ms (Views: 4061.6ms | ActiveRecord: 0.8ms | Allocations: 9310)
+
+
+Started GET "/" for ::1 at 2019-09-04 11:11:04 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1466)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6112ms (Views: 6085.7ms | ActiveRecord: 0.8ms | Allocations: 10694)
+
+
+Started GET "/" for ::1 at 2019-09-04 11:13:33 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1453)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4468ms (Views: 4464.1ms | ActiveRecord: 1.3ms | Allocations: 9890)
+
+
+Started GET "/items/1" for ::1 at 2019-09-04 11:13:43 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (1.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 920.9ms | Allocations: 179964)
+Completed 500 Internal Server Error in 927ms (ActiveRecord: 1.2ms | Allocations: 181071)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_items_path' for #<#<Class:0x00007f140596b480>:0x00007f1405c48770>
+Did you mean?  new_item_path):
+    1: <%= link_to"Retour",index_items_path%>
+    2: <div class="container show_event">
+    3:   <div class="col text-center">
+    4:     <h2>Cat n°<%=@item.id%></h2><br>
+  
+app/views/items/show.html.erb:1
+Started GET "/items/1" for ::1 at 2019-09-04 11:14:16 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 398)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3889ms (Views: 3884.7ms | ActiveRecord: 0.8ms | Allocations: 9423)
+
+
+Started GET "/items" for ::1 at 2019-09-04 11:14:23 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1455)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4306ms (Views: 4303.7ms | ActiveRecord: 0.6ms | Allocations: 8830)
+
+
+Started GET "/items" for ::1 at 2019-09-04 11:18:59 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1211)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3694ms (Views: 3690.7ms | ActiveRecord: 1.8ms | Allocations: 8417)
+
+
+Started GET "/items" for ::1 at 2019-09-04 11:26:08 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1312)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 7369ms (Views: 7367.5ms | ActiveRecord: 0.8ms | Allocations: 8524)
+
+
+Started GET "/items" for ::1 at 2019-09-04 11:26:19 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1210)
+[Webpacker] Compiling…
+Started GET "/items" for ::1 at 2019-09-04 11:26:19 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1312)
+[Webpacker] Compiling…
+Started GET "/items" for ::1 at 2019-09-04 11:26:20 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1312)
+[Webpacker] Compiling…
+Started GET "/items" for ::1 at 2019-09-04 11:26:20 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1312)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 7824ms (Views: 7817.3ms | ActiveRecord: 1.5ms | Allocations: 30959)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 8075ms (Views: 8071.9ms | ActiveRecord: 0.5ms | Allocations: 43176)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 7672ms (Views: 7668.2ms | ActiveRecord: 2.2ms | Allocations: 10745)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 8424ms (Views: 8422.2ms | ActiveRecord: 0.9ms | Allocations: 24697)
+
+
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mItem Load (1.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.9ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 1]]
+  [1m[35m (16.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 2]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 3]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 4]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 5]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 6]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 7]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 8]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 9]]
+  [1m[35m (12.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 10]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 11]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 12]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (15.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Bella"], ["description", "Devon Rex"], ["price", 12.65], ["image_url", "https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_960_720.jpg"], ["created_at", "2019-09-04 08:27:30.395642"], ["updated_at", "2019-09-04 08:27:30.395642"]]
+  [1m[35m (19.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Oscar"], ["description", "Devon Rex"], ["price", 69.03], ["image_url", "https://cdn.pixabay.com/photo/2017/07/25/01/22/cat-2536662_960_720.jpg"], ["created_at", "2019-09-04 08:27:30.437433"], ["updated_at", "2019-09-04 08:27:30.437433"]]
+  [1m[35m (18.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Sooty"], ["description", "Javanese"], ["price", 53.85], ["image_url", "https://cdn.pixabay.com/photo/2018/03/29/21/51/cute-3273789_960_720.jpg"], ["created_at", "2019-09-04 08:27:30.462332"], ["updated_at", "2019-09-04 08:27:30.462332"]]
+  [1m[35m (18.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Alfie"], ["description", "Himalayan, or Colorpoint Persian"], ["price", 96.3], ["image_url", "https://cdn.pixabay.com/photo/2015/05/22/05/52/cat-778315__340.jpg"], ["created_at", "2019-09-04 08:27:30.487186"], ["updated_at", "2019-09-04 08:27:30.487186"]]
+  [1m[35m (18.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Tiger"], ["description", "Chausie"], ["price", 21.96], ["image_url", "https://cdn.pixabay.com/photo/2016/09/05/21/37/cat-1647775_960_720.jpg"], ["created_at", "2019-09-04 08:27:30.512035"], ["updated_at", "2019-09-04 08:27:30.512035"]]
+  [1m[35m (18.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Sooty"], ["description", "Birman"], ["price", 23.38], ["image_url", "https://cdn.pixabay.com/photo/2017/04/04/14/29/cat-2201460_960_720.jpg"], ["created_at", "2019-09-04 08:27:30.536975"], ["updated_at", "2019-09-04 08:27:30.536975"]]
+  [1m[35m (18.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (6.8ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Missy"], ["description", "Dragon Li"], ["price", 51.52], ["image_url", "https://cdn.pixabay.com/photo/2018/03/28/16/37/cat-3269765_960_720.jpg"], ["created_at", "2019-09-04 08:27:30.561938"], ["updated_at", "2019-09-04 08:27:30.561938"]]
+  [1m[35m (20.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Smudge"], ["description", "Egyptian Mau"], ["price", 66.87], ["image_url", "https://cdn.pixabay.com/photo/2013/12/12/03/08/kitten-227009_960_720.jpg"], ["created_at", "2019-09-04 08:27:30.595115"], ["updated_at", "2019-09-04 08:27:30.595115"]]
+  [1m[35m (18.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Milo"], ["description", "Scottish Fold"], ["price", 15.22], ["image_url", "https://cdn.pixabay.com/photo/2018/05/30/19/29/cat-3442257__340.jpg"], ["created_at", "2019-09-04 08:27:30.620020"], ["updated_at", "2019-09-04 08:27:30.620020"]]
+  [1m[35m (43.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2019-09-04 11:28:21 +0300
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 50.4ms | Allocations: 6779)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 8092ms (Views: 8000.2ms | ActiveRecord: 13.1ms | Allocations: 1261728)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 13]]
+  [1m[35m (16.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 14]]
+  [1m[35m (18.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.7ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 15]]
+  [1m[35m (16.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 16]]
+  [1m[35m (12.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 17]]
+  [1m[35m (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 18]]
+  [1m[35m (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 19]]
+  [1m[35m (12.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 20]]
+  [1m[35m (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 21]]
+  [1m[35m (18.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Oliver"], ["description", "Dragon Li"], ["price", 14.8], ["image_url", "https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_960_720.jpg"], ["created_at", "2019-09-04 08:30:43.109036"], ["updated_at", "2019-09-04 08:30:43.109036"]]
+  [1m[35m (28.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Smokey"], ["description", "Kurilian Bobtail, or Kuril Islands Bobtail"], ["price", 0.27], ["image_url", "https://cdn.pixabay.com/photo/2017/07/25/01/22/cat-2536662_960_720.jpg"], ["created_at", "2019-09-04 08:30:43.144570"], ["updated_at", "2019-09-04 08:30:43.144570"]]
+  [1m[35m (18.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Missy"], ["description", "Selkirk Rex"], ["price", 99.58], ["image_url", "https://cdn.pixabay.com/photo/2018/03/29/21/51/cute-3273789_960_720.jpg"], ["created_at", "2019-09-04 08:30:43.169368"], ["updated_at", "2019-09-04 08:30:43.169368"]]
+  [1m[35m (18.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Smokey"], ["description", "Australian Mist"], ["price", 67.56], ["image_url", "https://cdn.pixabay.com/photo/2015/06/09/09/35/animal-children-803123_960_720.jpg"], ["created_at", "2019-09-04 08:30:43.194385"], ["updated_at", "2019-09-04 08:30:43.194385"]]
+  [1m[35m (18.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Shadow"], ["description", "Foldex Cat"], ["price", 89.42], ["image_url", "https://cdn.pixabay.com/photo/2016/09/05/21/37/cat-1647775_960_720.jpg"], ["created_at", "2019-09-04 08:30:43.219225"], ["updated_at", "2019-09-04 08:30:43.219225"]]
+  [1m[35m (19.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Oliver"], ["description", "Foldex Cat"], ["price", 80.24], ["image_url", "https://cdn.pixabay.com/photo/2017/04/04/14/29/cat-2201460_960_720.jpg"], ["created_at", "2019-09-04 08:30:43.244241"], ["updated_at", "2019-09-04 08:30:43.244241"]]
+  [1m[35m (18.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Charlie"], ["description", "Oriental Shorthair"], ["price", 67.97], ["image_url", "https://cdn.pixabay.com/photo/2018/03/28/16/37/cat-3269765_960_720.jpg"], ["created_at", "2019-09-04 08:30:43.269029"], ["updated_at", "2019-09-04 08:30:43.269029"]]
+  [1m[35m (18.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Bella"], ["description", "Japanese Bobtail"], ["price", 58.34], ["image_url", "https://cdn.pixabay.com/photo/2013/12/12/03/08/kitten-227009_960_720.jpg"], ["created_at", "2019-09-04 08:30:43.294051"], ["updated_at", "2019-09-04 08:30:43.294051"]]
+  [1m[35m (27.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Jasper"], ["description", "Exotic Shorthair"], ["price", 67.18], ["image_url", "https://cdn.pixabay.com/photo/2018/05/30/19/29/cat-3442257__340.jpg"], ["created_at", "2019-09-04 08:30:43.327343"], ["updated_at", "2019-09-04 08:30:43.327343"]]
+  [1m[35m (26.7ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2019-09-04 11:31:21 +0300
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 32.2ms | Allocations: 6779)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5510ms (Views: 5481.8ms | ActiveRecord: 8.6ms | Allocations: 1261727)
+
+
