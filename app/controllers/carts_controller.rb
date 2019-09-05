@@ -13,6 +13,7 @@ class CartsController < ApplicationController
     if
        current_user.cart.items.include?(item) == false
       CartItem.create( cart_id: current_user.cart.id, item_id: item.id)
+
    end
   end
 
@@ -25,6 +26,7 @@ class CartsController < ApplicationController
    @cart_items.each do |cart_item| 
      @price_total += cart_item.price
    end
+   session[:success] = "send to panier"
  end
 
  def destroy

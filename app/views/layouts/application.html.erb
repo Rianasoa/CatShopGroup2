@@ -35,7 +35,7 @@
         <ul class="navbar-nav">       
           
           <%if current_user%>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown" style="position: absolute; right: 10%; top: 10%;color: white;">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Profile
               </a>
@@ -60,7 +60,13 @@
         </ul>
       </div>
     </nav>
-  
+  <div>
+    
+  </div>
+
+  <% if flash[:success] %>
+        <div class="alert alert-success"><%= session[:success] %></div>
+  <% end %>
     <%= yield %>
   </body>
 </html>
