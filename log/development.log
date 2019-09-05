@@ -19518,3 +19518,1272 @@ Processing by ItemsController#index as HTML
 Completed 200 OK in 2269ms (Views: 2265.3ms | ActiveRecord: 3.1ms | Allocations: 13126)
 
 
+  [1m[35m (39.0ms)[0m  [1m[35mCREATE DATABASE "CatShop_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE "CatShop_test" ENCODING = 'unicode'[0m
+  [1m[35m (19.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6695254529977101165)[0m
+  [1m[35m (43.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateOrderItems (20190905053351)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (338.8ms)[0m  [1m[35mCREATE TABLE "order_items" ("id" bigserial primary key, "order_id" bigint, "item_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (118.1ms)[0m  [1m[35mCREATE  INDEX  "index_order_items_on_order_id" ON "order_items"  ("order_id")[0m
+  [1m[35m (91.4ms)[0m  [1m[35mCREATE  INDEX  "index_order_items_on_item_id" ON "order_items"  ("item_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905053351"]]
+  [1m[35m (35.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (8.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6695254529977101165)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mItem Load (44.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 22]]
+  [1m[35m (15.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 23]]
+  [1m[35m (18.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 24]]
+  [1m[35m (16.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 25]]
+  [1m[35m (34.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 26]]
+  [1m[35m (25.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 27]]
+  [1m[35m (29.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 28]]
+  [1m[35m (19.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 29]]
+  [1m[35m (16.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (9.8ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 30]]
+  [1m[35m (16.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (15.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCart Load (12.9ms)[0m  [1m[34mSELECT "carts".* FROM "carts"[0m
+  [1m[36mCartItem Load (1.6ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items"[0m
+  [1m[36mOrder Load (1.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  [1m[36mOrderItem Load (0.9ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (42.2ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Simba"], ["description", "Norwegian Forest Cat"], ["price", 10.1], ["image_url", "https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_960_720.jpg"], ["created_at", "2019-09-05 07:03:53.347650"], ["updated_at", "2019-09-05 07:03:53.347650"]]
+  [1m[35m (26.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Coco"], ["description", "Chartreux"], ["price", 77.02], ["image_url", "https://cdn.pixabay.com/photo/2017/07/25/01/22/cat-2536662_960_720.jpg"], ["created_at", "2019-09-05 07:03:53.448362"], ["updated_at", "2019-09-05 07:03:53.448362"]]
+  [1m[35m (24.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Missy"], ["description", "Korat"], ["price", 27.31], ["image_url", "https://cdn.pixabay.com/photo/2018/03/29/21/51/cute-3273789_960_720.jpg"], ["created_at", "2019-09-05 07:03:53.480877"], ["updated_at", "2019-09-05 07:03:53.480877"]]
+  [1m[35m (27.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (6.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Charlie"], ["description", "German Rex"], ["price", 68.9], ["image_url", "https://cdn.pixabay.com/photo/2015/06/09/09/35/animal-children-803123_960_720.jpg"], ["created_at", "2019-09-05 07:03:53.515926"], ["updated_at", "2019-09-05 07:03:53.515926"]]
+  [1m[35m (22.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Tiger"], ["description", "Persian (Traditional Persian Cat)"], ["price", 16.0], ["image_url", "https://cdn.pixabay.com/photo/2016/09/05/21/37/cat-1647775_960_720.jpg"], ["created_at", "2019-09-05 07:03:53.556684"], ["updated_at", "2019-09-05 07:03:53.556684"]]
+  [1m[35m (23.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Lucky"], ["description", "Aegean"], ["price", 39.47], ["image_url", "https://cdn.pixabay.com/photo/2017/04/04/14/29/cat-2201460_960_720.jpg"], ["created_at", "2019-09-05 07:03:53.590025"], ["updated_at", "2019-09-05 07:03:53.590025"]]
+  [1m[35m (22.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Molly"], ["description", "Exotic Shorthair"], ["price", 50.37], ["image_url", "https://cdn.pixabay.com/photo/2018/03/28/16/37/cat-3269765_960_720.jpg"], ["created_at", "2019-09-05 07:03:53.622082"], ["updated_at", "2019-09-05 07:03:53.622082"]]
+  [1m[35m (18.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Tiger"], ["description", "Sphynx"], ["price", 38.04], ["image_url", "https://cdn.pixabay.com/photo/2013/12/12/03/08/kitten-227009_960_720.jpg"], ["created_at", "2019-09-05 07:03:53.647729"], ["updated_at", "2019-09-05 07:03:53.647729"]]
+  [1m[35m (33.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.9ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Milo"], ["description", "Dwarf cat, or Dwelf"], ["price", 86.73], ["image_url", "https://cdn.pixabay.com/photo/2018/05/30/19/29/cat-3442257__340.jpg"], ["created_at", "2019-09-05 07:03:53.689764"], ["updated_at", "2019-09-05 07:03:53.689764"]]
+  [1m[35m (13.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "franklyn_romaguera@wardbayer.org"], ["LIMIT", 1]]
+  [1m[36mUser Create (15.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "franklyn_romaguera@wardbayer.org"], ["encrypted_password", "$2a$11$K37aqONu6RgdOVMidQJSkuxoSljMMiwEl1Rml0CgE/HR1ZD8tYL8W"], ["created_at", "2019-09-05 07:03:54.026049"], ["updated_at", "2019-09-05 07:03:54.026049"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 45.8ms | Allocations: 439)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 22.4ms | Allocations: 130)
+UserMailer#welcome_email: processed outbound mail in 244.7ms
+Delivered mail 5d70b35ae0899_2d472b001f1fb9a0263d@lenovoe05.mail (463.0ms)
+Date: Thu, 05 Sep 2019 10:03:54 +0300
+From: catshop@gasikara.mg
+To: franklyn_romaguera@wardbayer.org
+Message-ID: <5d70b35ae0899_2d472b001f1fb9a0263d@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d70b35ad9179_2d472b001f1fb9a025b3";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d70b35ad9179_2d472b001f1fb9a025b3
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgZnJhbmtseW5fcm9tYWd1ZXJhQHdhcmRiYXllci5vcmcgZXQgYmll
+bnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09DQogDQpUdSB0J2Vz
+IGluc2NyaXQgc3VyIG5vdHJlIHNpdGUgZW4gdXRpbGlzYW50IGwnZS1tYWls
+IHN1aXZhbnQgOiBmcmFua2x5bl9yb21hZ3VlcmFAd2FyZGJheWVyLm9yZy4N
+CiANCiANCsOAIHRyw6hzIHZpdGUgc3VyIENhdFNob3AhDQo=
+
+----==_mimepart_5d70b35ad9179_2d472b001f1fb9a025b3
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut franklyn_romaguera@wardbayer.org et bienvenue chez nous !</=
+h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : fran=
+klyn_romaguera@wardbayer.org.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d70b35ad9179_2d472b001f1fb9a025b3--
+
+  [1m[35m (93.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "je_wilderman@ruel.name"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "je_wilderman@ruel.name"], ["encrypted_password", "$2a$11$TiXT9dJHaNmuUHRflzaPg.70laYtOspuyUfvu68HD5LxIIa9WCRSG"], ["created_at", "2019-09-05 07:03:55.741495"], ["updated_at", "2019-09-05 07:03:55.741495"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 8.3ms
+Delivered mail 5d70b35bb8e5c_2d472b001f1fb9a02878@lenovoe05.mail (86.1ms)
+Date: Thu, 05 Sep 2019 10:03:55 +0300
+From: catshop@gasikara.mg
+To: je_wilderman@ruel.name
+Message-ID: <5d70b35bb8e5c_2d472b001f1fb9a02878@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d70b35bb7515_2d472b001f1fb9a027ce";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d70b35bb7515_2d472b001f1fb9a027ce
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgamVfd2lsZGVybWFuQHJ1ZWwubmFtZSBldCBiaWVudmVudWUgY2hl
+eiBub3VzICENCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT0NCiANClR1IHQnZXMgaW5zY3JpdCBz
+dXIgbm90cmUgc2l0ZSBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6
+IGplX3dpbGRlcm1hbkBydWVsLm5hbWUuDQogDQogDQrDgCB0csOocyB2aXRl
+IHN1ciBDYXRTaG9wIQ0K
+
+----==_mimepart_5d70b35bb7515_2d472b001f1fb9a027ce
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut je_wilderman@ruel.name et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : je_w=
+ilderman@ruel.name.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d70b35bb7515_2d472b001f1fb9a027ce--
+
+  [1m[35m (29.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rosendo@blanda.net"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "rosendo@blanda.net"], ["encrypted_password", "$2a$11$7hEm4Lu1EsfRMHkIpZo2FujKyAX/EcBipJUmPuIAFpLSNEa.bCXQW"], ["created_at", "2019-09-05 07:03:56.138987"], ["updated_at", "2019-09-05 07:03:56.138987"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 4.4ms
+Delivered mail 5d70b35c24327_2d472b001f1fb9a0309e@lenovoe05.mail (46.7ms)
+Date: Thu, 05 Sep 2019 10:03:56 +0300
+From: catshop@gasikara.mg
+To: rosendo@blanda.net
+Message-ID: <5d70b35c24327_2d472b001f1fb9a0309e@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d70b35c234e0_2d472b001f1fb9a02977";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d70b35c234e0_2d472b001f1fb9a02977
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgcm9zZW5kb0BibGFuZGEubmV0IGV0IGJpZW52ZW51ZSBjaGV6IG5v
+dXMgIQ0KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1ciBu
+b3RyZSBzaXRlIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogcm9z
+ZW5kb0BibGFuZGEubmV0Lg0KIA0KIA0Kw4AgdHLDqHMgdml0ZSBzdXIgQ2F0
+U2hvcCENCg==
+
+----==_mimepart_5d70b35c234e0_2d472b001f1fb9a02977
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut rosendo@blanda.net et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : rose=
+ndo@blanda.net.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d70b35c234e0_2d472b001f1fb9a02977--
+
+  [1m[35m (26.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mario@dooley.org"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "mario@dooley.org"], ["encrypted_password", "$2a$11$BCXQvqvoHIjDUjc2zHszgOQonkRDKO4gxEwB1vcW3388GvQ29a4yC"], ["created_at", "2019-09-05 07:03:56.491336"], ["updated_at", "2019-09-05 07:03:56.491336"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 7.5ms
+Delivered mail 5d70b35c7e46d_2d472b001f1fb9a03241@lenovoe05.mail (293.9ms)
+Date: Thu, 05 Sep 2019 10:03:56 +0300
+From: catshop@gasikara.mg
+To: mario@dooley.org
+Message-ID: <5d70b35c7e46d_2d472b001f1fb9a03241@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d70b35c7a1e9_2d472b001f1fb9a03110";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d70b35c7a1e9_2d472b001f1fb9a03110
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgbWFyaW9AZG9vbGV5Lm9yZyBldCBiaWVudmVudWUgY2hleiBub3Vz
+ICENCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT0NCiANClR1IHQnZXMgaW5zY3JpdCBzdXIgbm90
+cmUgc2l0ZSBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IG1hcmlv
+QGRvb2xleS5vcmcuDQogDQogDQrDgCB0csOocyB2aXRlIHN1ciBDYXRTaG9w
+IQ0K
+
+----==_mimepart_5d70b35c7a1e9_2d472b001f1fb9a03110
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut mario@dooley.org et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : mari=
+o@dooley.org.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d70b35c7a1e9_2d472b001f1fb9a03110--
+
+  [1m[35m (54.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ernestine.wilderman@murazik.co"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "ernestine.wilderman@murazik.co"], ["encrypted_password", "$2a$11$UfdJCaoWrpN9sDqhNhd53us1rtwEaG6yTSOFPsFmqLFWO3hZF.FLO"], ["created_at", "2019-09-05 07:03:57.185709"], ["updated_at", "2019-09-05 07:03:57.185709"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 6.1ms
+Delivered mail 5d70b35d30515_2d472b001f1fb9a034f4@lenovoe05.mail (48.4ms)
+Date: Thu, 05 Sep 2019 10:03:57 +0300
+From: catshop@gasikara.mg
+To: ernestine.wilderman@murazik.co
+Message-ID: <5d70b35d30515_2d472b001f1fb9a034f4@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d70b35d2f164_2d472b001f1fb9a033b3";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d70b35d2f164_2d472b001f1fb9a033b3
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgZXJuZXN0aW5lLndpbGRlcm1hbkBtdXJhemlrLmNvIGV0IGJpZW52
+ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQ0KIA0KVHUgdCdlcyBp
+bnNjcml0IHN1ciBub3RyZSBzaXRlIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBz
+dWl2YW50IDogZXJuZXN0aW5lLndpbGRlcm1hbkBtdXJhemlrLmNvLg0KIA0K
+IA0Kw4AgdHLDqHMgdml0ZSBzdXIgQ2F0U2hvcCENCg==
+
+----==_mimepart_5d70b35d2f164_2d472b001f1fb9a033b3
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut ernestine.wilderman@murazik.co et bienvenue chez nous !</h1=
+>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : erne=
+stine.wilderman@murazik.co.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d70b35d2f164_2d472b001f1fb9a033b3--
+
+  [1m[35m (47.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "wan.crooks@damore.org"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "wan.crooks@damore.org"], ["encrypted_password", "$2a$11$Ag.6YM7gkm1ADE4HMY.sZerQsEuhm6CrVQY9ib48AtqEvWJYT5oku"], ["created_at", "2019-09-05 07:03:57.564138"], ["updated_at", "2019-09-05 07:03:57.564138"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 4.9ms
+Delivered mail 5d70b35d8c1e6_2d472b001f1fb9a0368@lenovoe05.mail (70.8ms)
+Date: Thu, 05 Sep 2019 10:03:57 +0300
+From: catshop@gasikara.mg
+To: wan.crooks@damore.org
+Message-ID: <5d70b35d8c1e6_2d472b001f1fb9a0368@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d70b35d8b295_2d472b001f1fb9a035b6";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d70b35d8b295_2d472b001f1fb9a035b6
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgd2FuLmNyb29rc0BkYW1vcmUub3JnIGV0IGJpZW52ZW51ZSBjaGV6
+IG5vdXMgIQ0KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1
+ciBub3RyZSBzaXRlIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDog
+d2FuLmNyb29rc0BkYW1vcmUub3JnLg0KIA0KIA0Kw4AgdHLDqHMgdml0ZSBz
+dXIgQ2F0U2hvcCENCg==
+
+----==_mimepart_5d70b35d8b295_2d472b001f1fb9a035b6
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut wan.crooks@damore.org et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : wan.=
+crooks@damore.org.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d70b35d8b295_2d472b001f1fb9a035b6--
+
+  [1m[35m (30.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rodrigo@walker.io"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "rodrigo@walker.io"], ["encrypted_password", "$2a$11$7Lvk.WT5Z1dF5AwWDAuY/.MeR1rV/lhMVKJ7OJdMFqTvvOXF1g5Zi"], ["created_at", "2019-09-05 07:03:57.963967"], ["updated_at", "2019-09-05 07:03:57.963967"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 6.5ms
+Delivered mail 5d70b35dee814_2d472b001f1fb9a0388d@lenovoe05.mail (36.8ms)
+Date: Thu, 05 Sep 2019 10:03:57 +0300
+From: catshop@gasikara.mg
+To: rodrigo@walker.io
+Message-ID: <5d70b35dee814_2d472b001f1fb9a0388d@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d70b35ded385_2d472b001f1fb9a037b9";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d70b35ded385_2d472b001f1fb9a037b9
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgcm9kcmlnb0B3YWxrZXIuaW8gZXQgYmllbnZlbnVlIGNoZXogbm91
+cyAhDQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIG5v
+dHJlIHNpdGUgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiByb2Ry
+aWdvQHdhbGtlci5pby4NCiANCiANCsOAIHRyw6hzIHZpdGUgc3VyIENhdFNo
+b3AhDQo=
+
+----==_mimepart_5d70b35ded385_2d472b001f1fb9a037b9
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut rodrigo@walker.io et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : rodr=
+igo@walker.io.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d70b35ded385_2d472b001f1fb9a037b9--
+
+  [1m[35m (52.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "stephen_schmidt@olsonkuvalis.biz"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "stephen_schmidt@olsonkuvalis.biz"], ["encrypted_password", "$2a$11$nA2jWOkO.PmhN45PXlMAtutECv0xnHH34mdoP7fl86w7ugNtpnW8e"], ["created_at", "2019-09-05 07:03:58.334152"], ["updated_at", "2019-09-05 07:03:58.334152"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 31.9ms
+Delivered mail 5d70b35e5a731_2d472b001f1fb9a04078@lenovoe05.mail (30.0ms)
+Date: Thu, 05 Sep 2019 10:03:58 +0300
+From: catshop@gasikara.mg
+To: stephen_schmidt@olsonkuvalis.biz
+Message-ID: <5d70b35e5a731_2d472b001f1fb9a04078@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d70b35e598d3_2d472b001f1fb9a039c2";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d70b35e598d3_2d472b001f1fb9a039c2
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgc3RlcGhlbl9zY2htaWR0QG9sc29ua3V2YWxpcy5iaXogZXQgYmll
+bnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09DQogDQpUdSB0J2Vz
+IGluc2NyaXQgc3VyIG5vdHJlIHNpdGUgZW4gdXRpbGlzYW50IGwnZS1tYWls
+IHN1aXZhbnQgOiBzdGVwaGVuX3NjaG1pZHRAb2xzb25rdXZhbGlzLmJpei4N
+CiANCiANCsOAIHRyw6hzIHZpdGUgc3VyIENhdFNob3AhDQo=
+
+----==_mimepart_5d70b35e598d3_2d472b001f1fb9a039c2
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut stephen_schmidt@olsonkuvalis.biz et bienvenue chez nous !</=
+h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : step=
+hen_schmidt@olsonkuvalis.biz.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d70b35e598d3_2d472b001f1fb9a039c2--
+
+  [1m[35m (38.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ji.wiza@douglas.org"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "ji.wiza@douglas.org"], ["encrypted_password", "$2a$11$ZlKq.gdVe/lVyuY11OdMMun0XYxuagFBlqTxqxASUFoUgTRPA9V6i"], ["created_at", "2019-09-05 07:03:58.722518"], ["updated_at", "2019-09-05 07:03:58.722518"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 5.2ms
+Delivered mail 5d70b35eb2e45_2d472b001f1fb9a042e5@lenovoe05.mail (32.2ms)
+Date: Thu, 05 Sep 2019 10:03:58 +0300
+From: catshop@gasikara.mg
+To: ji.wiza@douglas.org
+Message-ID: <5d70b35eb2e45_2d472b001f1fb9a042e5@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d70b35eb1e05_2d472b001f1fb9a041e4";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d70b35eb1e05_2d472b001f1fb9a041e4
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgamkud2l6YUBkb3VnbGFzLm9yZyBldCBiaWVudmVudWUgY2hleiBu
+b3VzICENCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT0NCiANClR1IHQnZXMgaW5zY3JpdCBzdXIg
+bm90cmUgc2l0ZSBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGpp
+LndpemFAZG91Z2xhcy5vcmcuDQogDQogDQrDgCB0csOocyB2aXRlIHN1ciBD
+YXRTaG9wIQ0K
+
+----==_mimepart_5d70b35eb1e05_2d472b001f1fb9a041e4
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut ji.wiza@douglas.org et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : ji.w=
+iza@douglas.org.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d70b35eb1e05_2d472b001f1fb9a041e4--
+
+  [1m[35m (123.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "hortensia@langosh.net"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "hortensia@langosh.net"], ["encrypted_password", "$2a$11$FsuRIlvBHf/7a/jEaKZob.YA1MZbUED8adED7Ozf9.HxU1d7ge5Xu"], ["created_at", "2019-09-05 07:03:59.150978"], ["updated_at", "2019-09-05 07:03:59.150978"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 4.5ms
+Delivered mail 5d70b35f2717e_2d472b001f1fb9a044b2@lenovoe05.mail (30.6ms)
+Date: Thu, 05 Sep 2019 10:03:59 +0300
+From: catshop@gasikara.mg
+To: hortensia@langosh.net
+Message-ID: <5d70b35f2717e_2d472b001f1fb9a044b2@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d70b35f263aa_2d472b001f1fb9a0437b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d70b35f263aa_2d472b001f1fb9a0437b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgaG9ydGVuc2lhQGxhbmdvc2gubmV0IGV0IGJpZW52ZW51ZSBjaGV6
+IG5vdXMgIQ0KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1
+ciBub3RyZSBzaXRlIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDog
+aG9ydGVuc2lhQGxhbmdvc2gubmV0Lg0KIA0KIA0Kw4AgdHLDqHMgdml0ZSBz
+dXIgQ2F0U2hvcCENCg==
+
+----==_mimepart_5d70b35f263aa_2d472b001f1fb9a0437b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut hortensia@langosh.net et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : hort=
+ensia@langosh.net.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d70b35f263aa_2d472b001f1fb9a0437b--
+
+  [1m[35m (96.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (1292.9ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 1], ["created_at", "2019-09-05 07:03:59.305453"], ["updated_at", "2019-09-05 07:03:59.305453"]]
+  [1m[35m (582.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.9ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 2], ["created_at", "2019-09-05 07:04:01.192200"], ["updated_at", "2019-09-05 07:04:01.192200"]]
+  [1m[35m (568.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.5ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 3], ["created_at", "2019-09-05 07:04:02.015993"], ["updated_at", "2019-09-05 07:04:02.015993"]]
+  [1m[35m (153.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.7ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 4], ["created_at", "2019-09-05 07:04:02.177668"], ["updated_at", "2019-09-05 07:04:02.177668"]]
+  [1m[35m (33.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.7ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 5], ["created_at", "2019-09-05 07:04:02.221289"], ["updated_at", "2019-09-05 07:04:02.221289"]]
+  [1m[35m (25.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.5ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 6], ["created_at", "2019-09-05 07:04:02.254029"], ["updated_at", "2019-09-05 07:04:02.254029"]]
+  [1m[35m (25.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.5ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 7], ["created_at", "2019-09-05 07:04:02.308466"], ["updated_at", "2019-09-05 07:04:02.308466"]]
+  [1m[35m (73.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.7ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 8], ["created_at", "2019-09-05 07:04:02.394222"], ["updated_at", "2019-09-05 07:04:02.394222"]]
+  [1m[35m (99.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (4.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (4.9ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 9], ["created_at", "2019-09-05 07:04:02.504140"], ["updated_at", "2019-09-05 07:04:02.504140"]]
+  [1m[35m (563.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.7ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 10], ["created_at", "2019-09-05 07:04:03.085994"], ["updated_at", "2019-09-05 07:04:03.085994"]]
+  [1m[35m (65.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (29.5ms)[0m  [1m[32mINSERT INTO "orders" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 0], ["created_at", "2019-09-05 07:04:04.391096"], ["updated_at", "2019-09-05 07:04:04.391096"]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/mailers/user_mailer.rb:21:in `order_email'
+UserMailer#order_email: processed outbound mail in 25.1ms
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/" for ::1 at 2019-09-05 10:09:04 +0300
+  [1m[35m (45.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 60.2ms | Allocations: 7231)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 16120ms (Views: 16023.4ms | ActiveRecord: 12.8ms | Allocations: 1284881)
+
+
+Started GET "/items/35" for ::1 at 2019-09-05 10:09:44 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 24.0ms | Allocations: 367)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4808ms (Views: 4769.1ms | ActiveRecord: 0.9ms | Allocations: 13815)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-05 10:09:58 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"authenticity_token"=>"cmz1xlypSbh3SCfQgy26UQSYDTGLx7rFLO/zUTJ+2lKO+LWguGvo3S6Lqt6awza9ZiyoOiMEeQYu1Rcve9VyQA=="}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 2.4ms | Allocations: 216)
+  Rendered devise/shared/_links.html.erb (Duration: 3.0ms | Allocations: 547)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 78.7ms | Allocations: 3105)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4238ms (Views: 4208.6ms | ActiveRecord: 9.8ms | Allocations: 19635)
+
+
+Started GET "/" for ::1 at 2019-09-05 10:13:54 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1429)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5224ms (Views: 5222.1ms | ActiveRecord: 0.5ms | Allocations: 11077)
+
+
+Started GET "/" for ::1 at 2019-09-05 11:18:52 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (22.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 52.7ms | Allocations: 1527)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 49398ms (Views: 49181.3ms | ActiveRecord: 22.6ms | Allocations: 11333)
+
+
+Started GET "/" for ::1 at 2019-09-05 11:22:33 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (28.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 92.4ms | Allocations: 1739)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 22087ms (Views: 22055.6ms | ActiveRecord: 28.6ms | Allocations: 12736)
+
+
+Started GET "/" for ::1 at 2019-09-05 11:27:23 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (201.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 2497.9ms | Allocations: 1747)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 23057ms (Views: 21705.1ms | ActiveRecord: 201.9ms | Allocations: 12686)
+
+
+Started GET "/" for ::1 at 2019-09-05 11:28:00 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (12.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 297.6ms | Allocations: 1424)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 7514ms (Views: 7451.1ms | ActiveRecord: 12.4ms | Allocations: 11071)
+
+
+Started GET "/" for ::1 at 2019-09-05 11:31:22 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 85.2ms | Allocations: 1430)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 22627ms (Views: 22614.8ms | ActiveRecord: 0.8ms | Allocations: 11185)
+
+
+Started GET "/" for ::1 at 2019-09-05 11:32:16 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 128.4ms | Allocations: 1737)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 7701ms (Views: 7687.8ms | ActiveRecord: 2.1ms | Allocations: 12638)
+
+
+Started GET "/" for ::1 at 2019-09-05 11:35:08 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 40.4ms | Allocations: 1734)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4571ms (Views: 4563.7ms | ActiveRecord: 0.7ms | Allocations: 12623)
+
+
+Started GET "/" for ::1 at 2019-09-05 11:36:27 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 64.8ms | Allocations: 1735)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4676ms (Views: 4644.7ms | ActiveRecord: 1.5ms | Allocations: 12620)
+
+
+Started GET "/" for ::1 at 2019-09-05 11:36:35 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1424)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4433ms (Views: 4431.2ms | ActiveRecord: 0.4ms | Allocations: 11061)
+
+
+Started GET "/" for ::1 at 2019-09-05 11:36:51 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 51.3ms | Allocations: 1734)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4698ms (Views: 4684.3ms | ActiveRecord: 0.7ms | Allocations: 12620)
+
+
+Started GET "/" for ::1 at 2019-09-05 11:37:07 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 43.3ms | Allocations: 1734)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5026ms (Views: 5022.6ms | ActiveRecord: 0.9ms | Allocations: 12616)
+
+
+Started GET "/" for ::1 at 2019-09-05 11:38:35 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 86.7ms | Allocations: 1734)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 14125ms (Views: 14110.5ms | ActiveRecord: 1.7ms | Allocations: 12651)
+
+
+Started GET "/" for ::1 at 2019-09-05 12:39:02 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1833.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 3077.0ms | Allocations: 1841)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 39966ms (Views: 38025.3ms | ActiveRecord: 1833.9ms | Allocations: 12817)
+
+
+Started GET "/" for ::1 at 2019-09-05 12:48:32 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 1292.2ms | Allocations: 1840)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 181808ms (Views: 181489.5ms | ActiveRecord: 1.1ms | Allocations: 13010)
+
+
+Started GET "/" for ::1 at 2019-09-05 13:13:42 +0300
+  [1m[35m (27.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (80.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 155.0ms | Allocations: 7231)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 11510ms (Views: 11283.4ms | ActiveRecord: 112.3ms | Allocations: 1265596)
+
+
+Started GET "/" for ::1 at 2019-09-05 13:32:20 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:30
+  Rendered items/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 1864)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 12545ms (Views: 12540.3ms | ActiveRecord: 1.1ms | Allocations: 12777)
+
+
+Started GET "/" for ::1 at 2019-09-05 13:32:42 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:30
+  Rendered items/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 1432)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4221ms (Views: 4216.7ms | ActiveRecord: 0.9ms | Allocations: 11085)
+
+
+Started GET "/" for ::1 at 2019-09-05 13:33:39 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:30
+  Rendered items/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1768)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4112ms (Views: 4109.9ms | ActiveRecord: 0.5ms | Allocations: 12671)
+
+
+Started GET "/" for ::1 at 2019-09-05 13:35:33 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.0ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:30
+  Rendered items/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 1763)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 12559ms (Views: 12552.9ms | ActiveRecord: 2.0ms | Allocations: 12677)
+
+
+Started GET "/items/32" for ::1 at 2019-09-05 13:35:58 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mItem Load (26.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 18.5ms | Allocations: 359)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5323ms (Views: 4990.4ms | ActiveRecord: 86.7ms | Allocations: 12867)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-05 13:36:17 +0300
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"bOABPJ+D4mzuC+Uaso3zvLT3WYLla5BUrIu+Ur+wEE6QdEFae0FDCbfIaBSrY39Q1kP8iU2oU5eusVos9hu4XA=="}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 17.4ms | Allocations: 638)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1581.4ms | Allocations: 179295)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5686ms (Views: 5549.5ms | ActiveRecord: 77.6ms | Allocations: 195577)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-05 13:36:43 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.8ms | Allocations: 215)
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 123)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 21.5ms | Allocations: 1553)
+[Webpacker] Compiling…
+Started GET "/users/sign_up" for ::1 at 2019-09-05 13:36:47 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 77)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 731)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4998ms (Views: 4995.6ms | ActiveRecord: 0.0ms | Allocations: 25669)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5321ms (Views: 5317.9ms | ActiveRecord: 0.0ms | Allocations: 11682)
+
+
+Started GET "/" for ::1 at 2019-09-05 13:40:20 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (18.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:30
+  Rendered items/index.html.erb within layouts/application (Duration: 27.7ms | Allocations: 1532)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 19875ms (Views: 19853.6ms | ActiveRecord: 18.7ms | Allocations: 11229)
+
+
+Started GET "/" for ::1 at 2019-09-05 13:50:31 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:30
+  Rendered items/index.html.erb within layouts/application (Duration: 74.4ms | Allocations: 1862)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 17633ms (Views: 17630.0ms | ActiveRecord: 1.2ms | Allocations: 12790)
+
+
+Started GET "/" for ::1 at 2019-09-05 13:53:33 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:30
+  Rendered items/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1755)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 9250ms (Views: 9247.6ms | ActiveRecord: 0.9ms | Allocations: 12658)
+
+
