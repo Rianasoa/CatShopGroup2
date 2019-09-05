@@ -54,7 +54,6 @@ ActiveRecord::Schema.define(version: 2019_09_05_053351) do
 
   create_table "orders", force: :cascade do |t|
     t.bigint "user_id"
-    t.string "stripe_customer_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_orders_on_user_id"
@@ -70,7 +69,8 @@ ActiveRecord::Schema.define(version: 2019_09_05_053351) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.boolean "is_admin", default: false
+    t.bigint "cart_id"
+    t.index ["cart_id"], name: "index_users_on_cart_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
