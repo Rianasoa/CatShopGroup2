@@ -19518,3 +19518,194 @@ Processing by ItemsController#index as HTML
 Completed 200 OK in 2269ms (Views: 2265.3ms | ActiveRecord: 3.1ms | Allocations: 13126)
 
 
+Started GET "/users/sign_out" for ::1 at 2019-09-05 10:42:18 +0300
+  [1m[35m (10.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/11
+Filter chain halted as :own_profile rendered or redirected
+Completed 302 Found in 60ms (ActiveRecord: 5.0ms | Allocations: 10444)
+
+
+Started GET "/users/11" for ::1 at 2019-09-05 10:42:18 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 410)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3529ms (Views: 3478.8ms | ActiveRecord: 2.1ms | Allocations: 1257734)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-09-05 10:42:25 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Dm0i5Fqkc4nKRWnIxSxRG6E+gTOJuol+QZRkPebRvG7yLh/tHg//tx8nVDtI/wxihcD00TM49qZgV0rCbBYUyA=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 1959ms (ActiveRecord: 0.5ms | Allocations: 761625)
+
+
+Started GET "/" for ::1 at 2019-09-05 10:42:27 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 20.1ms | Allocations: 6818)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2396ms (Views: 2368.9ms | ActiveRecord: 5.5ms | Allocations: 19619)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-05 10:42:33 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"authenticity_token"=>"gy4drTfXscR+sO8eM9+nMOfHKBI2NHY069r51qCDBCce7LWI112UdCQX918dfiyv/L54XxIAs9pkHN3JNUcQjQ=="}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 11.2ms | Allocations: 215)
+  Rendered devise/shared/_links.html.erb (Duration: 11.7ms | Allocations: 546)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 91.1ms | Allocations: 2583)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2464ms (Views: 2463.1ms | ActiveRecord: 0.0ms | Allocations: 13703)
+
+
+Started POST "/users" for ::1 at 2019-09-05 10:43:08 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"wSqNgTJ8ec4U9Jk8t5zsyLqUCkkY7/FAGrjfPRVb2Bhc6CWk0vZcfk5TgX2ZPWdXoe1aBDzbNK6VfvsigJ/Msg==", "user"=>{"first_name"=>"Jean", "last_name"=>"Marie", "email"=>"jean123@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jean123@yopmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Jean"], ["last_name", "Marie"], ["email", "jean123@yopmail.com"], ["encrypted_password", "$2a$11$EVN5RqoK3W3IDg/ssDlHpeDlCCF1.0qj/ghFOIhzjhqQDGksqE/hm"], ["created_at", "2019-09-05 07:43:09.348331"], ["updated_at", "2019-09-05 07:43:09.348331"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 8.1ms | Allocations: 147)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.7ms | Allocations: 129)
+UserMailer#welcome_email: processed outbound mail in 56.4ms
+Delivered mail 5d70bc8d71a2f_35062af5a3b3e5d454757@lenovoa18.mail (7076.4ms)
+Date: Thu, 05 Sep 2019 10:43:09 +0300
+From: catshop@gasikara.mg
+To: jean123@yopmail.com
+Message-ID: <5d70bc8d71a2f_35062af5a3b3e5d454757@lenovoa18.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d70bc8d6bf3f_35062af5a3b3e5d4546f1";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d70bc8d6bf3f_35062af5a3b3e5d4546f1
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgamVhbjEyM0B5b3BtYWlsLmNvbSBldCBiaWVudmVudWUgY2hleiBu
+b3VzICENCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT0NCiANClR1IHQnZXMgaW5zY3JpdCBzdXIg
+bm90cmUgc2l0ZSBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGpl
+YW4xMjNAeW9wbWFpbC5jb20uDQogDQogDQrDgCB0csOocyB2aXRlIHN1ciBD
+YXRTaG9wIQ0K
+
+----==_mimepart_5d70bc8d6bf3f_35062af5a3b3e5d4546f1
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut jean123@yopmail.com et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : jean=
+123@yopmail.com.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d70bc8d6bf3f_35062af5a3b3e5d4546f1--
+
+  [1m[35m (24.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7624ms (ActiveRecord: 25.9ms | Allocations: 31013)
+
+
+Started GET "/" for ::1 at 2019-09-05 10:43:16 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/items/index.html.erb:19
+  Rendered items/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2437)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2431ms (Views: 2429.4ms | ActiveRecord: 0.7ms | Allocations: 12175)
+
+
+Started GET "/" for ::1 at 2019-09-05 10:48:12 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/items/index.html.erb:18
+  Rendered items/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2600)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2310ms (Views: 2307.5ms | ActiveRecord: 1.1ms | Allocations: 13604)
+
+
+Started GET "/" for ::1 at 2019-09-05 10:48:37 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/items/index.html.erb:18
+  Rendered items/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2610)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2286ms (Views: 2283.1ms | ActiveRecord: 1.4ms | Allocations: 13608)
+
+
+Started GET "/users/12" for ::1 at 2019-09-05 10:53:02 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"knwTOJwkO60KZXUbHaqY1xGu4PenMrlw2PbfrGf6Ld4PvrsdfK4eHVDCbVozCxNICtewuoMGfJ5XMPuz8j45dA==", "id"=>"12"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 23.5ms | Allocations: 266)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5781ms (Views: 5774.9ms | ActiveRecord: 0.9ms | Allocations: 12677)
+
+
