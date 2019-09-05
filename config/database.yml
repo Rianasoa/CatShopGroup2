@@ -83,3 +83,4 @@ production:
   database: CatShop_production
   username: CatShop
   password: <%= ENV['CATSHOP_DATABASE_PASSWORD'] %>
+  url: <%= ENV["DATABASE_URL"] %>
