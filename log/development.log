@@ -19709,3 +19709,31 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 5781ms (Views: 5774.9ms | ActiveRecord: 0.9ms | Allocations: 12677)
 
 
+Started GET "/" for ::1 at 2019-09-05 11:21:27 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/items/index.html.erb:18
+  Rendered items/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2468)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 12598ms (Views: 12596.1ms | ActiveRecord: 1.2ms | Allocations: 12258)
+
+
+Started GET "/" for ::1 at 2019-09-05 11:21:40 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/items/index.html.erb:18
+  Rendered items/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2303)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2560ms (Views: 2558.9ms | ActiveRecord: 0.8ms | Allocations: 12040)
+
+
