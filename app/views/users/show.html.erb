@@ -1,45 +1,19 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>profil page</title>
-  <style type="text/css">
-    .card{
-       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-       max-width: 450px;
-       margin: auto;
-       text-align: center;
-    }
-    .content{
-      font-size: 20px;
-      width: 200px;
-    }
-     
-
-  </style>
-</head>
-<body>
-
-
-
 <div class="container">
   <div class="row">
     <div class="col text-center">
       <h1 class="my-3"><%=current_user.first_name%> profile page</h1>
     </div>
   </div>
-  <div class="card">
+
+  <div class="row flex-row">
     <div class="col-md-6">
-      <h2 >My informations</h2>
-      <div class="content">
-        <h4>First Name :</h4><%=current_user.first_name%> <%=current_user.last_name%></li>
-        <h4>Email :</h4><%=current_user.email%></li>
-      </div>
-      <br>
-      <br><%= link_to "Edit my informations",  edit_user_registration_path(current_user), :method => 'get', class: "btn btn-info"%><br>
+      <h2>My informations</h2>
+      <ul>
+        <li><h4>First Name :</h4><%=current_user.first_name%> <%=current_user.last_name%></li><br>
+        <li><h4>Email :</h4><%=current_user.email%></li>
+      </ul>
+      <br><br>
+      <br><%= link_to "Edit my informations", edit_user_path(current_user), :method => 'get', class: "btn btn-info"%><br><br>
     </div>
   </div>
 </div>
-
-</body>
-</html>
