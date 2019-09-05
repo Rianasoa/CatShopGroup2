@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+	<h1><%= @order_user.email %> just made a new order!</h1>
+
+	<p>Here is what he bought:</p>
+	
+	
+	<% @cart_items_ordered.each do |item| %>
+	<h2>
+		<%= item.title %>
+	</h2>
+	<p>
+		<img src="<%= item.image_url%>" width="600" height="auto" alt="<%= item.title%> image">
+	</p>
+	<% end %>
+
+	<p>
+		A new order has just been completed!
+	</p>
+
+</body>
+</html>

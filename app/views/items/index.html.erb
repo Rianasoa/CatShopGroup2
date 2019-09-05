@@ -1,0 +1,27 @@
+
+<div class="container">
+  <div class="row flex-row">
+    <div class="col d-flex justify-content-center mt-3">
+      <h2>There are all cats  :</h2>
+    </div>
+  </div>
+  
+  <div class="row">
+    <%@items.each do |item|%>
+      <div class="text-center col-md-4">
+        <h3><%= item.title.capitalize!%></h3>
+        <p class="text-center card-text"><%= item.description[0..80] %>...</p> 
+        <% unless item.image_url.nil? %>
+          <img class="card-img-top" width="150px" heigth="150px"<%= image_tag item.image_url%> </br></br>
+
+        <% end %>
+        <p><a href="<%= item_path(item.id)%>" class="btn btn-info">Show Cat</a></p>
+        <%if current_user%>
+        <a href="<%= carts_path(item.id)%>" data-method="post" class="btn btn-primary">Add cart</a>
+         <a href="<%= cart_path(item.id)%>" data-method="get" class="btn btn-primary">Show cart</a>
+       <%end%>
+      </div>
+      
+    <%end%>
+  </div>
+</div>
