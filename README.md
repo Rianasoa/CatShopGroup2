@@ -17,4 +17,15 @@ Si vous voulez tester en tant qu'utilisateur:
 * email  : 
 * password  : 
 ​
+
+
+Equipe de groupe 2:
+
+https://github.com/Rianasoa
+https://github.com/VerizaWalter
+https://github.com/manalintsoa
+https://github.com/RADONARINDRA
+https://github.com/Miharyrakotonanahary
+https://github.com/safidypatrick
+
 Bonne visite
