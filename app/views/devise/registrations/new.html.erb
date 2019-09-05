@@ -62,20 +62,20 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
   <div class="field">
-<%= f.text_field :first_name, autofocus: true,:class=>'zone',:value=>"First-name..."%>
+<%= f.text_field :first_name, autofocus: true,:class=>'zone',:placeholder=>"First-name..."%>
   </div>
   <div class="field">
-<%= f.text_field :last_name, autofocus: true,:class=>'zone',:value=>"Last-name..."%>
+<%= f.text_field :last_name, autofocus: true,:class=>'zone',:placeholder=>"Last-name..."%>
   </div>
   <div class="field">
     
-    <%= f.email_field :email, autofocus: true, autocomplete: "email",:class=>'zone',:value=>"Email..." %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email",:class=>'zone',:placeholder=>"Email..." %>
   </div>
   <div class="field">
-  <%= f.password_field :password, autocomplete: "new-password",:class=>'zone',:value=>"Password" %>
+  <%= f.password_field :password, autocomplete: "new-password",:class=>'zone',:placeholder=>"Password" %>
   </div>
   <div class="field">
-  <%= f.password_field :password_confirmation, autocomplete: "new-password",:class=>'zone',:value=>"Password" %>
+  <%= f.password_field :password_confirmation, autocomplete: "new-password",:class=>'zone',:placeholder=>"Password" %>
   </div>
 
   <div class="actions">
