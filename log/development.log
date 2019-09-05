@@ -19777,3 +19777,335 @@ Processing by ItemsController#index as HTML
 Completed 200 OK in 44ms (Views: 25.5ms | ActiveRecord: 4.7ms | Allocations: 19505)
 
 
+Started GET "/" for ::1 at 2019-09-05 14:43:14 +0300
+  [1m[35m (18.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/items/index.html.erb:39
+  Rendered items/index.html.erb within layouts/application (Duration: 84.6ms | Allocations: 15634)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3793ms (Views: 3712.2ms | ActiveRecord: 9.8ms | Allocations: 1274794)
+
+
+Started POST "/carts.33" for ::1 at 2019-09-05 14:43:28 +0300
+Processing by CartsController#create as 
+  Parameters: {"authenticity_token"=>"IxAIOZjwiUBo0L4Ju7AsT5VYZR5LxW6YJdvJvLuNwze2w2V7WitZU0dvrDvPtIL9HDkGe1KLxqS686AS/af2SA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:8:in `create'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:12:in `create'
+  [1m[36mItem Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1 AND "items"."id" = $2 LIMIT $3[0m  [["cart_id", 11], ["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:14:in `create'
+No template found for CartsController#create, rendering head :no_content
+Completed 204 No Content in 119ms (ActiveRecord: 6.0ms | Allocations: 15390)
+
+
+Started POST "/carts.33" for ::1 at 2019-09-05 14:43:30 +0300
+Processing by CartsController#create as 
+  Parameters: {"authenticity_token"=>"IxAIOZjwiUBo0L4Ju7AsT5VYZR5LxW6YJdvJvLuNwze2w2V7WitZU0dvrDvPtIL9HDkGe1KLxqS686AS/af2SA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (1.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:8:in `create'
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:12:in `create'
+  [1m[36mItem Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1 AND "items"."id" = $2 LIMIT $3[0m  [["cart_id", 11], ["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:14:in `create'
+No template found for CartsController#create, rendering head :no_content
+Completed 204 No Content in 12ms (ActiveRecord: 3.0ms | Allocations: 3947)
+
+
+Started POST "/carts.33" for ::1 at 2019-09-05 14:43:31 +0300
+Processing by CartsController#create as 
+  Parameters: {"authenticity_token"=>"IxAIOZjwiUBo0L4Ju7AsT5VYZR5LxW6YJdvJvLuNwze2w2V7WitZU0dvrDvPtIL9HDkGe1KLxqS686AS/af2SA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:8:in `create'
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:12:in `create'
+  [1m[36mItem Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1 AND "items"."id" = $2 LIMIT $3[0m  [["cart_id", 11], ["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:14:in `create'
+No template found for CartsController#create, rendering head :no_content
+Completed 204 No Content in 12ms (ActiveRecord: 2.0ms | Allocations: 3943)
+
+
+Started GET "/carts/33" for ::1 at 2019-09-05 14:43:31 +0300
+Processing by CartsController#show as HTML
+  Parameters: {"authenticity_token"=>"IxAIOZjwiUBo0L4Ju7AsT5VYZR5LxW6YJdvJvLuNwze2w2V7WitZU0dvrDvPtIL9HDkGe1KLxqS686AS/af2SA==", "id"=>"33"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:20:in `show'
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 11]]
+  ↳ app/controllers/carts_controller.rb:25:in `show'
+  Rendering carts/show.html.erb within layouts/application
+  Rendered carts/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 467)
+[Webpacker] Compiling…
+Started GET "/carts/33" for ::1 at 2019-09-05 14:43:32 +0300
+Processing by CartsController#show as HTML
+  Parameters: {"authenticity_token"=>"IxAIOZjwiUBo0L4Ju7AsT5VYZR5LxW6YJdvJvLuNwze2w2V7WitZU0dvrDvPtIL9HDkGe1KLxqS686AS/af2SA==", "id"=>"33"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:20:in `show'
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 11]]
+  ↳ app/controllers/carts_controller.rb:25:in `show'
+  Rendering carts/show.html.erb within layouts/application
+  Rendered carts/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 223)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2804ms (Views: 2795.3ms | ActiveRecord: 1.3ms | Allocations: 31842)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2692ms (Views: 2680.5ms | ActiveRecord: 1.9ms | Allocations: 14978)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:45:47 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:30
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/items/index.html.erb:39
+  Rendered items/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 2626)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2123ms (Views: 2118.2ms | ActiveRecord: 3.8ms | Allocations: 14343)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:46:43 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (3.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/items/index.html.erb:39
+  Rendered items/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 2625)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2177ms (Views: 2171.5ms | ActiveRecord: 4.0ms | Allocations: 14337)
+
+
+Started GET "/carts/12" for ::1 at 2019-09-05 14:46:49 +0300
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:20:in `show'
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 11]]
+  ↳ app/controllers/carts_controller.rb:25:in `show'
+  Rendering carts/show.html.erb within layouts/application
+  Rendered carts/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 443)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2180ms (Views: 2173.4ms | ActiveRecord: 1.1ms | Allocations: 14594)
+
+
+Started GET "/carts/12" for ::1 at 2019-09-05 14:49:39 +0300
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:20:in `show'
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 11]]
+  ↳ app/controllers/carts_controller.rb:25:in `show'
+  Rendering carts/show.html.erb within layouts/application
+  Rendered carts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 449)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2176ms (Views: 2166.1ms | ActiveRecord: 1.2ms | Allocations: 15211)
+
+
+Started GET "/carts/12" for ::1 at 2019-09-05 14:50:02 +0300
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (0.7ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:20:in `show'
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 11]]
+  ↳ app/controllers/carts_controller.rb:25:in `show'
+  Rendering carts/show.html.erb within layouts/application
+  Rendered carts/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 445)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2144ms (Views: 2132.7ms | ActiveRecord: 1.7ms | Allocations: 15176)
+
+
+Started GET "/carts/12" for ::1 at 2019-09-05 14:50:16 +0300
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:20:in `show'
+  [1m[36mItem Load (3.3ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 11]]
+  ↳ app/controllers/carts_controller.rb:25:in `show'
+  Rendering carts/show.html.erb within layouts/application
+  Rendered carts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 445)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2202ms (Views: 2191.7ms | ActiveRecord: 3.9ms | Allocations: 15204)
+
+
+Started GET "/carts/12" for ::1 at 2019-09-05 14:50:58 +0300
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (0.8ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:20:in `show'
+  [1m[36mItem Load (1.4ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 11]]
+  ↳ app/controllers/carts_controller.rb:25:in `show'
+  Rendering carts/show.html.erb within layouts/application
+  Rendered carts/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 446)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2235ms (Views: 2220.9ms | ActiveRecord: 2.4ms | Allocations: 15185)
+
+
+Started GET "/charges/new" for ::1 at 2019-09-05 14:51:08 +0300
+Processing by ChargesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/charges_controller.rb:5:in `new'
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 11]]
+  ↳ app/models/cart.rb:10:in `total_price'
+  Rendering charges/new.html.erb within layouts/application
+  Rendered charges/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 392)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2164ms (Views: 2156.1ms | ActiveRecord: 1.3ms | Allocations: 14566)
+
+
+Started GET "/charges/new" for ::1 at 2019-09-05 14:54:16 +0300
+Processing by ChargesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (1.1ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/charges_controller.rb:5:in `new'
+  [1m[36mItem Load (1.4ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 11]]
+  ↳ app/models/cart.rb:10:in `total_price'
+  Rendering charges/new.html.erb within layouts/application
+  Rendered charges/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 382)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2165ms (Views: 2156.6ms | ActiveRecord: 2.7ms | Allocations: 15099)
+
+
+Started GET "/charges/new" for ::1 at 2019-09-05 14:55:28 +0300
+Processing by ChargesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/charges_controller.rb:5:in `new'
+  [1m[36mItem Load (1.2ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 11]]
+  ↳ app/models/cart.rb:10:in `total_price'
+  Rendering charges/new.html.erb within layouts/application
+  Rendered charges/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 380)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2103ms (Views: 2093.7ms | ActiveRecord: 1.8ms | Allocations: 15098)
+
+
+Started GET "/charges/new" for ::1 at 2019-09-05 14:55:53 +0300
+Processing by ChargesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/charges_controller.rb:5:in `new'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 11]]
+  ↳ app/models/cart.rb:10:in `total_price'
+  Rendering charges/new.html.erb within layouts/application
+  Rendered charges/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 380)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2075ms (Views: 2068.8ms | ActiveRecord: 0.7ms | Allocations: 15097)
+
+
+Started GET "/charges/new" for ::1 at 2019-09-05 14:56:03 +0300
+Processing by ChargesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/charges_controller.rb:5:in `new'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 11]]
+  ↳ app/models/cart.rb:10:in `total_price'
+  Rendering charges/new.html.erb within layouts/application
+  Rendered charges/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 380)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2138ms (Views: 2127.0ms | ActiveRecord: 0.8ms | Allocations: 15097)
+
+
+Started GET "/charges/new" for ::1 at 2019-09-05 14:56:24 +0300
+Processing by ChargesController#new as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/charges_controller.rb:5:in `new'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 11]]
+  ↳ app/models/cart.rb:10:in `total_price'
+  Rendering charges/new.html.erb within layouts/application
+  Rendered charges/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 380)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2151ms (Views: 2142.9ms | ActiveRecord: 2.9ms | Allocations: 15095)
+
+
+Started GET "/charges/new" for ::1 at 2019-09-05 14:56:45 +0300
+Processing by ChargesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (0.8ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/charges_controller.rb:5:in `new'
+  [1m[36mItem Load (1.3ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 11]]
+  ↳ app/models/cart.rb:10:in `total_price'
+  Rendering charges/new.html.erb within layouts/application
+  Rendered charges/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 380)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2271ms (Views: 2262.7ms | ActiveRecord: 2.4ms | Allocations: 15124)
+
+
+Started GET "/charges/new" for ::1 at 2019-09-05 14:57:09 +0300
+Processing by ChargesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/charges_controller.rb:5:in `new'
+  [1m[36mItem Load (2.1ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 11]]
+  ↳ app/models/cart.rb:10:in `total_price'
+  Rendering charges/new.html.erb within layouts/application
+  Rendered charges/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 380)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2151ms (Views: 2142.4ms | ActiveRecord: 2.5ms | Allocations: 15100)
+
+
+Started GET "/charges/new" for ::1 at 2019-09-05 14:57:57 +0300
+Processing by ChargesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/charges_controller.rb:5:in `new'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "cart_items" ON "items"."id" = "cart_items"."item_id" WHERE "cart_items"."cart_id" = $1[0m  [["cart_id", 11]]
+  ↳ app/models/cart.rb:10:in `total_price'
+  Rendering charges/new.html.erb within layouts/application
+  Rendered charges/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 385)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2068ms (Views: 2061.8ms | ActiveRecord: 0.9ms | Allocations: 15112)
+
+
