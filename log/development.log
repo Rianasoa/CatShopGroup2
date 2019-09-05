@@ -19737,3 +19737,43 @@ Processing by ItemsController#index as HTML
 Completed 200 OK in 2560ms (Views: 2558.9ms | ActiveRecord: 0.8ms | Allocations: 12040)
 
 
+Started GET "/users/sign_out" for ::1 at 2019-09-05 13:21:36 +0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/12
+Filter chain halted as :own_profile rendered or redirected
+Completed 302 Found in 118ms (ActiveRecord: 7.8ms | Allocations: 10451)
+
+
+Started GET "/users/12" for ::1 at 2019-09-05 13:21:36 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 410)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/dev/Documents/riana/THP5/Semaine9/catshop3/public/packs
+Completed 200 OK in 4042ms (Views: 3973.4ms | ActiveRecord: 4.2ms | Allocations: 1258692)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-09-05 13:21:43 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OtvAfhi/KumyzpnXY10vyjcVfXFhVVPwYBMGBK7D1WqnGWhb+DUPWehpgZZN/KRVLGwtPEVhlh7v1SIbOwfBwA=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 2013ms (ActiveRecord: 0.5ms | Allocations: 178795)
+
+
+Started GET "/" for ::1 at 2019-09-05 13:21:45 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 18.8ms | Allocations: 6818)
+Completed 200 OK in 44ms (Views: 25.5ms | ActiveRecord: 4.7ms | Allocations: 19505)
+
+
