@@ -1,1 +1,16 @@
-show.html.erb
+<h1>Votre panier</h1>
+<div class="">
+   <strong>Prix total: <%=@price_total%> €</strong><br/>
+  
+ <%= link_to "Buy now", new_charge_path, class: "btn btn-lg btn-success mt-3"%>
+</div>
+<%@cart_items.each do |cart_item|%>
+<ul>
+ <li><%= image_tag cart_item.image_url, class: "rounded-circle" %></li>
+ <li><%=cart_item.title%></li>
+ <li><%=cart_item.price%> €</li>
+ <li>
+   <a href="<%=cart_path(cart_item.id)%>" data-method="delete">Enlever du panier</a>
+ </li>
+</ul>
+<%end%>

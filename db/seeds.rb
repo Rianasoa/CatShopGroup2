@@ -8,8 +8,13 @@
 
 
 Item.destroy_all
-cart =["https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_960_720.jpg","https://cdn.pixabay.com/photo/2017/07/25/01/22/cat-2536662_960_720.jpg","https://cdn.pixabay.com/photo/2016/07/10/21/47/cat-1508613__340.jpg","https://cdn.pixabay.com/photo/2015/05/22/05/52/cat-778315__340.jpg","https://cdn.pixabay.com/photo/2016/07/10/21/47/cat-1508613__340.jpg",
-	"https://cdn.pixabay.com/photo/2015/11/16/22/14/cat-1046544__340.jpg","https://cdn.pixabay.com/photo/2017/02/15/12/12/cat-2068462__340.jpg","https://cdn.pixabay.com/photo/2013/04/01/03/45/cat-98359__340.jpg","https://cdn.pixabay.com/photo/2018/01/28/12/37/cat-3113513__340.jpg","https://cdn.pixabay.com/photo/2018/07/08/14/16/cat-3523992__340.jpg","https://cdn.pixabay.com/photo/2016/12/30/12/16/cat-1940487__340.jpg",
+User.destroy_all
+Cart.destroy_all
+CartItem.destroy_all
+Order.destroy_all
+OrderItem.destroy_all
+cart =["https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_960_720.jpg","https://cdn.pixabay.com/photo/2017/07/25/01/22/cat-2536662_960_720.jpg","https://cdn.pixabay.com/photo/2018/03/29/21/51/cute-3273789_960_720.jpg","https://cdn.pixabay.com/photo/2015/06/09/09/35/animal-children-803123_960_720.jpg","https://cdn.pixabay.com/photo/2016/09/05/21/37/cat-1647775_960_720.jpg",
+	"https://cdn.pixabay.com/photo/2017/04/04/14/29/cat-2201460_960_720.jpg","https://cdn.pixabay.com/photo/2018/03/28/16/37/cat-3269765_960_720.jpg","https://cdn.pixabay.com/photo/2013/12/12/03/08/kitten-227009_960_720.jpg",
 	"https://cdn.pixabay.com/photo/2018/05/30/19/29/cat-3442257__340.jpg"]
 for i in (0..cart.length-1)
 	Item.create!(title: Faker::Creature::Cat.name,
@@ -19,4 +24,29 @@ for i in (0..cart.length-1)
 end
 
 puts "Items create"
+
+puts "20 seed for item created succesfully with 4 attributs"
+    10.times do
+        User.create(email: Faker::Internet.email,
+                    password: "123456789")
+    end
+puts "10 seed for user created succesfully with 2 attributs"
+    for user in (1..10)
+        Cart.create(user_id: user)
+    end
+puts "10 seed for Cart created succesfully with attribut user_id "
+    20.times do
+        CartItem.create(cart_id: rand(1..10),
+                                item_id: rand(1..20))
+    end
+puts "20 seed for CartItem created succesfully with 2 attributs"
+    for user in (0..10)
+        Order.create(user_id: user)
+    end
+puts "10 seed for Order created succesfully with attribut user_id "
+    20.times do
+        OrderItem.create(order_id: rand(1..10),
+                                item_id: rand(1..20))
+    end
+puts "20 seed for OrderItem created succesfully with 2 attributs"
 

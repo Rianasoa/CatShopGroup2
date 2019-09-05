@@ -1,12 +1,13 @@
 class UsersController < ApplicationController
 	
-      before_action :authenticate_user!, only: [:show]
+    before_action :authenticate_user!, only: [:show]
     before_action :own_profile, only: [:show]
   
   def show
     @user = User.find(params[:id])
     @user = current_user
   end
+  
   def update
     @user = User.find(params[:id])
     if @user.update(first_name: params[:first_name], last_name: params[:last_name], email: params[:email], description: params[:description])
@@ -16,6 +17,7 @@ class UsersController < ApplicationController
       render :edit
     end
   end
+
   private
   def own_profile
     if params[:id].to_i == current_user.id
@@ -23,8 +25,9 @@ class UsersController < ApplicationController
       redirect_to user_path(current_user.id)
     end
   end
+
 end
-Réduire
+
 
 
 
