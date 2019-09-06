@@ -16,10 +16,11 @@
   margin-top: 50px;
   border-right: 100px;
   padding-top: 20px;
-  margin-left:500px;
+  margin-left:400px;
   margin-right: 500px;
   border-radius: 50px;
   height: 600px;
+  width: 550px;
 }
  .field{
   position: center;
@@ -97,7 +98,7 @@
   </div>
   <div class="field">
     
-    <%= f.email_field :email, autofocus: true, autocomplete: "email",:class=>'zone', placeholder: "Email"%>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email",:class=>'zone', placeholder: "example@gmail.com"%>
   </div>
   <div class="field">
   <%= f.password_field :password, autocomplete: "new-password",:class=>'zone', placeholder: "Password"%>
