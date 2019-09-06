@@ -1,4 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Index items</title>
+  <style type="text/css">
+    .card-img-top:hover{
+      
+    }
+.team-member {
+  margin-bottom: 50px;
+  text-align: center;
+}
 
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border: 7px 
+  border-style: double;
+  border-color: 
+}
+
+.team-member h4 {
+  margin-top:px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+.team-member p {
+  margin-top: 0;
+}
+footer{
+  background-image:url(https://orgaphenix.com/wp-content/uploads/2017/06/Banniere-LinkedIn-11.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bottom{
+  text-align: center;
+  
+  background-color: grey;
+}
+.navbar-brand{
+  font-family: Luminari;
+  font-size: 30px;
+}
+.team{
+  font-size:50px;
+  font-family:Avantgarde;
+  text-align: center;
+  color: white;
+  
+  
+}
+.mx-auto:hover{
+  font-size:200px;
+}
+.name:hover{
+  font-size:50px;
+  color:white;
+}
+
+    </style>
+  
+
+</head>
+<body>
 <div class="container">
   <div class="row flex-row">
     <div class="col d-flex justify-content-center mt-3">
@@ -10,9 +74,9 @@
     <%@items.each do |item|%>
       <div class="text-center col-md-4">
         <h3><%= item.title.capitalize!%></h3>
-        <p class="text-center card-text"><%= item.description[0..80] %>...</p> 
+        <p class="text-center card-text"><%= item.description[0..80] %></p> 
         <% unless item.image_url.nil? %>
-          <img class="card-img-top" width="150px" heigth="150px"<%= image_tag item.image_url%> </br></br>
+          <img class="card-img-top" width="150px" heigth="150px"<%= image_tag item.image_url%>> </br></br>
 
         <% end %>
         <p><a href="<%= item_path(item.id)%>" class="btn btn-info">Show Cat</a></p>
@@ -25,3 +89,67 @@
     <%end%>
   </div>
 </div>
+</body>
+
+   <footer>
+    <div>
+    <h3 class="team">💪TEAM👌</h3>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="https://scontent.ftnr2-1.fna.fbcdn.net/v/t1.0-0/cp0/e15/q65/p320x320/68756253_878754345823303_7503960005356290048_n.jpg?_nc_cat=100&efg=eyJpIjoiYiJ9&_nc_oc=AQl919ItGOMYFSwW4BPna2pkDo0Up63MhVpag7GLe7deacG2CQSL_nUghiE9VquJPAY&_nc_ht=scontent.ftnr2-1.fna&oh=7faf64e85a09b57244a699457bb94ee4&oe=5DF8A73B" alt="Manalintsoa" class="name">
+            <h4 class="name">Manalintsoa</h4>
+            <p class="text-muted">Fulstack</p>
+            
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="https://scontent.ftnr2-1.fna.fbcdn.net/v/t1.0-0/cp0/e15/q65/p320x320/66609992_100588191268289_4076564098714697728_n.jpg?_nc_cat=108&efg=eyJpIjoiYiJ9&_nc_oc=AQn79ygkBs3Pl7dEY8D9irksmEmHep5NRLBQrGwioPcpN1vOqrOwwaVOSMyqCC-iNUw&_nc_ht=scontent.ftnr2-1.fna&oh=9031e100960c330f2340cbb9dfec2426&oe=5DCCD6CF" alt="Mihary" class="name">
+            <h4 class="name">Mihary</h4>
+            <p class="text-muted">Front-end</p>
+            
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="https://scontent.ftnr2-1.fna.fbcdn.net/v/t1.0-0/cp0/e15/q65/p320x320/24296306_830339203802850_8607602865922775346_n.jpg?_nc_cat=106&efg=eyJpIjoiYiJ9&_nc_oc=AQkQjAbL0W7mclAkquXtvIknWQMW1xrS4wurHyBA17enXJFMGSNnsh6cFoALsKAS-wk&_nc_ht=scontent.ftnr2-1.fna&oh=ded5d7f7bb3c5cb09f87540e27c92ab3&oe=5DCE013A" alt="Patrick" class="name">
+            <h4 class="name">Patrick</h4>
+            <p class="text-muted">Back-end</p>
+            
+          </div>
+        </div>
+      
+    
+        <div class="col-sm-2">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="https://scontent.ftnr2-1.fna.fbcdn.net/v/t1.0-0/cp0/e15/q65/p320x320/69483972_2683430058550438_2251369122954739712_n.jpg?_nc_cat=105&efg=eyJpIjoiYiJ9&_nc_oc=AQlgxgQY5kYRJRrGtCYFZHw18CtZJ7bkGFKny9d0Wq-lAaBlt_lnaZA0bkoh55sKUn8&_nc_ht=scontent.ftnr2-1.fna&oh=e554ecdcab70c0559b74c8c0494ba2ac&oe=5E113051" alt="Rianasoa">
+            <h4 class="name">Rianasoa</h4>
+            <p class="text-muted">Back-end</p>
+            
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="https://scontent.ftnr2-1.fna.fbcdn.net/v/t1.0-0/cp0/e15/q65/p320x320/69112839_3313298422014460_7129270618981138432_n.jpg?_nc_cat=102&efg=eyJpIjoiYiJ9&_nc_oc=AQmR9Gkg6sC-gAb3wYpS_dNAQMNdgKdqezepvDS8i20yldCS6rT0SluwaLpsA9wpRHE&_nc_ht=scontent.ftnr2-1.fna&oh=60307cf79daf87ffa1394401ce36b03f&oe=5DFA57DE" alt="Rado" class="name">
+            <h4 class="name">Rado</h4>
+            <p class="text-muted">Front-end</p>
+            
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="https://scontent.ftnr2-1.fna.fbcdn.net/v/t1.0-0/cp0/e15/q65/p320x320/53274716_2003219903048292_7228386502688899072_n.jpg?_nc_cat=101&efg=eyJpIjoiYiJ9&_nc_oc=AQmJ98tm9rviatbg-sh7Z4PZv5524m7l1fJQdkK89EFU5HZQ7rRLC1uCj9D2QvrNoVc&_nc_ht=scontent.ftnr2-1.fna&oh=0b03ff5cadeac108c5179d9ed4ed5cfc&oe=5DCE41C5" alt="Walter" class="name">
+            <h4 class="name">Walter</h4>
+            <p class="text-muted">Fulstack</p>
+           
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+      Speedteam&copy;copyright 2019
+      </div>
+  </footer>
+
+</html>
