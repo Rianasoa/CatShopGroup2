@@ -1,11 +1,12 @@
-<div class="container" >
-  	<div class="row">
+<div class="container">
+  <h2 style="text-align: center; text-transform: uppercase;">Modify your informations</h2>
+    <div class="row">
       <div class="col-md-4">
         
       </div>
-  		<div class="col-md-4">
+      <div class="col-md-4">
 
-      	<%= form_tag url_for(action: "update"), method: "put" do |f| %>
+        <%= form_tag url_for(action: "update"), method: "put" do |f| %>
         <%= label_tag 'First name' %>
         <%= text_field_tag 'first_name', current_user.first_name, class: 'form-control'%>
         <%= label_tag 'Last name' %>
@@ -13,14 +14,19 @@
         <%= label_tag 'Email' %>
         <%= text_field_tag 'email', current_user.email, class: 'form-control'%>
         <br/>
-        <%= submit_tag "Modify profil", class: 'btn btn-lg btn-primary btn-block' %>
+       
+        <div class="form-group">
+          <%= submit_tag "Update profil", class: 'btn btn-secondary btn-sm' %>
+          
+        </div>
+        </div>
 
       <% end %>
 
-  		</div>
+      </div>
       <div class="col-md-4">
         
       </div>
-  	</div>
+    </div>
   </div>  
 

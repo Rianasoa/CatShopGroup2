@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   	has_one :cart
   	has_many :orders
+    has_one_attached :avatar
 
   after_create :welcome_send
 
