@@ -13,3 +13,42 @@
  *= require_tree .
  *= require_self
  */
+
+ .card-img-top {
+          border-style: ridge;
+          border-radius: 70px;
+          background: #505050;
+          padding: 5px; 
+          width: 350px;
+          height: 350px;
+          background-size: auto;}
+​
+          
+          .card-text{
+            border-style: outset;
+            background-color: lightblue;
+            width: 100%;
+            background-size: auto;
+            border-radius:50px; 
+​
+          }  
+​
+           h2 {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Ey_75ZxLS3GLQFhRD4e2OIVIjZvbjxMSw6HE7vLBFrmWy2IE");
+            opacity: 0.5;
+            filter: alpha(opacity=50); /* For IE8 and earlier */
+            border-radius:50px; 
+            font-size: 5.5em; /* 40px/16=2.5em */
+            border-style: groove;
+            padding: 10px;
+            text-align: center;
+            width: 200%;
+            height: 125px;
+            margin-bottom: 50px;
+            background-size: auto;
+            font-weight: bold;
+            font-family: roboto;
+            font-style: oblique;
+            color:Navy;
+           
+          }

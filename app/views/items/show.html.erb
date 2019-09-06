@@ -5,13 +5,7 @@
 
   <div class="card mx-3">
     <div class="card-header">
-      <strong><%= @item.title%></strong>
-    </div>
-
-    <div>
-
-      <center><h3>Cat Picture</h3></center>
-        <img class="card-img-top" <%= image_tag @item.image_url%> </br></br>
+      <strong><%= @item.title.capitalize%></strong>
     </div>
   </div>
 
@@ -20,11 +14,16 @@
      <p class="text-center card-text"><%= @item.description%></p> 
      <p><strong>Price :</strong> <%= @item.price%></p>
 
-     <%if current_user%>
-      <a href="/carts/<%= @item.id%>" class="btn btn-success" data-method="post">Add cart</a>
-     <%end%>
+     
+    <a href="<%= carts_path(@item.id)%>" data-method="post" class="btn btn-success">Add cart</a>
+
     
   </div>
+   <div class="card-img-top">
+
+      <center><h3>Cat Picture</h3></center>
+        <img class="card-img-top" <%= image_tag @item.image_url%> </br></br>
+    </div>
 
 
 </div>

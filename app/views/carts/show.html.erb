@@ -1,16 +1,26 @@
-<h1>Votre panier</h1>
-<div class="">
-   <strong>Prix total: <%=@price_total%> €</strong><br/>
-  
- <%= link_to "Buy now", new_charge_path, class: "btn btn-lg btn-success mt-3"%>
+<center><h1 style="margin-top:50px;">Your cart</h1></center>
+	<center><strong>Prix total: <%=@price_total%> €</strong><br/> 
+ 	<%= link_to "Buy now", new_charge_path, class: "btn btn-sm btn-success"%></center>
+<div class="container">
+
+
+
+	<div class="row" style="margin-top: 50px;">
+	
+	<%@cart_items.each do |cart_item|%>
+	<div class="col-md-4">
+		<%= image_tag cart_item.image_url, class: "rounded-circle", width: "100%", heigth: "100%" %>
+		<div style="text-align: center;margin-top: 30px;">
+			<p><strong>Title: <%=cart_item.title%></strong></p>
+	 	
+		 	<p><strong>Price: <%=cart_item.price%> €</strong></p>
+			 <a href="<%=cart_path(cart_item.id)%>" data-method="delete" class="btn btn-sm btn-danger" data-confirm="Are you sure to delete your carts??">Remove cart</a>
+		</div>
+	 	
+
+	</div>
+	 
+
+	<%end%>
 </div>
-<%@cart_items.each do |cart_item|%>
-<ul>
- <li><%= image_tag cart_item.image_url, class: "rounded-circle" %></li>
- <li><%=cart_item.title%></li>
- <li><%=cart_item.price%> €</li>
- <li>
-   <a href="<%=cart_path(cart_item.id)%>" data-method="delete">Enlever du panier</a>
- </li>
-</ul>
-<%end%>
+</div>
