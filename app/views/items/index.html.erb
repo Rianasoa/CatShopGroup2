@@ -36,9 +36,7 @@
 
         <% end %>
         <p><a href="<%= item_path(item.id)%>" class="btn btn-info">Show Cat</a></p>
-        <%if current_user%>
-        <a href="<%= carts_path(item.id)%>" data-method="post" class="btn btn-primary">Add cart</a>
-       <%end%>
+        <a href="<%= carts_path(item.id)%>" data-method="post" class="btn btn-primary">Add cart</a> 
       </div>
       
     <%end%>

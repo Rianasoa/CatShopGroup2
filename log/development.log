@@ -22186,3 +22186,1004 @@ Completed 200 OK in 2623ms (Views: 2616.8ms | ActiveRecord: 1.3ms | Allocations:
 Completed 200 OK in 2904ms (Views: 2891.8ms | ActiveRecord: 4.6ms | Allocations: 15603)
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6695254529977101165)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActiveStorageTables (20190906070831)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (308.4ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6695254529977101165)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (36.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (609.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "CatShop_development"[0m
+  [1m[35m (444.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "CatShop_test"[0m
+  [1m[35m (1472.1ms)[0m  [1m[35mCREATE DATABASE "CatShop_development" ENCODING = 'unicode'[0m
+  [1m[35m (1337.8ms)[0m  [1m[35mCREATE DATABASE "CatShop_test" ENCODING = 'unicode'[0m
+  [1m[35m (295.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (159.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6695254529977101165)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20190902105231)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (258.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "is_admin" boolean DEFAULT FALSE)[0m
+  [1m[35m (61.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (83.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190902105231"]]
+  [1m[35m (15.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCarts (20190902111622)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (76.0ms)[0m  [1m[35mCREATE TABLE "carts" ("id" bigserial primary key, "user_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (63.3ms)[0m  [1m[35mCREATE  INDEX  "index_carts_on_user_id" ON "carts"  ("user_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190902111622"]]
+  [1m[35m (24.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateOrders (20190902111637)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (172.2ms)[0m  [1m[35mCREATE TABLE "orders" ("id" bigserial primary key, "user_id" bigint, "stripe_customer_id" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (86.1ms)[0m  [1m[35mCREATE  INDEX  "index_orders_on_user_id" ON "orders"  ("user_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190902111637"]]
+  [1m[35m (23.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateItems (20190902130506)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (143.3ms)[0m  [1m[35mCREATE TABLE "items" ("id" bigserial primary key, "title" character varying, "description" text, "price" float, "image_url" character varying, "user_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (63.3ms)[0m  [1m[35mCREATE  INDEX  "index_items_on_user_id" ON "items"  ("user_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190902130506"]]
+  [1m[35m (22.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCartItems (20190903054026)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (75.9ms)[0m  [1m[35mCREATE TABLE "cart_items" ("id" bigserial primary key, "quantity" integer, "cart_id" bigint, "item_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (75.6ms)[0m  [1m[35mCREATE  INDEX  "index_cart_items_on_cart_id" ON "cart_items"  ("cart_id")[0m
+  [1m[35m (95.8ms)[0m  [1m[35mCREATE  INDEX  "index_cart_items_on_item_id" ON "cart_items"  ("item_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190903054026"]]
+  [1m[35m (21.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateOrderItems (20190905053351)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (146.7ms)[0m  [1m[35mCREATE TABLE "order_items" ("id" bigserial primary key, "order_id" bigint, "item_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (64.5ms)[0m  [1m[35mCREATE  INDEX  "index_order_items_on_order_id" ON "order_items"  ("order_id")[0m
+  [1m[35m (63.8ms)[0m  [1m[35mCREATE  INDEX  "index_order_items_on_item_id" ON "order_items"  ("item_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190905053351"]]
+  [1m[35m (20.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveStorageTables (20190906070831)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (151.4ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  [1m[35m (64.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  [1m[35m (166.1ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (52.3ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  [1m[35m (53.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190906070831"]]
+  [1m[35m (18.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (12.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-06 07:13:52.207974"], ["updated_at", "2019-09-06 07:13:52.207974"]]
+  [1m[35m (24.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6695254529977101165)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCart Load (0.7ms)[0m  [1m[34mSELECT "carts".* FROM "carts"[0m
+  [1m[36mCartItem Load (0.8ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items"[0m
+  [1m[36mOrder Load (0.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  [1m[36mOrderItem Load (0.8ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Coco"], ["description", "Ukrainian Levkoy"], ["price", 31.43], ["image_url", "https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_960_720.jpg"], ["created_at", "2019-09-06 07:13:54.504537"], ["updated_at", "2019-09-06 07:13:54.504537"]]
+  [1m[35m (39.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Tiger"], ["description", "Korat"], ["price", 36.96], ["image_url", "https://cdn.pixabay.com/photo/2017/07/25/01/22/cat-2536662_960_720.jpg"], ["created_at", "2019-09-06 07:13:54.550196"], ["updated_at", "2019-09-06 07:13:54.550196"]]
+  [1m[35m (17.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Milo"], ["description", "American Shorthair"], ["price", 16.91], ["image_url", "https://cdn.pixabay.com/photo/2018/03/29/21/51/cute-3273789_960_720.jpg"], ["created_at", "2019-09-06 07:13:54.574716"], ["updated_at", "2019-09-06 07:13:54.574716"]]
+  [1m[35m (15.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Oliver"], ["description", "Korn Ja"], ["price", 77.72], ["image_url", "https://cdn.pixabay.com/photo/2015/06/09/09/35/animal-children-803123_960_720.jpg"], ["created_at", "2019-09-06 07:13:54.596845"], ["updated_at", "2019-09-06 07:13:54.596845"]]
+  [1m[35m (15.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Sooty"], ["description", "Scottish Fold"], ["price", 33.49], ["image_url", "https://cdn.pixabay.com/photo/2016/09/05/21/37/cat-1647775_960_720.jpg"], ["created_at", "2019-09-06 07:13:54.619041"], ["updated_at", "2019-09-06 07:13:54.619041"]]
+  [1m[35m (15.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Misty"], ["description", "Brazilian Shorthair"], ["price", 29.2], ["image_url", "https://cdn.pixabay.com/photo/2017/04/04/14/29/cat-2201460_960_720.jpg"], ["created_at", "2019-09-06 07:13:54.641118"], ["updated_at", "2019-09-06 07:13:54.641118"]]
+  [1m[35m (15.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Poppy"], ["description", "Maine Coon"], ["price", 59.91], ["image_url", "https://cdn.pixabay.com/photo/2018/03/28/16/37/cat-3269765_960_720.jpg"], ["created_at", "2019-09-06 07:13:54.663365"], ["updated_at", "2019-09-06 07:13:54.663365"]]
+  [1m[35m (15.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Lucy"], ["description", "Snowshoe"], ["price", 36.78], ["image_url", "https://cdn.pixabay.com/photo/2013/12/12/03/08/kitten-227009_960_720.jpg"], ["created_at", "2019-09-06 07:13:54.684772"], ["updated_at", "2019-09-06 07:13:54.684772"]]
+  [1m[35m (17.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Angel"], ["description", "Devon Rex"], ["price", 46.42], ["image_url", "https://cdn.pixabay.com/photo/2018/05/30/19/29/cat-3442257__340.jpg"], ["created_at", "2019-09-06 07:13:54.706982"], ["updated_at", "2019-09-06 07:13:54.706982"]]
+  [1m[35m (17.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ira.schultz@romaguera.net"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "ira.schultz@romaguera.net"], ["encrypted_password", "$2a$11$e0RgAFbyVk0mXkMEOoFw4ORExxThv3f95c24dtpRDBnzZ0QoxZuz."], ["created_at", "2019-09-06 07:13:54.993797"], ["updated_at", "2019-09-06 07:13:54.993797"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 15.8ms | Allocations: 269)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.8ms | Allocations: 129)
+UserMailer#welcome_email: processed outbound mail in 137.7ms
+Delivered mail 5d7207332b94f_21132b0f672f5994660f0@lenovoa18.mail (3702.4ms)
+Date: Fri, 06 Sep 2019 10:13:55 +0300
+From: catshop@gasikara.mg
+To: ira.schultz@romaguera.net
+Message-ID: <5d7207332b94f_21132b0f672f5994660f0@lenovoa18.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d72073325e52_21132b0f672f599465916";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d72073325e52_21132b0f672f599465916
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgaXJhLnNjaHVsdHpAcm9tYWd1ZXJhLm5ldCBldCBiaWVudmVudWUg
+Y2hleiBub3VzICENCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT0NCiANClR1IHQnZXMgaW5zY3Jp
+dCBzdXIgbm90cmUgc2l0ZSBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFu
+dCA6IGlyYS5zY2h1bHR6QHJvbWFndWVyYS5uZXQuDQogDQogDQrDgCB0csOo
+cyB2aXRlIHN1ciBDYXRTaG9wIQ0K
+
+----==_mimepart_5d72073325e52_21132b0f672f599465916
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut ira.schultz@romaguera.net et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : ira.=
+schultz@romaguera.net.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d72073325e52_21132b0f672f599465916--
+
+  [1m[35m (19.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "moira_sawayn@gradyveum.io"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "moira_sawayn@gradyveum.io"], ["encrypted_password", "$2a$11$Qm/6FEMa5RUMYY0g6I4QzuGwu/wn/zaHFZeqOZ7NTnAS6dMIaZdyG"], ["created_at", "2019-09-06 07:13:59.036073"], ["updated_at", "2019-09-06 07:13:59.036073"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 2.8ms
+Delivered mail 5d720737a3cc_21132b0f672f599466269@lenovoa18.mail (2872.4ms)
+Date: Fri, 06 Sep 2019 10:13:59 +0300
+From: catshop@gasikara.mg
+To: moira_sawayn@gradyveum.io
+Message-ID: <5d720737a3cc_21132b0f672f599466269@lenovoa18.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d7207379b65_21132b0f672f599466112";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d7207379b65_21132b0f672f599466112
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgbW9pcmFfc2F3YXluQGdyYWR5dmV1bS5pbyBldCBiaWVudmVudWUg
+Y2hleiBub3VzICENCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT0NCiANClR1IHQnZXMgaW5zY3Jp
+dCBzdXIgbm90cmUgc2l0ZSBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFu
+dCA6IG1vaXJhX3Nhd2F5bkBncmFkeXZldW0uaW8uDQogDQogDQrDgCB0csOo
+cyB2aXRlIHN1ciBDYXRTaG9wIQ0K
+
+----==_mimepart_5d7207379b65_21132b0f672f599466112
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut moira_sawayn@gradyveum.io et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : moir=
+a_sawayn@gradyveum.io.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d7207379b65_21132b0f672f599466112--
+
+  [1m[35m (20.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "harland_conn@nikolaus.io"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "harland_conn@nikolaus.io"], ["encrypted_password", "$2a$11$JnOkodzB2/LrDbRJ/IGa8eTkFTU7vR0oEuY4SEwMV7YW1tPO1w8om"], ["created_at", "2019-09-06 07:14:02.090540"], ["updated_at", "2019-09-06 07:14:02.090540"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 2.9ms
+Delivered mail 5d72073a17836_21132b0f672f59946642c@lenovoa18.mail (2915.0ms)
+Date: Fri, 06 Sep 2019 10:14:02 +0300
+From: catshop@gasikara.mg
+To: harland_conn@nikolaus.io
+Message-ID: <5d72073a17836_21132b0f672f59946642c@lenovoa18.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d72073a16f79_21132b0f672f599466320";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d72073a16f79_21132b0f672f599466320
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgaGFybGFuZF9jb25uQG5pa29sYXVzLmlvIGV0IGJpZW52ZW51ZSBj
+aGV6IG5vdXMgIQ0KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0
+IHN1ciBub3RyZSBzaXRlIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50
+IDogaGFybGFuZF9jb25uQG5pa29sYXVzLmlvLg0KIA0KIA0Kw4AgdHLDqHMg
+dml0ZSBzdXIgQ2F0U2hvcCENCg==
+
+----==_mimepart_5d72073a16f79_21132b0f672f599466320
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut harland_conn@nikolaus.io et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : harl=
+and_conn@nikolaus.io.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d72073a16f79_21132b0f672f599466320--
+
+  [1m[35m (23.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luther_orn@cartwright.io"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "luther_orn@cartwright.io"], ["encrypted_password", "$2a$11$QR7wTXZCELGMhrAFwz3R/Ov37Pl9wf7fWpuMW2c/EAhCsctLPgEHS"], ["created_at", "2019-09-06 07:14:05.188609"], ["updated_at", "2019-09-06 07:14:05.188609"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 2.7ms
+Delivered mail 5d72073d2f687_21132b0f672f59946665b@lenovoa18.mail (3116.3ms)
+Date: Fri, 06 Sep 2019 10:14:05 +0300
+From: catshop@gasikara.mg
+To: luther_orn@cartwright.io
+Message-ID: <5d72073d2f687_21132b0f672f59946665b@lenovoa18.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d72073d2ee29_21132b0f672f5994665cc";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d72073d2ee29_21132b0f672f5994665cc
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgbHV0aGVyX29ybkBjYXJ0d3JpZ2h0LmlvIGV0IGJpZW52ZW51ZSBj
+aGV6IG5vdXMgIQ0KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0
+IHN1ciBub3RyZSBzaXRlIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50
+IDogbHV0aGVyX29ybkBjYXJ0d3JpZ2h0LmlvLg0KIA0KIA0Kw4AgdHLDqHMg
+dml0ZSBzdXIgQ2F0U2hvcCENCg==
+
+----==_mimepart_5d72073d2ee29_21132b0f672f5994665cc
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut luther_orn@cartwright.io et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : luth=
+er_orn@cartwright.io.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d72073d2ee29_21132b0f672f5994665cc--
+
+  [1m[35m (23.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "maurita.medhurst@homenickgerlach.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "maurita.medhurst@homenickgerlach.com"], ["encrypted_password", "$2a$11$WJbPsoHQZJBY0qnhzrx7jOZ9MAdGmWP/kwvG4vUUUshkD.MVzTZCe"], ["created_at", "2019-09-06 07:14:08.489985"], ["updated_at", "2019-09-06 07:14:08.489985"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 2.8ms
+Delivered mail 5d72074079078_21132b0f672f5994668e3@lenovoa18.mail (2920.1ms)
+Date: Fri, 06 Sep 2019 10:14:08 +0300
+From: catshop@gasikara.mg
+To: maurita.medhurst@homenickgerlach.com
+Message-ID: <5d72074079078_21132b0f672f5994668e3@lenovoa18.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d720740787e3_21132b0f672f59946675a";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d720740787e3_21132b0f672f59946675a
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgbWF1cml0YS5tZWRodXJzdEBob21lbmlja2dlcmxhY2guY29tIGV0
+IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQ0KIA0KVHUg
+dCdlcyBpbnNjcml0IHN1ciBub3RyZSBzaXRlIGVuIHV0aWxpc2FudCBsJ2Ut
+bWFpbCBzdWl2YW50IDogbWF1cml0YS5tZWRodXJzdEBob21lbmlja2dlcmxh
+Y2guY29tLg0KIA0KIA0Kw4AgdHLDqHMgdml0ZSBzdXIgQ2F0U2hvcCENCg==
+
+----==_mimepart_5d720740787e3_21132b0f672f59946675a
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut maurita.medhurst@homenickgerlach.com et bienvenue chez nous=
+ !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : maur=
+ita.medhurst@homenickgerlach.com.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d720740787e3_21132b0f672f59946675a--
+
+  [1m[35m (17.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kirstie_dickens@keebler.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "kirstie_dickens@keebler.com"], ["encrypted_password", "$2a$11$ayAqBsMHyiZRgHEFm3/HC.jqb7X6M9Xhp9I9eTyZgfio9zgJb2xt6"], ["created_at", "2019-09-06 07:14:11.587788"], ["updated_at", "2019-09-06 07:14:11.587788"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 2.9ms
+Delivered mail 5d72074390eba_21132b0f672f59946708b@lenovoa18.mail (2954.8ms)
+Date: Fri, 06 Sep 2019 10:14:11 +0300
+From: catshop@gasikara.mg
+To: kirstie_dickens@keebler.com
+Message-ID: <5d72074390eba_21132b0f672f59946708b@lenovoa18.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d720743905ff_21132b0f672f59946699f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d720743905ff_21132b0f672f59946699f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQga2lyc3RpZV9kaWNrZW5zQGtlZWJsZXIuY29tIGV0IGJpZW52ZW51
+ZSBjaGV6IG5vdXMgIQ0KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNj
+cml0IHN1ciBub3RyZSBzaXRlIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2
+YW50IDoga2lyc3RpZV9kaWNrZW5zQGtlZWJsZXIuY29tLg0KIA0KIA0Kw4Ag
+dHLDqHMgdml0ZSBzdXIgQ2F0U2hvcCENCg==
+
+----==_mimepart_5d720743905ff_21132b0f672f59946699f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut kirstie_dickens@keebler.com et bienvenue chez nous !</h1>=0D=
+
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : kirs=
+tie_dickens@keebler.com.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d720743905ff_21132b0f672f59946699f--
+
+  [1m[35m (17.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "hedwig@tillmanlabadie.biz"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "hedwig@tillmanlabadie.biz"], ["encrypted_password", "$2a$11$ueeQTl0jnv6W9WmQ0H98aOvf09ApY/o8fiNaY0QWpasCdbs/cZuB."], ["created_at", "2019-09-06 07:14:14.720192"], ["updated_at", "2019-09-06 07:14:14.720192"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 2.8ms
+Delivered mail 5d720746b1370_21132b0f672f5994672c6@lenovoa18.mail (2891.0ms)
+Date: Fri, 06 Sep 2019 10:14:14 +0300
+From: catshop@gasikara.mg
+To: hedwig@tillmanlabadie.biz
+Message-ID: <5d720746b1370_21132b0f672f5994672c6@lenovoa18.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d720746b0af6_21132b0f672f5994671f7";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d720746b0af6_21132b0f672f5994671f7
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgaGVkd2lnQHRpbGxtYW5sYWJhZGllLmJpeiBldCBiaWVudmVudWUg
+Y2hleiBub3VzICENCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT0NCiANClR1IHQnZXMgaW5zY3Jp
+dCBzdXIgbm90cmUgc2l0ZSBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFu
+dCA6IGhlZHdpZ0B0aWxsbWFubGFiYWRpZS5iaXouDQogDQogDQrDgCB0csOo
+cyB2aXRlIHN1ciBDYXRTaG9wIQ0K
+
+----==_mimepart_5d720746b0af6_21132b0f672f5994671f7
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut hedwig@tillmanlabadie.biz et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : hedw=
+ig@tillmanlabadie.biz.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d720746b0af6_21132b0f672f5994671f7--
+
+  [1m[35m (27.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kimberely_borer@heller.name"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "kimberely_borer@heller.name"], ["encrypted_password", "$2a$11$NqaI59/Xi.Hn90guE77SdO8mG5vPSfz6.u9uelJYqolfBem/LWNwK"], ["created_at", "2019-09-06 07:14:17.797014"], ["updated_at", "2019-09-06 07:14:17.797014"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 2.5ms
+Delivered mail 5d720749c3e31_21132b0f672f5994674a4@lenovoa18.mail (2857.6ms)
+Date: Fri, 06 Sep 2019 10:14:17 +0300
+From: catshop@gasikara.mg
+To: kimberely_borer@heller.name
+Message-ID: <5d720749c3e31_21132b0f672f5994674a4@lenovoa18.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d720749c3667_21132b0f672f59946734b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d720749c3667_21132b0f672f59946734b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQga2ltYmVyZWx5X2JvcmVyQGhlbGxlci5uYW1lIGV0IGJpZW52ZW51
+ZSBjaGV6IG5vdXMgIQ0KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNj
+cml0IHN1ciBub3RyZSBzaXRlIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2
+YW50IDoga2ltYmVyZWx5X2JvcmVyQGhlbGxlci5uYW1lLg0KIA0KIA0Kw4Ag
+dHLDqHMgdml0ZSBzdXIgQ2F0U2hvcCENCg==
+
+----==_mimepart_5d720749c3667_21132b0f672f59946734b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut kimberely_borer@heller.name et bienvenue chez nous !</h1>=0D=
+
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : kimb=
+erely_borer@heller.name.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d720749c3667_21132b0f672f59946734b--
+
+  [1m[35m (17.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ezekiel@rutherfordjakubowski.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "ezekiel@rutherfordjakubowski.com"], ["encrypted_password", "$2a$11$CjKekhM2IrTBSxjZNozJauLnMueg75JJGxZ2J5ivWLjf8Zo9y9NnW"], ["created_at", "2019-09-06 07:14:20.829544"], ["updated_at", "2019-09-06 07:14:20.829544"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 2.4ms
+Delivered mail 5d72074ccbcc2_21132b0f672f599467685@lenovoa18.mail (3454.7ms)
+Date: Fri, 06 Sep 2019 10:14:20 +0300
+From: catshop@gasikara.mg
+To: ezekiel@rutherfordjakubowski.com
+Message-ID: <5d72074ccbcc2_21132b0f672f599467685@lenovoa18.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d72074ccb506_21132b0f672f59946756e";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d72074ccb506_21132b0f672f59946756e
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgZXpla2llbEBydXRoZXJmb3JkamFrdWJvd3NraS5jb20gZXQgYmll
+bnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09DQogDQpUdSB0J2Vz
+IGluc2NyaXQgc3VyIG5vdHJlIHNpdGUgZW4gdXRpbGlzYW50IGwnZS1tYWls
+IHN1aXZhbnQgOiBlemVraWVsQHJ1dGhlcmZvcmRqYWt1Ym93c2tpLmNvbS4N
+CiANCiANCsOAIHRyw6hzIHZpdGUgc3VyIENhdFNob3AhDQo=
+
+----==_mimepart_5d72074ccb506_21132b0f672f59946756e
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut ezekiel@rutherfordjakubowski.com et bienvenue chez nous !</=
+h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : ezek=
+iel@rutherfordjakubowski.com.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d72074ccb506_21132b0f672f59946756e--
+
+  [1m[35m (18.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "nanci@treutel.net"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "nanci@treutel.net"], ["encrypted_password", "$2a$11$1yIqTPnWEXIbiKIhID1z3umWhpcJ7OJmFAX2vaMugSbTpr9JRY5LG"], ["created_at", "2019-09-06 07:14:24.462613"], ["updated_at", "2019-09-06 07:14:24.462613"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 2.6ms
+Delivered mail 5d72075072441_21132b0f672f59946784b@lenovoa18.mail (3202.2ms)
+Date: Fri, 06 Sep 2019 10:14:24 +0300
+From: catshop@gasikara.mg
+To: nanci@treutel.net
+Message-ID: <5d72075072441_21132b0f672f59946784b@lenovoa18.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d72075071c62_21132b0f672f5994677f4";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d72075071c62_21132b0f672f5994677f4
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgbmFuY2lAdHJldXRlbC5uZXQgZXQgYmllbnZlbnVlIGNoZXogbm91
+cyAhDQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIG5v
+dHJlIHNpdGUgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBuYW5j
+aUB0cmV1dGVsLm5ldC4NCiANCiANCsOAIHRyw6hzIHZpdGUgc3VyIENhdFNo
+b3AhDQo=
+
+----==_mimepart_5d72075071c62_21132b0f672f5994677f4
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut nanci@treutel.net et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : nanc=
+i@treutel.net.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d72075071c62_21132b0f672f5994677f4--
+
+  [1m[35m (25.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.5ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 1], ["created_at", "2019-09-06 07:14:27.704117"], ["updated_at", "2019-09-06 07:14:27.704117"]]
+  [1m[35m (21.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.6ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 2], ["created_at", "2019-09-06 07:14:27.730410"], ["updated_at", "2019-09-06 07:14:27.730410"]]
+  [1m[35m (15.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.4ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 3], ["created_at", "2019-09-06 07:14:27.751981"], ["updated_at", "2019-09-06 07:14:27.751981"]]
+  [1m[35m (16.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.4ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 4], ["created_at", "2019-09-06 07:14:27.774192"], ["updated_at", "2019-09-06 07:14:27.774192"]]
+  [1m[35m (16.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.4ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 5], ["created_at", "2019-09-06 07:14:27.796427"], ["updated_at", "2019-09-06 07:14:27.796427"]]
+  [1m[35m (16.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.4ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 6], ["created_at", "2019-09-06 07:14:27.818567"], ["updated_at", "2019-09-06 07:14:27.818567"]]
+  [1m[35m (16.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.3ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 7], ["created_at", "2019-09-06 07:14:27.840313"], ["updated_at", "2019-09-06 07:14:27.840313"]]
+  [1m[35m (18.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.3ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 8], ["created_at", "2019-09-06 07:14:27.862343"], ["updated_at", "2019-09-06 07:14:27.862343"]]
+  [1m[35m (18.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.3ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 9], ["created_at", "2019-09-06 07:14:27.884543"], ["updated_at", "2019-09-06 07:14:27.884543"]]
+  [1m[35m (18.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.4ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 10], ["created_at", "2019-09-06 07:14:27.906919"], ["updated_at", "2019-09-06 07:14:27.906919"]]
+  [1m[35m (17.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCartItem Create (0.6ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 5], ["item_id", 1], ["created_at", "2019-09-06 07:14:28.000694"], ["updated_at", "2019-09-06 07:14:28.000694"]]
+  [1m[35m (24.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCartItem Create (0.3ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 8], ["item_id", 6], ["created_at", "2019-09-06 07:14:28.033221"], ["updated_at", "2019-09-06 07:14:28.033221"]]
+  [1m[35m (41.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCartItem Create (0.3ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 1], ["item_id", 3], ["created_at", "2019-09-06 07:14:28.085773"], ["updated_at", "2019-09-06 07:14:28.085773"]]
+  [1m[35m (17.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCartItem Create (0.4ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 9], ["item_id", 3], ["created_at", "2019-09-06 07:14:28.111501"], ["updated_at", "2019-09-06 07:14:28.111501"]]
+  [1m[35m (24.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCartItem Create (0.4ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 9], ["item_id", 2], ["created_at", "2019-09-06 07:14:28.155673"], ["updated_at", "2019-09-06 07:14:28.155673"]]
+  [1m[35m (13.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (3.0ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCartItem Create (0.5ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 4], ["item_id", 6], ["created_at", "2019-09-06 07:14:28.192712"], ["updated_at", "2019-09-06 07:14:28.192712"]]
+  [1m[35m (21.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCartItem Create (0.5ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 6], ["item_id", 8], ["created_at", "2019-09-06 07:14:28.221269"], ["updated_at", "2019-09-06 07:14:28.221269"]]
+  [1m[35m (14.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCartItem Create (0.5ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 10], ["item_id", 5], ["created_at", "2019-09-06 07:14:28.244518"], ["updated_at", "2019-09-06 07:14:28.244518"]]
+  [1m[35m (24.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCartItem Create (0.3ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 9], ["item_id", 4], ["created_at", "2019-09-06 07:14:28.277231"], ["updated_at", "2019-09-06 07:14:28.277231"]]
+  [1m[35m (14.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.1ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCartItem Create (0.3ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 1], ["item_id", 5], ["created_at", "2019-09-06 07:14:28.304246"], ["updated_at", "2019-09-06 07:14:28.304246"]]
+  [1m[35m (20.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCartItem Create (0.3ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 9], ["item_id", 6], ["created_at", "2019-09-06 07:14:28.332293"], ["updated_at", "2019-09-06 07:14:28.332293"]]
+  [1m[35m (14.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCartItem Create (0.4ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 9], ["item_id", 2], ["created_at", "2019-09-06 07:14:28.373687"], ["updated_at", "2019-09-06 07:14:28.373687"]]
+  [1m[35m (17.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCartItem Create (0.4ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["cart_id", 8], ["item_id", 4], ["created_at", "2019-09-06 07:14:28.398805"], ["updated_at", "2019-09-06 07:14:28.398805"]]
+  [1m[35m (14.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.8ms)[0m  [1m[32mINSERT INTO "orders" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 0], ["created_at", "2019-09-06 07:14:28.436767"], ["updated_at", "2019-09-06 07:14:28.436767"]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/mailers/user_mailer.rb:21:in `order_email'
+UserMailer#order_email: processed outbound mail in 6.1ms
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/" for ::1 at 2019-09-06 10:26:23 +0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 17.0ms | Allocations: 7203)
+Completed 200 OK in 1386ms (Views: 1369.7ms | ActiveRecord: 4.7ms | Allocations: 1266872)
+
+
+Started GET "/" for ::1 at 2019-09-06 10:27:44 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1728)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 1.5ms | Allocations: 13641)
+
+
+Started GET "/" for ::1 at 2019-09-06 10:28:22 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1737)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 1.9ms | Allocations: 13631)
+
+
+Started GET "/" for ::1 at 2019-09-06 10:35:53 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:30
+  Rendered items/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1794)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.8ms | Allocations: 13696)
+
+
+Started GET "/" for ::1 at 2019-09-06 10:42:59 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:30
+  Rendered items/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1787)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.8ms | Allocations: 13694)
+
+
