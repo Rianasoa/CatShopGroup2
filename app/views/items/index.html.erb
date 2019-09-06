@@ -1,3 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+     <style type="text/css">
+         .card-img-top {
+          border-radius: 7px;
+          background: #505050;
+          padding: 20px; 
+          width: 200px;
+          height: 150px; 
+         }
+     </style>
+</body>
+</html>
+  
+
+
+
+
 
 <div class="container">
   <div class="row flex-row">
@@ -18,7 +38,6 @@
         <p><a href="<%= item_path(item.id)%>" class="btn btn-info">Show Cat</a></p>
         <%if current_user%>
         <a href="<%= carts_path(item.id)%>" data-method="post" class="btn btn-primary">Add cart</a>
-         <a href="<%= cart_path(item.id)%>" data-method="get" class="btn btn-primary">Show cart</a>
        <%end%>
       </div>
       
