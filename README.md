@@ -13,30 +13,29 @@ et puis => "rails server" et ouvrez dans le navigateur "localhost:3000"
 ​
 
 
-En production:
-Visitez le site: https://cat-shop-group2.herokuapp.com/ 
-​
-
-
 Si vous voulez tester en tant qu'utilisateur:
 ​
-* email  : 
-* password  : 
+* email  : catshopg2@gmail.com 
+* password  : 1234
 ​
 
 
-Equipe de groupe 2:
+EQUIPE CATSHOP HELLO KITTY! FROM KAWAI, COMPOSITION DE NOTRE STAFF
 
-https://github.com/Rianasoa
+    1)-Mlle Rianasoa: https://github.com/Rianasoa , @Rianasoa                             (Back-end) 
+    
+        2)-Mr Rado: https://github.com/RADONARINDRA ; @Rado Narindra                          (Front-end)
+        
+        3)-Mr Patrick: https://github.com/safidypatrick , @rakotondrarimanana safidy patrick  (Back-end)
+        
+        4)-Mr Manaly: https://github.com/manalintsoa , @HARINJATOVONASOAVINA Aina Manalintsoa (Front-end)
+        
+        5)-Mr Mihary: https://github.com/Miharyrakotonanahary , @mihari                       (Front-end)
+        
+        6)-Mr Walter: https://github.com/VerizaWalter, @Walter                                (Full-stack)
+        
+PRODUCTION LINK
+🔆 Venez vivre l'expérience Petit Chaton en visitant notre application ➡️ https://cat-shop-group2.herokuapp.com/ 
 
-https://github.com/VerizaWalter
-
-https://github.com/manalintsoa
-
-https://github.com/RADONARINDRA
-
-https://github.com/Miharyrakotonanahary
-
-https://github.com/safidypatrick
 
 Bonne visite
