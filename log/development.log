@@ -23786,3 +23786,1058 @@ Completed 200 OK in 29849ms (Views: 25596.6ms | ActiveRecord: 3647.3ms | Allocat
 Completed 200 OK in 16033ms (Views: 16021.1ms | ActiveRecord: 9.3ms | Allocations: 11722)
 
 
+Started GET "/" for ::1 at 2019-09-06 07:54:53 +0300
+  [1m[35m (16.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (51.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 130.3ms | Allocations: 7229)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 19164ms (Views: 18855.6ms | ActiveRecord: 80.6ms | Allocations: 1265563)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 07:55:24 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"authenticity_token"=>"MN0m0Rymj7Hb+Vp+ztsSK2lP38L+ZotlcGmjAa/vjWrqVQ9oetPsjMWkEf7C4IDWQ6nMq6vfbl6N9j7paY1l1A=="}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 16.7ms | Allocations: 216)
+  Rendered devise/shared/_links.html.erb (Duration: 2.8ms | Allocations: 547)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 82.1ms | Allocations: 2657)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5107ms (Views: 5045.1ms | ActiveRecord: 9.7ms | Allocations: 20740)
+
+
+Started POST "/users" for ::1 at 2019-09-06 07:55:42 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"c/MkqMclfvJ5LD3PvMY8sxTktUzMeeMtF2pxTz0FkBOpew0RoVAdz2dxdk+w/a5OPgKmJZnABhbq9eyn+2d4rQ==", "user"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.5ms | Allocations: 359)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 77)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1111)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6040ms (Views: 4824.5ms | ActiveRecord: 0.0ms | Allocations: 190356)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 07:56:06 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 77)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 750)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5036ms (Views: 5032.7ms | ActiveRecord: 0.0ms | Allocations: 10605)
+
+
+Started POST "/users" for ::1 at 2019-09-06 07:56:25 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"L2Di9kPnjEZkxXENKLRUzaL9lI4aHclsGZ8WDc2y5Ob16MtPJZLve3qYOo0kj8YwiBuH50+kLFfkAIvlC9AMWA==", "user"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.7ms | Allocations: 344)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 77)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1088)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4878ms (Views: 4869.4ms | ActiveRecord: 0.0ms | Allocations: 12679)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-06 07:57:52 +0300
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"3s7vb3eZF9EXlxJ1UX5lCx2DN3Hs6V8wH4LGnvMkd+oERsbWEex07AnKWfVdRff2N2UkGLlQugviHVt2NUafVA=="}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 212)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 48.3ms | Allocations: 1788)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5083ms (Views: 5079.7ms | ActiveRecord: 0.0ms | Allocations: 12449)
+
+
+Started GET "/users/password/new" for ::1 at 2019-09-06 07:57:59 +0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 140)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 946)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5416ms (Views: 5412.3ms | ActiveRecord: 0.0ms | Allocations: 11475)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 07:58:17 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 758)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5292ms (Views: 5289.9ms | ActiveRecord: 0.0ms | Allocations: 10621)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-06 07:58:31 +0300
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"NBu7cqeIAOmDR9tkFhDaeoQD/xMVUJ9E51HvELinl6Xuk5LLwf1j1J0akOQaK0iHruXsekDpen8aznL4fsV/Gw=="}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 132)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 790)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4972ms (Views: 4967.6ms | ActiveRecord: 0.0ms | Allocations: 10709)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 07:58:40 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 77)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 749)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5344ms (Views: 5341.2ms | ActiveRecord: 0.0ms | Allocations: 10595)
+
+
+Started POST "/users" for ::1 at 2019-09-06 07:59:10 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"tFeg0MOetcRfpRLeYgLGp1SVlkmMHqApGCoBDu3/0VyRn7tSYCQ2UGimg7nAz9RC7mhqaUKv7azCg6JbPEpn7A==", "user"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.4ms | Allocations: 344)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 77)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1087)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4898ms (Views: 4887.9ms | ActiveRecord: 0.0ms | Allocations: 12684)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-06 08:01:25 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.1ms | Allocations: 544)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 1708)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5277ms (Views: 5274.2ms | ActiveRecord: 0.0ms | Allocations: 13220)
+
+
+Started GET "/users/password/new" for ::1 at 2019-09-06 08:01:34 +0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 206)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 132)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1220)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5316ms (Views: 5312.2ms | ActiveRecord: 0.0ms | Allocations: 11698)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:01:42 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1161)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5264ms (Views: 5260.9ms | ActiveRecord: 0.0ms | Allocations: 11685)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-06 08:02:06 +0300
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"pFmmF3qXSpwq0T5gifuWs2g/+U7Lq0G3q2yt3yD2bQt+0Y+uHOIpoTSMdeCFwAROQtnqJ54SpIxW8zA35pSFtQ=="}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 132)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 789)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4880ms (Views: 4876.8ms | ActiveRecord: 0.0ms | Allocations: 10689)
+
+
+Started GET "/users/password/new" for ::1 at 2019-09-06 08:02:12 +0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 131)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 573)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5410ms (Views: 5407.6ms | ActiveRecord: 0.0ms | Allocations: 10385)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:02:36 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 77)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 749)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5410ms (Views: 5407.0ms | ActiveRecord: 0.0ms | Allocations: 10595)
+
+
+Started POST "/users" for ::1 at 2019-09-06 08:02:44 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"oF951PxXFOE29WJct0CR6ejEzFRXqYE3KPjX49nO7h+Fl2JWX+2XdQH28zsVjYMMUjkwdJkYzLLyUXS2CHtYrw==", "user"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.7ms | Allocations: 344)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 77)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1087)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4915ms (Views: 4891.9ms | ActiveRecord: 0.0ms | Allocations: 13772)
+
+
+Started GET "/users" for ::1 at 2019-09-06 08:06:17 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-09-06 08:06:21 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2019-09-06 08:06:28 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"lk1CeBF1XeCefas4Lp0kmiYsbaN4KcGANqwc1vzQP2pMxWvBdwA+3YAg4LgiprZnDMp+yi2QJLvLM4E+OrLX1A==", "user"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 3.3ms | Allocations: 537)
+  Rendered devise/shared/_links.html.erb (Duration: 2.4ms | Allocations: 490)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 14.8ms | Allocations: 2384)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5069ms (Views: 5054.9ms | ActiveRecord: 0.0ms | Allocations: 16758)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-06 08:07:01 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1159)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5469ms (Views: 5466.0ms | ActiveRecord: 0.0ms | Allocations: 11738)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:07:36 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 5.4ms | Allocations: 206)
+  Rendered devise/shared/_links.html.erb (Duration: 2.3ms | Allocations: 489)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 15.1ms | Allocations: 2038)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5446ms (Views: 5442.9ms | ActiveRecord: 0.0ms | Allocations: 13492)
+
+
+Started POST "/users" for ::1 at 2019-09-06 08:07:44 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"b8/lE4PHAryJdMFLK/QCvCE/7Rg3Hew5zylITG3NyrBKB/6RIH2BKL53UCyJORBZm8IROPmsobwVgOsZvHh8AA==", "user"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 2.6ms | Allocations: 344)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1093)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5221ms (Views: 5204.1ms | ActiveRecord: 0.0ms | Allocations: 13775)
+
+
+Started GET "/users" for ::1 at 2019-09-06 08:07:51 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:07:57 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 77)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 749)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5138ms (Views: 5134.3ms | ActiveRecord: 0.0ms | Allocations: 10602)
+
+
+Started POST "/users" for ::1 at 2019-09-06 08:08:17 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"72umcj6PpE495+h5gOXu7f0J1GcbJDawM8cUGBAbzXg144/LWPrHcyO6o/mM3nwQ1+/HDk6d04vOWInw1nklxg==", "user"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 2.2ms | Allocations: 344)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 77)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1087)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5086ms (Views: 5076.9ms | ActiveRecord: 0.0ms | Allocations: 12671)
+
+
+Started POST "/users" for ::1 at 2019-09-06 08:09:00 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"72umcj6PpE495+h5gOXu7f0J1GcbJDawM8cUGBAbzXg144/LWPrHcyO6o/mM3nwQ1+/HDk6d04vOWInw1nklxg==", "user"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 3.8ms | Allocations: 535)
+  Rendered devise/shared/_links.html.erb (Duration: 2.2ms | Allocations: 489)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 14.8ms | Allocations: 2378)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5032ms (Views: 5019.2ms | ActiveRecord: 0.0ms | Allocations: 16676)
+
+
+Started POST "/users" for ::1 at 2019-09-06 08:10:18 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"72umcj6PpE495+h5gOXu7f0J1GcbJDawM8cUGBAbzXg144/LWPrHcyO6o/mM3nwQ1+/HDk6d04vOWInw1nklxg==", "user"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 4.9ms | Allocations: 535)
+  Rendered devise/shared/_links.html.erb (Duration: 2.4ms | Allocations: 489)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 16.5ms | Allocations: 2376)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5071ms (Views: 5054.4ms | ActiveRecord: 0.0ms | Allocations: 16650)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:11:36 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.5ms | Allocations: 206)
+  Rendered devise/shared/_links.html.erb (Duration: 2.4ms | Allocations: 489)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.7ms | Allocations: 2039)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5265ms (Views: 5263.0ms | ActiveRecord: 0.0ms | Allocations: 13498)
+
+
+Started POST "/users" for ::1 at 2019-09-06 08:11:44 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"zsi3LuuTY5HOY3I9SClup/K9btVqT6sKMaiJaTPeyMUUQJ6XjeYArNA+Ob1EEvxa2Ft9vD/2TjHMNxSB9bwgew==", "user"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.4ms | Allocations: 344)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1093)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5071ms (Views: 5057.8ms | ActiveRecord: 0.0ms | Allocations: 13755)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:18:18 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 238)
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 507)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 2088)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5113ms (Views: 5110.6ms | ActiveRecord: 0.0ms | Allocations: 13539)
+
+
+Started POST "/users" for ::1 at 2019-09-06 08:18:25 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"5hjtphfOFdX1r77QWFHZgNwkooTb1KKwfOJowdxAHtE8kMQfcbt26Ovy9VBUakt99sKx7Y5tR4uBffUpGiL2bw==", "user"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 5.2ms | Allocations: 344)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 13.0ms | Allocations: 1093)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5266ms (Views: 5239.9ms | ActiveRecord: 0.0ms | Allocations: 13760)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:19:06 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.6ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 3.9ms | Allocations: 506)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 15.2ms | Allocations: 2086)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5113ms (Views: 5109.6ms | ActiveRecord: 0.0ms | Allocations: 13539)
+
+
+Started POST "/users" for ::1 at 2019-09-06 08:19:16 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"Aiw+TopY6pvX1XLh2JfYIHM7d+3PMJ+wEcIEFzEI/MvYpBf37C2JpsmIOWHUrErdWd1khJqJeovsXZn/92oUdQ==", "user"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 2.3ms | Allocations: 344)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1093)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5050ms (Views: 5036.0ms | ActiveRecord: 0.0ms | Allocations: 13755)
+
+
+Started GET "/users" for ::1 at 2019-09-06 08:19:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:19:51 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.4ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 2.7ms | Allocations: 506)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.7ms | Allocations: 2091)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5154ms (Views: 5039.6ms | ActiveRecord: 0.0ms | Allocations: 13560)
+
+
+Started POST "/users" for ::1 at 2019-09-06 08:20:23 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"LnPyCt8m4jph3hoBi7FixB8AhoanIA6IrEufcxNSpUP0+9uzuVOBB3+DUYGHivA5NeaV7/KZ67NR1AKb1TBN/Q==", "user"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.9ms | Allocations: 344)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1093)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5033ms (Views: 5020.1ms | ActiveRecord: 0.0ms | Allocations: 13770)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:21:08 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.8ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 2.6ms | Allocations: 506)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 14.0ms | Allocations: 2086)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4994ms (Views: 4991.2ms | ActiveRecord: 0.0ms | Allocations: 13542)
+
+
+Started POST "/users" for ::1 at 2019-09-06 08:21:18 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"/m/W+o6AjONeU+JZvDsaXOnDgMvi6KFFVKlViE+Ee3ck5/9D6PXv3kAOqdmwAIihwyWTordRRH6pNshgieaTyQ==", "user"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 344)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1093)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5028ms (Views: 5016.0ms | ActiveRecord: 0.0ms | Allocations: 13752)
+
+
+Started POST "/users" for ::1 at 2019-09-06 08:21:32 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"KIZF1+JJmd0X4PjZwAUS+w/ovj2LkIlogOIXtt6scA/yDmxuhDz64Am9s1nMPoAGJQ6tVN4pbFN9fYpeGM6YsQ==", "user"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.5ms | Allocations: 344)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 77)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1087)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4986ms (Views: 4975.7ms | ActiveRecord: 0.0ms | Allocations: 12666)
+
+
+Started GET "/users" for ::1 at 2019-09-06 08:21:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:22:01 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.7ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 2.8ms | Allocations: 506)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 15.8ms | Allocations: 2086)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4992ms (Views: 4989.4ms | ActiveRecord: 0.0ms | Allocations: 13541)
+
+
+Started POST "/users" for ::1 at 2019-09-06 08:22:08 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"g1aZDIC0xJ1HvJ4ADMwhPO7kOqF6kXr5N/SWMbdwKL1Z3rC15sGnoFnh1YAA97PBxAIpyC8on8LKawvZcRLAAw==", "user"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.9ms | Allocations: 344)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1093)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5184ms (Views: 5171.4ms | ActiveRecord: 0.0ms | Allocations: 13755)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:22:35 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 1842)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5565ms (Views: 5561.3ms | ActiveRecord: 1.4ms | Allocations: 12175)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-06 08:22:47 +0300
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"+47+zW6WV6A/yUjGdGKrSrqpNQ+W+whyCiSei0HDVGwhBtd0COM0nSGUA0Z4WTm3kE8mZsNC7Un3uwNjh6G80g=="}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 132)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1156)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5032ms (Views: 5028.8ms | ActiveRecord: 0.0ms | Allocations: 11728)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-09-06 08:23:14 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"/VcaVsM5mbKP+XHQs9AgD0yj4AX4dOMWXkfUE3bt3J8n3zPvpUz6j5GkOlC/67LyZkXzbK3NBi2j2En7sI80IQ==", "user"=>{"email"=>"safidy@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (34.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "safidy@yahoo.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 98ms (ActiveRecord: 34.9ms | Allocations: 4389)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"/VcaVsM5mbKP+XHQs9AgD0yj4AX4dOMWXkfUE3bt3J8n3zPvpUz6j5GkOlC/67LyZkXzbK3NBi2j2En7sI80IQ==", "user"=>{"email"=>"safidy@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 132)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 776)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5291ms (Views: 5030.8ms | ActiveRecord: 0.0ms | Allocations: 11102)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:23:24 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 758)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5448ms (Views: 5445.2ms | ActiveRecord: 0.0ms | Allocations: 10615)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:26:30 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 77)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 749)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5132ms (Views: 5129.0ms | ActiveRecord: 0.0ms | Allocations: 10613)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:29:43 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.5ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 2.3ms | Allocations: 506)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.8ms | Allocations: 2096)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5158ms (Views: 5155.4ms | ActiveRecord: 0.0ms | Allocations: 13566)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:30:08 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.7ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 3.0ms | Allocations: 506)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 12.4ms | Allocations: 2091)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5015ms (Views: 5012.1ms | ActiveRecord: 0.0ms | Allocations: 13546)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:30:56 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.8ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 506)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.5ms | Allocations: 2090)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4995ms (Views: 4991.8ms | ActiveRecord: 0.0ms | Allocations: 13543)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:31:41 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 2.6ms | Allocations: 506)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.7ms | Allocations: 2092)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5040ms (Views: 5037.2ms | ActiveRecord: 0.0ms | Allocations: 13541)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:32:08 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.4ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 2.3ms | Allocations: 506)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 2091)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5172ms (Views: 5169.7ms | ActiveRecord: 0.0ms | Allocations: 13543)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:32:25 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 3.0ms | Allocations: 506)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.9ms | Allocations: 2091)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5114ms (Views: 5110.9ms | ActiveRecord: 0.0ms | Allocations: 13558)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:33:18 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.4ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 2.9ms | Allocations: 506)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 2096)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5033ms (Views: 5030.1ms | ActiveRecord: 0.0ms | Allocations: 13554)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:33:40 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.5ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 2.8ms | Allocations: 506)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.2ms | Allocations: 2095)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5189ms (Views: 5186.5ms | ActiveRecord: 0.0ms | Allocations: 13544)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:34:43 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 2.6ms | Allocations: 506)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.3ms | Allocations: 2092)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5051ms (Views: 5048.9ms | ActiveRecord: 0.0ms | Allocations: 13547)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:36:10 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.5ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 5.7ms | Allocations: 506)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 15.0ms | Allocations: 2096)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5115ms (Views: 5112.5ms | ActiveRecord: 0.0ms | Allocations: 13551)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:37:09 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.8ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 2.6ms | Allocations: 506)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 2098)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5169ms (Views: 5167.0ms | ActiveRecord: 0.0ms | Allocations: 13550)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:37:51 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 3.5ms | Allocations: 506)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.9ms | Allocations: 2099)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5158ms (Views: 5155.5ms | ActiveRecord: 0.0ms | Allocations: 13553)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:38:08 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.9ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 2.4ms | Allocations: 506)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 12.9ms | Allocations: 2099)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5211ms (Views: 5206.2ms | ActiveRecord: 0.0ms | Allocations: 13550)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:42:28 +0300
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 248)
+  Rendered devise/shared/_links.html.erb (Duration: 10.3ms | Allocations: 571)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 41.3ms | Allocations: 2862)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 7717ms (Views: 7598.0ms | ActiveRecord: 15.4ms | Allocations: 1266021)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-09-06 08:44:50 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 212)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1065.7ms | Allocations: 177596)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 7080ms (Views: 7077.7ms | ActiveRecord: 0.0ms | Allocations: 188259)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:45:05 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  Rendered items/index.html.erb within layouts/application (Duration: 41.7ms | Allocations: 6843)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5082ms (Views: 5028.0ms | ActiveRecord: 12.9ms | Allocations: 19538)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 08:45:15 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"authenticity_token"=>"MbeXCRTv2XVZLrK2cg2rod35JTykebyArTFVNVh+qO3rP76wcpq6SEdz+TZ+Njlc9x82VfHAWbtQrsjdnhxAUw=="}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 758)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5021ms (Views: 5017.3ms | ActiveRecord: 0.0ms | Allocations: 10616)
+
+
+Started POST "/users" for ::1 at 2019-09-06 08:46:01 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"Ers8C6ndkG/N/HcwxP+s++qxsSQQXjooZvNf+ROpUEvIMxWyz6jzUtOhPLDIxD4GwFeiTUXn3xObbMIR1cu49Q==", "user"=>{"first_name"=>"safi", "last_name"=>"patrick", "email"=>"safi@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (15.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "safi@yahoo.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (57.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "safi"], ["last_name", "patrick"], ["email", "safi@yahoo.com"], ["encrypted_password", "$2a$11$q6RSOux7WqeDrSunBM.XxecZQNlWVWxyGqmiY.Oq5dHaObpsY.NDC"], ["created_at", "2019-09-06 05:46:01.386775"], ["updated_at", "2019-09-06 05:46:01.386775"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 15.0ms | Allocations: 152)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 1.7ms | Allocations: 130)
+UserMailer#welcome_email: processed outbound mail in 62.9ms
+Delivered mail 5d71f29a1fcc5_20432b1a22071608407b0@lenovos50.mail (140.7ms)
+Date: Fri, 06 Sep 2019 08:46:02 +0300
+From: catshop@gasikara.mg
+To: safi@yahoo.com
+Message-ID: <5d71f29a1fcc5_20432b1a22071608407b0@lenovos50.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d71f29a1c3ea_20432b1a22071608406eb";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d71f29a1c3ea_20432b1a22071608406eb
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgc2FmaUB5YWhvby5jb20gZXQgYmllbnZlbnVlIGNoZXogbm91cyAh
+DQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIG5vdHJl
+IHNpdGUgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBzYWZpQHlh
+aG9vLmNvbS4NCiANCiANCsOAIHRyw6hzIHZpdGUgc3VyIENhdFNob3AhDQo=
+
+----==_mimepart_5d71f29a1c3ea_20432b1a22071608406eb
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut safi@yahoo.com et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : safi=
+@yahoo.com.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d71f29a1c3ea_20432b1a22071608406eb--
+
+  [1m[35m (25.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 1161ms (ActiveRecord: 98.7ms | Allocations: 77599)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:46:02 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:10
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/items/index.html.erb:19
+  Rendered items/index.html.erb within layouts/application (Duration: 24.9ms | Allocations: 2538)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5171ms (Views: 5163.5ms | ActiveRecord: 3.9ms | Allocations: 12176)
+
+
+Started GET "/users/13" for ::1 at 2019-09-06 08:46:18 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"x5c/VADEHRp7YbGBA+XgGFu6pnqdXV7GKJPukh1GvxAdHxbtZrF+J2U8+gEP3nLlcVy1E8jku/3VDHN62yRXrg==", "id"=>"13"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 15.2ms | Allocations: 279)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5060ms (Views: 5041.0ms | ActiveRecord: 2.7ms | Allocations: 12759)
+
+
+Started GET "/users/13/edit" for ::1 at 2019-09-06 08:46:28 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"authenticity_token"=>"639gwdKcnqmnm+yavm7B5l08jEd+REde1Ajo7/sXtLQx90l4tOn9lLnGpxqyVVMbd9qfLiv9omUpl3UHPXVcCg==", "id"=>"13"}
+  Rendering users/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/users/edit.html.erb:10
+  Rendered users/edit.html.erb within layouts/application (Duration: 12.9ms | Allocations: 2345)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5032ms (Views: 5028.0ms | ActiveRecord: 0.8ms | Allocations: 12084)
+
+
+Started PUT "/users/13" for ::1 at 2019-09-06 08:46:55 +0300
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"QoUkRPEdqJmkpkjUgFZ7ONwBKkhBhKi9sXryAHzSQw2YDQ39l2jLpLr7A1SMbenF9uc5IRQ9TYZM5W/ourCrsw==", "first_name"=>"", "last_name"=>"patrick", "email"=>"safi@yahoo.com", "commit"=>"Modify profil", "id"=>"13"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `update'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.8ms | Allocations: 1359)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'description' for User.):
+  
+app/controllers/users_controller.rb:13:in `update'

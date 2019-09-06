@@ -21,9 +21,6 @@
   border-radius: 50px;
   height: 600px;
 }
-.content:hover{
-  background-image: url(https://cdn.pixabay.com/photo/2018/05/30/19/29/cat-3442257_960_720.jpg)
-}
  .field{
   position: center;
   height: 50px;
@@ -36,7 +33,7 @@
     border-right: none;
     border-top: none;
     background-color: transparent;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 100px;
     color: white;
     font-family: roboto;
@@ -47,10 +44,10 @@
   outline: none;
  }
  h2{
- margin-left:100px;
  color: white;
- font-size: 50px;
- font-family:roboto; 
+ font-size: 29px;
+ font-family:roboto; $
+
  }
  .checkbox{
   font-size: 20px;
@@ -73,12 +70,20 @@
   margin-right: 220px;
   margin-left: 220px;
   font-size: 22px;
+
+  color: black;
+}
+
+.for:hover{
+    text-decoration: none;
+
 }
 
   </style>
 </head>
 <body>
-<div class="content">
+
+    <div class="content">
 <center><h2 >Sign up</h2></center>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -103,16 +108,23 @@
  
 
   <div class="actions">
-    <%= f.submit "Sign up",:class=>"bouton"%><br>
+    <center><%= f.submit "Sign up",:class=>"btn btn-md btn-warning"%><br></center>
+  
      </div><br>
      <div class="for">
-    <%= render "devise/shared/links" %>
+    <center>
+       <%= render "devise/shared/links" %>
+    </center>
+   
     </div>
  
 <% end %>
 
       
 </div>
+
+
+
 <script type="text/javascript">
   
 
