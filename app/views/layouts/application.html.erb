@@ -13,7 +13,15 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <style type="text/css">
+      body{
+        background-image:url(https://www.templatemonster.com/bwp-content/uploads/2019/01/gradient-sets.jpg); 
+        background-repeat: repeat-y;
+        background-size: cover;
 
+      }
+
+    </style>
   </head>
 
   <body>
@@ -21,14 +29,13 @@
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="<%=root_path%>">CatShop</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <!--  <span class="navbar-toggler-icon"></span> -->
-       <span class="fa fa-cart"></span>
+       <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">       
           
           <%if current_user%>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown" style="position: absolute; right: 10%; top: 10%;color: white;">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Profile
               </a>
@@ -37,6 +44,8 @@
                 <%= link_to "Deconnect", destroy_user_session_path, :method => :delete, class: "dropdown-item"%>
               </div>
             </li>
+            <a href="<%= cart_path(current_user.id)%>"><span class="panier" style="position: absolute; right: 2%; top: 5%;"><img src="https://cdn.pixabay.com/photo/2014/04/02/10/53/shopping-cart-304843_960_720.png" width="50px" height="50px" ></span></a>
+
           <%else%>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -51,7 +60,13 @@
         </ul>
       </div>
     </nav>
-  
+  <div>
+    
+  </div>
+
+  <% if flash[:success] %>
+        <div class="alert alert-success"><%= session[:success] %></div>
+  <% end %>
     <%= yield %>
   </body>
 </html>
