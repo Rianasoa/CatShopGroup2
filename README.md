@@ -16,7 +16,7 @@ et puis => "rails server" et ouvrez dans le navigateur "localhost:3000"
 Si vous voulez tester en tant qu'utilisateur:
 ​
 * email  : catshopg2@gmail.com 
-* password  : 1234
+* password  : catshop123
 ​
 
 
