@@ -20787,3 +20787,3627 @@ Processing by ItemsController#index as HTML
 Completed 200 OK in 9250ms (Views: 9247.6ms | ActiveRecord: 0.9ms | Allocations: 12658)
 
 
+Started GET "/items/31" for ::1 at 2019-09-05 14:25:42 +0300
+  [1m[35m (9.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 24.1ms | Allocations: 513)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 30539ms (Views: 29977.9ms | ActiveRecord: 211.9ms | Allocations: 1265244)
+
+
+Started GET "/items/36" for ::1 at 2019-09-05 14:31:21 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mItem Load (31.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 27.6ms | Allocations: 351)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 12578ms (Views: 12541.6ms | ActiveRecord: 31.5ms | Allocations: 11840)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:31:53 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (16.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:30
+  Rendered items/index.html.erb within layouts/application (Duration: 31.2ms | Allocations: 1781)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4036ms (Views: 4018.8ms | ActiveRecord: 16.3ms | Allocations: 11589)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:32:08 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:30
+  Rendered items/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1770)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3991ms (Views: 3987.6ms | ActiveRecord: 0.5ms | Allocations: 12674)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:32:19 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:30
+  Rendered items/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1755)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4048ms (Views: 4046.1ms | ActiveRecord: 0.5ms | Allocations: 12637)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:33:13 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:30
+  Rendered items/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1763)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4074ms (Views: 4071.1ms | ActiveRecord: 0.7ms | Allocations: 12665)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:33:52 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:31
+  Rendered items/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1756)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4019ms (Views: 4017.4ms | ActiveRecord: 0.6ms | Allocations: 12640)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:37:33 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:35
+  Rendered items/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1762)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3904ms (Views: 3900.7ms | ActiveRecord: 0.6ms | Allocations: 12649)
+
+
+Started GET "/items/31" for ::1 at 2019-09-05 14:37:53 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 343)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4751ms (Views: 4746.6ms | ActiveRecord: 0.6ms | Allocations: 10696)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:38:12 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:35
+  Rendered items/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1761)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4454ms (Views: 4451.6ms | ActiveRecord: 0.8ms | Allocations: 12666)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:38:16 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:35
+  Rendered items/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1424)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4040ms (Views: 4036.8ms | ActiveRecord: 1.7ms | Allocations: 11074)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:41:50 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1762)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3909ms (Views: 3906.0ms | ActiveRecord: 0.5ms | Allocations: 12646)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:42:22 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (6.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 14.6ms | Allocations: 1785)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4581ms (Views: 4572.5ms | ActiveRecord: 6.4ms | Allocations: 12662)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:43:07 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1762)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3827ms (Views: 3824.2ms | ActiveRecord: 1.3ms | Allocations: 12644)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:47:35 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:30
+  Rendered items/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1755)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6700ms (Views: 6697.6ms | ActiveRecord: 0.7ms | Allocations: 12647)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:49:36 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:30
+  Rendered items/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1755)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4095ms (Views: 4091.5ms | ActiveRecord: 1.3ms | Allocations: 12643)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:52:52 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:32
+  Rendered items/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 1757)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 8322ms (Views: 8319.2ms | ActiveRecord: 0.5ms | Allocations: 12654)
+
+
+Started GET "/items/32" for ::1 at 2019-09-05 14:53:05 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mItem Load (1.9ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 13.3ms | Allocations: 343)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4740ms (Views: 4734.6ms | ActiveRecord: 1.9ms | Allocations: 10684)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:53:30 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:32
+  Rendered items/index.html.erb within layouts/application (Duration: 14.8ms | Allocations: 1757)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4138ms (Views: 4134.9ms | ActiveRecord: 0.9ms | Allocations: 12642)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:58:02 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:32
+  Rendered items/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 1424)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 27703ms (Views: 27631.1ms | ActiveRecord: 0.7ms | Allocations: 11182)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:02:17 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (31.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:31
+  Rendered items/index.html.erb within layouts/application (Duration: 38.2ms | Allocations: 1756)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 12437ms (Views: 12403.3ms | ActiveRecord: 31.6ms | Allocations: 12666)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:05:03 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (5.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:32
+  Rendered items/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 1763)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4650ms (Views: 4643.3ms | ActiveRecord: 5.1ms | Allocations: 12676)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:05:33 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.0ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:32
+  Rendered items/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1757)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4223ms (Views: 4217.6ms | ActiveRecord: 2.0ms | Allocations: 12640)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:06:00 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:32
+  Rendered items/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1757)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4144ms (Views: 4141.5ms | ActiveRecord: 0.5ms | Allocations: 12646)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:06:21 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:32
+  Rendered items/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1757)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4086ms (Views: 4082.8ms | ActiveRecord: 0.6ms | Allocations: 12640)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:06:52 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:32
+  Rendered items/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1757)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4008ms (Views: 4005.9ms | ActiveRecord: 0.7ms | Allocations: 12643)
+
+
+Started GET "/items/32" for ::1 at 2019-09-05 15:07:20 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mItem Load (15.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 19.3ms | Allocations: 343)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5993ms (Views: 5970.2ms | ActiveRecord: 15.2ms | Allocations: 10693)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:11:15 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:31
+  Rendered items/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 1757)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5778ms (Views: 5772.7ms | ActiveRecord: 0.6ms | Allocations: 12652)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:11:24 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:31
+  Rendered items/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1424)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4687ms (Views: 4685.5ms | ActiveRecord: 0.4ms | Allocations: 11065)
+
+
+Started GET "/items/32" for ::1 at 2019-09-05 15:11:32 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 20.1ms | Allocations: 343)
+[Webpacker] Compiling…
+Started GET "/items/32" for ::1 at 2019-09-05 15:11:36 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mItem Load (2.8ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 113)
+[Webpacker] Compiling…
+Started GET "/items/32" for ::1 at 2019-09-05 15:11:38 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 113)
+[Webpacker] Compiling…
+Started GET "/items/32" for ::1 at 2019-09-05 15:11:38 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"32"}
+Started GET "/items/32" for ::1 at 2019-09-05 15:11:39 +0300
+  [1m[36mItem Load (7.8ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 17.2ms | Allocations: 113)
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mItem Load (2.7ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 113)
+[Webpacker] Compiling…
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 7150ms (Views: 7143.2ms | ActiveRecord: 0.5ms | Allocations: 63684)
+
+
+Started GET "/items/32" for ::1 at 2019-09-05 15:11:39 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mItem Load (7.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 113)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 16924ms (Views: 16911.4ms | ActiveRecord: 3.1ms | Allocations: 62499)
+
+
+Started GET "/items/32" for ::1 at 2019-09-05 15:11:54 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mItem Load (246.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 113)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 16535ms (Views: 16507.2ms | ActiveRecord: 20.2ms | Allocations: 37961)
+
+
+[Webpacker] Compilation failed:
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 19251ms (Views: 19244.2ms | ActiveRecord: 1.2ms | Allocations: 64450)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 18936ms (Views: 18892.3ms | ActiveRecord: 14.7ms | Allocations: 52188)
+
+
+Completed 500 Internal Server Error in 19577ms (ActiveRecord: 7.4ms | Allocations: 28952)
+
+
+  
+ActionView::Template::Error (767: unexpected token at ''):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10: 
+    11:     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    12: 
+  
+app/views/layouts/application.html.erb:9
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 21307ms (Views: 21052.7ms | ActiveRecord: 246.3ms | Allocations: 398228)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:12:20 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (175.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:31
+  Rendered items/index.html.erb within layouts/application (Duration: 179.1ms | Allocations: 1444)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6084ms (Views: 5907.5ms | ActiveRecord: 175.5ms | Allocations: 11129)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:13:01 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:31
+  Rendered items/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 1756)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5219ms (Views: 5217.5ms | ActiveRecord: 0.6ms | Allocations: 12662)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:21:28 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (29.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:32
+  Rendered items/index.html.erb within layouts/application (Duration: 125.7ms | Allocations: 1859)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 13781ms (Views: 13731.4ms | ActiveRecord: 29.7ms | Allocations: 12765)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:22:08 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:32
+  Rendered items/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1757)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4912ms (Views: 4909.2ms | ActiveRecord: 0.4ms | Allocations: 12642)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:24:46 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:31
+  Rendered items/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 1756)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6090ms (Views: 6086.2ms | ActiveRecord: 2.2ms | Allocations: 12645)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:24:54 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:31
+  Rendered items/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 1424)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4979ms (Views: 4977.3ms | ActiveRecord: 0.7ms | Allocations: 11075)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:27:01 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:31
+  Rendered items/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1756)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 12642ms (Views: 12639.0ms | ActiveRecord: 1.4ms | Allocations: 12657)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:28:02 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:31
+  Rendered items/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 1756)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 8310ms (Views: 8271.2ms | ActiveRecord: 1.2ms | Allocations: 12652)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:30:06 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:31
+  Rendered items/index.html.erb within layouts/application (Duration: 17.4ms | Allocations: 1760)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5072ms (Views: 5067.3ms | ActiveRecord: 0.7ms | Allocations: 12648)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:30:53 +0300
+  [1m[35m (24.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:31
+  Rendered items/index.html.erb within layouts/application (Duration: 77.8ms | Allocations: 7254)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6502ms (Views: 6390.9ms | ActiveRecord: 38.8ms | Allocations: 1265603)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:32:34 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:31
+  Rendered items/index.html.erb within layouts/application (Duration: 16.0ms | Allocations: 1773)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6168ms (Views: 6165.0ms | ActiveRecord: 0.8ms | Allocations: 12686)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:33:45 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:31
+  Rendered items/index.html.erb within layouts/application (Duration: 17.9ms | Allocations: 1424)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4783ms (Views: 4780.9ms | ActiveRecord: 1.3ms | Allocations: 11068)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:35:17 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:27
+  Rendered items/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1767)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4497ms (Views: 4494.6ms | ActiveRecord: 0.6ms | Allocations: 12672)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:36:26 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:29
+  Rendered items/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1764)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4317ms (Views: 4314.7ms | ActiveRecord: 0.6ms | Allocations: 12658)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:36:33 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:29
+  Rendered items/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1424)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4233ms (Views: 4231.6ms | ActiveRecord: 0.6ms | Allocations: 11060)
+
+
+Started GET "/items/31" for ::1 at 2019-09-05 15:36:40 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mItem Load (1.8ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 7.7ms | Allocations: 360)
+[Webpacker] Compiling…
+Started GET "/items/31" for ::1 at 2019-09-05 15:36:43 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 113)
+[Webpacker] Compiling…
+Started GET "/items/31" for ::1 at 2019-09-05 15:36:45 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 113)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5670ms (Views: 5626.8ms | ActiveRecord: 2.2ms | Allocations: 39430)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 7147ms (Views: 7140.0ms | ActiveRecord: 1.3ms | Allocations: 24765)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6272ms (Views: 6259.5ms | ActiveRecord: 1.1ms | Allocations: 12616)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:36:55 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:29
+  Rendered items/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1426)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4674ms (Views: 4671.0ms | ActiveRecord: 0.9ms | Allocations: 11072)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:40:15 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:32
+  Rendered items/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1759)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4524ms (Views: 4521.2ms | ActiveRecord: 0.5ms | Allocations: 12650)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:40:22 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:32
+  Rendered items/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1424)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4692ms (Views: 4690.4ms | ActiveRecord: 0.5ms | Allocations: 11067)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:45:24 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:33
+  Rendered items/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1761)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4370ms (Views: 4367.5ms | ActiveRecord: 0.5ms | Allocations: 12646)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:45:32 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:33
+  Rendered items/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1424)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4274ms (Views: 4272.8ms | ActiveRecord: 0.6ms | Allocations: 11064)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:46:38 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:33
+  Rendered items/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1760)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4885ms (Views: 4882.2ms | ActiveRecord: 0.8ms | Allocations: 12646)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:47:25 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:33
+  Rendered items/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1761)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4888ms (Views: 4885.6ms | ActiveRecord: 0.6ms | Allocations: 12645)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:50:10 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.0ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:33
+  Rendered items/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1760)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5531ms (Views: 5528.8ms | ActiveRecord: 1.0ms | Allocations: 12645)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:50:40 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:33
+  Rendered items/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 1760)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4981ms (Views: 4976.6ms | ActiveRecord: 2.7ms | Allocations: 12653)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:50:51 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:33
+  Rendered items/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1424)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4656ms (Views: 4653.5ms | ActiveRecord: 0.4ms | Allocations: 11066)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:52:31 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:33
+  Rendered items/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1759)
+[Webpacker] Compiling…
+Started GET "/" for ::1 at 2019-09-05 15:52:33 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (3.0ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:33
+  Rendered items/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 1530)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5464ms (Views: 5459.0ms | ActiveRecord: 0.6ms | Allocations: 26608)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5821ms (Views: 5814.4ms | ActiveRecord: 3.0ms | Allocations: 12243)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:53:42 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:33
+  Rendered items/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1423)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4552ms (Views: 4548.9ms | ActiveRecord: 1.3ms | Allocations: 11061)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:55:11 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:35
+  Rendered items/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1767)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5246ms (Views: 5242.8ms | ActiveRecord: 1.4ms | Allocations: 12661)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:56:56 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:34
+  Rendered items/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1761)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4979ms (Views: 4975.1ms | ActiveRecord: 0.8ms | Allocations: 12650)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:57:48 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (4.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:35
+  Rendered items/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 1762)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5473ms (Views: 5466.6ms | ActiveRecord: 4.6ms | Allocations: 12661)
+
+
+Started GET "/" for ::1 at 2019-09-05 15:59:59 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1763)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4715ms (Views: 4712.6ms | ActiveRecord: 0.7ms | Allocations: 12648)
+
+
+Started GET "/" for ::1 at 2019-09-05 16:00:28 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (3.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 1763)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4964ms (Views: 4955.9ms | ActiveRecord: 3.7ms | Allocations: 12652)
+
+
+Started GET "/" for ::1 at 2019-09-05 16:01:22 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 1763)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4464ms (Views: 4460.0ms | ActiveRecord: 1.7ms | Allocations: 12653)
+
+
+Started GET "/items/31" for ::1 at 2019-09-05 16:01:50 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 354)
+[Webpacker] Compiling…
+Started GET "/items/31" for ::1 at 2019-09-05 16:01:54 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mItem Load (1.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 113)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5592ms (Views: 5587.4ms | ActiveRecord: 0.8ms | Allocations: 23982)
+
+
+Started GET "/items/31" for ::1 at 2019-09-05 16:01:59 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mItem Load (4.7ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 113)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6618ms (Views: 6607.5ms | ActiveRecord: 1.7ms | Allocations: 22753)
+
+
+Started GET "/items/31" for ::1 at 2019-09-05 16:02:01 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mItem Load (2.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 113)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 8058ms (Views: 8047.0ms | ActiveRecord: 4.7ms | Allocations: 22624)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 7413ms (Views: 7402.8ms | ActiveRecord: 2.3ms | Allocations: 11395)
+
+
+Started GET "/" for ::1 at 2019-09-05 16:03:33 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1426)
+[Webpacker] Compiling…
+Started GET "/items/34" for ::1 at 2019-09-05 16:03:38 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 113)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5736ms (Views: 5733.6ms | ActiveRecord: 0.7ms | Allocations: 22280)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5704ms (Views: 5699.6ms | ActiveRecord: 0.6ms | Allocations: 11376)
+
+
+Started GET "/items/37" for ::1 at 2019-09-05 16:03:56 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mItem Load (1.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 113)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5320ms (Views: 5311.8ms | ActiveRecord: 1.6ms | Allocations: 10316)
+
+
+Started GET "/" for ::1 at 2019-09-05 16:04:34 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1423)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5239ms (Views: 5237.6ms | ActiveRecord: 0.6ms | Allocations: 11058)
+
+
+Started GET "/" for ::1 at 2019-09-05 16:33:56 +0300
+  [1m[35m (32.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:29
+  Rendered items/index.html.erb within layouts/application (Duration: 41.0ms | Allocations: 7252)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 14030ms (Views: 13875.7ms | ActiveRecord: 14.3ms | Allocations: 1265678)
+
+
+Started GET "/items/32" for ::1 at 2019-09-05 16:34:26 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 9.3ms | Allocations: 367)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6486ms (Views: 6315.0ms | ActiveRecord: 0.7ms | Allocations: 12904)
+
+
+Started GET "/" for ::1 at 2019-09-05 16:35:26 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:31
+  Rendered items/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 1758)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6061ms (Views: 6058.4ms | ActiveRecord: 0.5ms | Allocations: 12656)
+
+
+Started GET "/items/31" for ::1 at 2019-09-05 16:35:52 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 19.4ms | Allocations: 344)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6759ms (Views: 6754.5ms | ActiveRecord: 0.6ms | Allocations: 10710)
+
+
+Started GET "/" for ::1 at 2019-09-05 16:37:36 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:31
+  Rendered items/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1766)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5199ms (Views: 5197.6ms | ActiveRecord: 0.5ms | Allocations: 12664)
+
+
+Started GET "/items/32" for ::1 at 2019-09-05 16:37:46 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 344)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5689ms (Views: 5682.7ms | ActiveRecord: 0.7ms | Allocations: 10709)
+
+
+Started GET "/items/32" for ::1 at 2019-09-05 16:37:59 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 113)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5147ms (Views: 5143.1ms | ActiveRecord: 0.6ms | Allocations: 10317)
+
+
+Started GET "/" for ::1 at 2019-09-05 16:41:10 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:33
+  Rendered items/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 1766)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4697ms (Views: 4693.1ms | ActiveRecord: 1.6ms | Allocations: 12660)
+
+
+Started GET "/items/32" for ::1 at 2019-09-05 16:41:22 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 343)
+[Webpacker] Compiling…
+Started GET "/items/32" for ::1 at 2019-09-05 16:41:25 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mItem Load (1.9ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 113)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6994ms (Views: 6988.0ms | ActiveRecord: 0.6ms | Allocations: 24014)
+
+
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6487ms (Views: 6476.8ms | ActiveRecord: 2.3ms | Allocations: 11536)
+
+
+Started GET "/" for ::1 at 2019-09-05 16:42:04 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:33
+  Rendered items/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1762)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4719ms (Views: 4715.1ms | ActiveRecord: 1.4ms | Allocations: 12651)
+
+
+Started GET "/" for ::1 at 2019-09-05 16:42:27 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:33
+  Rendered items/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1761)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4816ms (Views: 4811.9ms | ActiveRecord: 0.5ms | Allocations: 12647)
+
+
+Started GET "/" for ::1 at 2019-09-05 16:43:08 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 13.6ms | Allocations: 1763)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5193ms (Views: 5188.5ms | ActiveRecord: 2.4ms | Allocations: 12649)
+
+
+Started GET "/" for ::1 at 2019-09-05 16:43:39 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1764)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4809ms (Views: 4804.6ms | ActiveRecord: 0.7ms | Allocations: 12652)
+
+
+Started GET "/" for ::1 at 2019-09-05 16:44:07 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1763)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4793ms (Views: 4790.7ms | ActiveRecord: 0.5ms | Allocations: 12649)
+
+
+Started GET "/" for ::1 at 2019-09-05 16:56:01 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (16.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:37
+  Rendered items/index.html.erb within layouts/application (Duration: 10794.5ms | Allocations: 1889)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 35456ms (Views: 35280.9ms | ActiveRecord: 16.4ms | Allocations: 12830)
+
+
+Started GET "/" for ::1 at 2019-09-05 16:57:21 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (187.0ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 262.7ms | Allocations: 1762)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 13685ms (Views: 13496.1ms | ActiveRecord: 187.0ms | Allocations: 12675)
+
+
+Started GET "/" for ::1 at 2019-09-05 17:04:07 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (14.0ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:40
+  Rendered items/index.html.erb within layouts/application (Duration: 241.5ms | Allocations: 1869)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 18325ms (Views: 18187.7ms | ActiveRecord: 14.0ms | Allocations: 12792)
+
+
+Started GET "/" for ::1 at 2019-09-05 17:05:05 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:40
+  Rendered items/index.html.erb within layouts/application (Duration: 1032.7ms | Allocations: 1771)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 15809ms (Views: 15798.3ms | ActiveRecord: 0.6ms | Allocations: 12680)
+
+
+Started GET "/items/32" for ::1 at 2019-09-05 17:05:29 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mItem Load (4.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 104.6ms | Allocations: 343)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5526ms (Views: 5294.8ms | ActiveRecord: 25.3ms | Allocations: 10722)
+
+
+Started GET "/" for ::1 at 2019-09-05 17:05:41 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:40
+  Rendered items/index.html.erb within layouts/application (Duration: 50.7ms | Allocations: 1424)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5697ms (Views: 5643.6ms | ActiveRecord: 0.6ms | Allocations: 11069)
+
+
+Started GET "/" for ::1 at 2019-09-05 17:06:02 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:40
+  Rendered items/index.html.erb within layouts/application (Duration: 39.1ms | Allocations: 1423)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5603ms (Views: 5559.4ms | ActiveRecord: 1.2ms | Allocations: 11064)
+
+
+Started GET "/items/32" for ::1 at 2019-09-05 17:06:13 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 113)
+[Webpacker] Compiling…
+Started GET "/" for ::1 at 2019-09-05 17:06:14 +0300
+Processing by ItemsController#index as HTML
+[Webpacker] Compilation failed:
+
+  Rendering items/index.html.erb within layouts/application
+Completed 200 OK in 8201ms (Views: 8191.7ms | ActiveRecord: 0.6ms | Allocations: 14001)
+
+
+  [1m[36mItem Load (1.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:40
+  Rendered items/index.html.erb within layouts/application (Duration: 21.9ms | Allocations: 1954)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 12837ms (Views: 6121.6ms | ActiveRecord: 1.5ms | Allocations: 12272)
+
+
+Started GET "/" for ::1 at 2019-09-05 17:06:32 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:40
+  Rendered items/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 1423)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4817ms (Views: 4814.8ms | ActiveRecord: 0.6ms | Allocations: 11064)
+
+
+Started GET "/" for ::1 at 2019-09-05 17:07:07 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 29.1ms | Allocations: 1768)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5674ms (Views: 5671.9ms | ActiveRecord: 0.6ms | Allocations: 12659)
+
+
+Started GET "/" for ::1 at 2019-09-05 17:20:14 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 392.3ms | Allocations: 1865)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 27560ms (Views: 27520.8ms | ActiveRecord: 1.3ms | Allocations: 12810)
+
+
+Started GET "/" for ::1 at 2019-09-05 17:22:31 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 34.4ms | Allocations: 1424)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 82650ms (Views: 82646.9ms | ActiveRecord: 0.7ms | Allocations: 11315)
+
+
+Started GET "/" for ::1 at 2019-09-06 07:49:48 +0300
+  [1m[35m (135.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (87.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 221.5ms | Allocations: 7259)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 10616ms (Views: 10276.2ms | ActiveRecord: 162.8ms | Allocations: 1265605)
+
+
+Started GET "/" for ::1 at 2019-09-06 07:50:14 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1432)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3899ms (Views: 3897.6ms | ActiveRecord: 0.4ms | Allocations: 11074)
+
+
+Started GET "/" for ::1 at 2019-09-06 07:51:09 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1431)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3886ms (Views: 3884.5ms | ActiveRecord: 0.5ms | Allocations: 11073)
+
+
+Started GET "/" for ::1 at 2019-09-06 07:51:28 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1423)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4314ms (Views: 4312.6ms | ActiveRecord: 0.6ms | Allocations: 11049)
+
+
+Started GET "/" for ::1 at 2019-09-06 07:53:03 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1423)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4051ms (Views: 4049.5ms | ActiveRecord: 0.5ms | Allocations: 11051)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-09-06 07:53:47 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"authenticity_token"=>"UuAW81iu2Btq7moYQRJmxCJIBlsO/bSTFqqNBTzSM8eudFaVvGx5fjMt5xZY/OooQPyjUKY+d1AUkGl7dXmb1Q=="}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.9ms | Allocations: 216)
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 547)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 57.4ms | Allocations: 2596)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3916ms (Views: 3885.5ms | ActiveRecord: 5.3ms | Allocations: 18758)
+
+
+Started GET "/" for ::1 at 2019-09-06 07:57:16 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (9.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 29.6ms | Allocations: 1436)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 27338ms (Views: 27276.1ms | ActiveRecord: 9.9ms | Allocations: 11141)
+
+
+Started GET "/" for ::1 at 2019-09-06 07:58:40 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1423)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5056ms (Views: 5054.6ms | ActiveRecord: 0.5ms | Allocations: 11058)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 31]]
+  [1m[35m (43.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.8ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 32]]
+  [1m[35m (38.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 33]]
+  [1m[35m (12.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 34]]
+  [1m[35m (12.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 35]]
+  [1m[35m (12.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 36]]
+  [1m[35m (19.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 37]]
+  [1m[35m (19.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 38]]
+  [1m[35m (17.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Destroy (0.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 39]]
+  [1m[35m (17.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (64.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (18.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (28.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (17.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  [1m[35m (16.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 7]]
+  [1m[35m (16.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 8]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 9]]
+  [1m[35m (13.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 10]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCart Load (26.6ms)[0m  [1m[34mSELECT "carts".* FROM "carts"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Destroy (0.6ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = $1[0m  [["id", 1]]
+  [1m[35m (24.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Destroy (0.4ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = $1[0m  [["id", 2]]
+  [1m[35m (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Destroy (0.4ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = $1[0m  [["id", 3]]
+  [1m[35m (12.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Destroy (0.4ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = $1[0m  [["id", 4]]
+  [1m[35m (19.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (4.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Destroy (0.6ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = $1[0m  [["id", 5]]
+  [1m[35m (13.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Destroy (0.5ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = $1[0m  [["id", 6]]
+  [1m[35m (38.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Destroy (0.5ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = $1[0m  [["id", 7]]
+  [1m[35m (64.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Destroy (0.4ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = $1[0m  [["id", 8]]
+  [1m[35m (62.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Destroy (0.4ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = $1[0m  [["id", 9]]
+  [1m[35m (119.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Destroy (0.5ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = $1[0m  [["id", 10]]
+  [1m[35m (62.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCartItem Load (2.3ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items"[0m
+  [1m[36mOrder Load (32.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  [1m[36mOrderItem Load (13.1ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (69.2ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Felix"], ["description", "Cymric, or Manx Longhair"], ["price", 87.24], ["image_url", "https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_960_720.jpg"], ["created_at", "2019-09-06 05:00:55.143351"], ["updated_at", "2019-09-06 05:00:55.143351"]]
+  [1m[35m (20.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Lily"], ["description", "Oriental Longhair"], ["price", 85.14], ["image_url", "https://cdn.pixabay.com/photo/2017/07/25/01/22/cat-2536662_960_720.jpg"], ["created_at", "2019-09-06 05:00:55.241176"], ["updated_at", "2019-09-06 05:00:55.241176"]]
+  [1m[35m (30.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Felix"], ["description", "Savannah"], ["price", 21.8], ["image_url", "https://cdn.pixabay.com/photo/2018/03/29/21/51/cute-3273789_960_720.jpg"], ["created_at", "2019-09-06 05:00:55.282341"], ["updated_at", "2019-09-06 05:00:55.282341"]]
+  [1m[35m (40.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Oscar"], ["description", "Bambino"], ["price", 13.24], ["image_url", "https://cdn.pixabay.com/photo/2015/06/09/09/35/animal-children-803123_960_720.jpg"], ["created_at", "2019-09-06 05:00:55.331127"], ["updated_at", "2019-09-06 05:00:55.331127"]]
+  [1m[35m (18.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Alfie"], ["description", "Colorpoint Shorthair"], ["price", 27.22], ["image_url", "https://cdn.pixabay.com/photo/2016/09/05/21/37/cat-1647775_960_720.jpg"], ["created_at", "2019-09-06 05:00:55.356033"], ["updated_at", "2019-09-06 05:00:55.356033"]]
+  [1m[35m (18.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Shadow"], ["description", "Javanese"], ["price", 79.59], ["image_url", "https://cdn.pixabay.com/photo/2017/04/04/14/29/cat-2201460_960_720.jpg"], ["created_at", "2019-09-06 05:00:55.381110"], ["updated_at", "2019-09-06 05:00:55.381110"]]
+  [1m[35m (18.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Lily"], ["description", "Burmese"], ["price", 42.63], ["image_url", "https://cdn.pixabay.com/photo/2018/03/28/16/37/cat-3269765_960_720.jpg"], ["created_at", "2019-09-06 05:00:55.405973"], ["updated_at", "2019-09-06 05:00:55.405973"]]
+  [1m[35m (18.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Angel"], ["description", "Thai"], ["price", 19.27], ["image_url", "https://cdn.pixabay.com/photo/2013/12/12/03/08/kitten-227009_960_720.jpg"], ["created_at", "2019-09-06 05:00:55.431476"], ["updated_at", "2019-09-06 05:00:55.431476"]]
+  [1m[35m (41.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Oscar"], ["description", "LaPerm"], ["price", 96.95], ["image_url", "https://cdn.pixabay.com/photo/2018/05/30/19/29/cat-3442257__340.jpg"], ["created_at", "2019-09-06 05:00:55.482139"], ["updated_at", "2019-09-06 05:00:55.482139"]]
+  [1m[35m (14.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Smokey"], ["description", "Highlander"], ["price", 53.95], ["image_url", "https://www.photos-de-chat.fr/wp-content/uploads/2019/03/15801875_1821881761392490_5905951903153389568_n1-24.jpg"], ["created_at", "2019-09-06 05:00:55.505779"], ["updated_at", "2019-09-06 05:00:55.505779"]]
+  [1m[35m (17.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Lily"], ["description", "California Spangled"], ["price", 88.98], ["image_url", "https://www.photos-de-chat.fr/wp-content/uploads/2019/03/photo-de-chat-trop-mignon-1-3.jpg"], ["created_at", "2019-09-06 05:00:55.530515"], ["updated_at", "2019-09-06 05:00:55.530515"]]
+  [1m[35m (18.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Oscar"], ["description", "Bengal"], ["price", 49.05], ["image_url", "https://www.photos-de-chat.fr/wp-content/uploads/2019/03/100-chats-1662099-6-1.jpg"], ["created_at", "2019-09-06 05:00:55.555422"], ["updated_at", "2019-09-06 05:00:55.555422"]]
+  [1m[35m (26.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (22.2ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Molly"], ["description", "Oriental Shorthair"], ["price", 23.19], ["image_url", "https://www.photos-de-chat.fr/wp-content/uploads/2019/03/ebcac5efaad7b29f4171e3384baad92a-21.jpg"], ["created_at", "2019-09-06 05:00:55.588416"], ["updated_at", "2019-09-06 05:00:55.588416"]]
+  [1m[35m (21.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Smudge"], ["description", "Korat"], ["price", 43.22], ["image_url", "https://www.photos-de-chat.fr/wp-content/uploads/2019/03/Photo-chaton-trop-mignon-tigr25C325A9-1-9.jpg"], ["created_at", "2019-09-06 05:00:55.639355"], ["updated_at", "2019-09-06 05:00:55.639355"]]
+  [1m[35m (15.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Missy"], ["description", "Russian Blue"], ["price", 29.98], ["image_url", "https://www.photos-de-chat.fr/wp-content/uploads/2019/03/image-les-chatons-mignons-chaton-trop-mignon-chat-adorable-le-vol-3.jpg"], ["created_at", "2019-09-06 05:00:55.665155"], ["updated_at", "2019-09-06 05:00:55.665155"]]
+  [1m[35m (13.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (10.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "nathanael_brown@watsica.org"], ["LIMIT", 1]]
+  [1m[36mUser Create (6.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "nathanael_brown@watsica.org"], ["encrypted_password", "$2a$11$9M2BcREfO3.EJDWlL8egoeDclxElQlKdbTCmy4FnRfTmRRH/J69.C"], ["created_at", "2019-09-06 05:00:55.975653"], ["updated_at", "2019-09-06 05:00:55.975653"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 10.2ms | Allocations: 268)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 1.3ms | Allocations: 130)
+UserMailer#welcome_email: processed outbound mail in 92.3ms
+Delivered mail 5d71e808769ae_16ef2b1f7291f9a811435@lenovoe05.mail (183.7ms)
+Date: Fri, 06 Sep 2019 08:00:56 +0300
+From: catshop@gasikara.mg
+To: nathanael_brown@watsica.org
+Message-ID: <5d71e808769ae_16ef2b1f7291f9a811435@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d71e80874ef9_16ef2b1f7291f9a811360";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d71e80874ef9_16ef2b1f7291f9a811360
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgbmF0aGFuYWVsX2Jyb3duQHdhdHNpY2Eub3JnIGV0IGJpZW52ZW51
+ZSBjaGV6IG5vdXMgIQ0KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNj
+cml0IHN1ciBub3RyZSBzaXRlIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2
+YW50IDogbmF0aGFuYWVsX2Jyb3duQHdhdHNpY2Eub3JnLg0KIA0KIA0Kw4Ag
+dHLDqHMgdml0ZSBzdXIgQ2F0U2hvcCENCg==
+
+----==_mimepart_5d71e80874ef9_16ef2b1f7291f9a811360
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut nathanael_brown@watsica.org et bienvenue chez nous !</h1>=0D=
+
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : nath=
+anael_brown@watsica.org.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d71e80874ef9_16ef2b1f7291f9a811360--
+
+  [1m[35m (49.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "elmira_kirlin@bradtke.co"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "elmira_kirlin@bradtke.co"], ["encrypted_password", "$2a$11$EiNNswhqMBGXxp1VQPFqPO.ZtqORk0H/rVYdXbOL5L7Z6Q7/PERIW"], ["created_at", "2019-09-06 05:00:56.991396"], ["updated_at", "2019-09-06 05:00:56.991396"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 21.6ms
+Delivered mail 5d71e80964b1_16ef2b1f7291f9a811636@lenovoe05.mail (78.4ms)
+Date: Fri, 06 Sep 2019 08:00:57 +0300
+From: catshop@gasikara.mg
+To: elmira_kirlin@bradtke.co
+Message-ID: <5d71e80964b1_16ef2b1f7291f9a811636@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d71e80923a8_16ef2b1f7291f9a811542";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d71e80923a8_16ef2b1f7291f9a811542
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgZWxtaXJhX2tpcmxpbkBicmFkdGtlLmNvIGV0IGJpZW52ZW51ZSBj
+aGV6IG5vdXMgIQ0KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0
+IHN1ciBub3RyZSBzaXRlIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50
+IDogZWxtaXJhX2tpcmxpbkBicmFkdGtlLmNvLg0KIA0KIA0Kw4AgdHLDqHMg
+dml0ZSBzdXIgQ2F0U2hvcCENCg==
+
+----==_mimepart_5d71e80923a8_16ef2b1f7291f9a811542
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut elmira_kirlin@bradtke.co et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : elmi=
+ra_kirlin@bradtke.co.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d71e80923a8_16ef2b1f7291f9a811542--
+
+  [1m[35m (114.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "charis.walker@rauprohaska.biz"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "charis.walker@rauprohaska.biz"], ["encrypted_password", "$2a$11$V783AGtJeEYCy3LRp1sVP.8BciBEzkZoct77v.HOQFd5QYWZFgRNm"], ["created_at", "2019-09-06 05:00:57.490507"], ["updated_at", "2019-09-06 05:00:57.490507"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 40.1ms
+Delivered mail 5d71e80983eeb_16ef2b1f7291f9a811824@lenovoe05.mail (73.6ms)
+Date: Fri, 06 Sep 2019 08:00:57 +0300
+From: catshop@gasikara.mg
+To: charis.walker@rauprohaska.biz
+Message-ID: <5d71e80983eeb_16ef2b1f7291f9a811824@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d71e809829d2_16ef2b1f7291f9a811772";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d71e809829d2_16ef2b1f7291f9a811772
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgY2hhcmlzLndhbGtlckByYXVwcm9oYXNrYS5iaXogZXQgYmllbnZl
+bnVlIGNoZXogbm91cyAhDQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09DQogDQpUdSB0J2VzIGlu
+c2NyaXQgc3VyIG5vdHJlIHNpdGUgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1
+aXZhbnQgOiBjaGFyaXMud2Fsa2VyQHJhdXByb2hhc2thLmJpei4NCiANCiAN
+CsOAIHRyw6hzIHZpdGUgc3VyIENhdFNob3AhDQo=
+
+----==_mimepart_5d71e809829d2_16ef2b1f7291f9a811772
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut charis.walker@rauprohaska.biz et bienvenue chez nous !</h1>=
+=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : char=
+is.walker@rauprohaska.biz.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d71e809829d2_16ef2b1f7291f9a811772--
+
+  [1m[35m (26.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "marguerita_roberts@oreillymcclure.info"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "marguerita_roberts@oreillymcclure.info"], ["encrypted_password", "$2a$11$v87GjtmO8sKJvFrs/xgLhOV3BvzCAII1S5J97JaiY6z9mcMz4ckvS"], ["created_at", "2019-09-06 05:00:57.902243"], ["updated_at", "2019-09-06 05:00:57.902243"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 4.6ms
+Delivered mail 5d71e809de884_16ef2b1f7291f9a81206a@lenovoe05.mail (30.0ms)
+Date: Fri, 06 Sep 2019 08:00:57 +0300
+From: catshop@gasikara.mg
+To: marguerita_roberts@oreillymcclure.info
+Message-ID: <5d71e809de884_16ef2b1f7291f9a81206a@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d71e809dda34_16ef2b1f7291f9a81194c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d71e809dda34_16ef2b1f7291f9a81194c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgbWFyZ3Vlcml0YV9yb2JlcnRzQG9yZWlsbHltY2NsdXJlLmluZm8g
+ZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09DQogDQpU
+dSB0J2VzIGluc2NyaXQgc3VyIG5vdHJlIHNpdGUgZW4gdXRpbGlzYW50IGwn
+ZS1tYWlsIHN1aXZhbnQgOiBtYXJndWVyaXRhX3JvYmVydHNAb3JlaWxseW1j
+Y2x1cmUuaW5mby4NCiANCiANCsOAIHRyw6hzIHZpdGUgc3VyIENhdFNob3Ah
+DQo=
+
+----==_mimepart_5d71e809dda34_16ef2b1f7291f9a81194c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut marguerita_roberts@oreillymcclure.info et bienvenue chez no=
+us !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : marg=
+uerita_roberts@oreillymcclure.info.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d71e809dda34_16ef2b1f7291f9a81194c--
+
+  [1m[35m (30.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tawanna@reillyhackett.io"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "tawanna@reillyhackett.io"], ["encrypted_password", "$2a$11$nCg6maguhTXGuxAAoFc3GuKk6sgSV9W7tt2qeqYTh4Z/7wpSNoniO"], ["created_at", "2019-09-06 05:00:58.485866"], ["updated_at", "2019-09-06 05:00:58.485866"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 4.9ms
+Delivered mail 5d71e80a7906d_16ef2b1f7291f9a8122cc@lenovoe05.mail (77.0ms)
+Date: Fri, 06 Sep 2019 08:00:58 +0300
+From: catshop@gasikara.mg
+To: tawanna@reillyhackett.io
+Message-ID: <5d71e80a7906d_16ef2b1f7291f9a8122cc@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d71e80a7819e_16ef2b1f7291f9a8121bc";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d71e80a7819e_16ef2b1f7291f9a8121bc
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgdGF3YW5uYUByZWlsbHloYWNrZXR0LmlvIGV0IGJpZW52ZW51ZSBj
+aGV6IG5vdXMgIQ0KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0
+IHN1ciBub3RyZSBzaXRlIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50
+IDogdGF3YW5uYUByZWlsbHloYWNrZXR0LmlvLg0KIA0KIA0Kw4AgdHLDqHMg
+dml0ZSBzdXIgQ2F0U2hvcCENCg==
+
+----==_mimepart_5d71e80a7819e_16ef2b1f7291f9a8121bc
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut tawanna@reillyhackett.io et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : tawa=
+nna@reillyhackett.io.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d71e80a7819e_16ef2b1f7291f9a8121bc--
+
+  [1m[35m (121.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "man@hayes.co"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "man@hayes.co"], ["encrypted_password", "$2a$11$OWxdvltjo3pjaPxz5la9VOcgy4QMhLkVgvtyac0RY5mAZsHlrlqrW"], ["created_at", "2019-09-06 05:00:58.964739"], ["updated_at", "2019-09-06 05:00:58.964739"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 6.8ms
+Delivered mail 5d71e80aeedf7_16ef2b1f7291f9a812458@lenovoe05.mail (81.4ms)
+Date: Fri, 06 Sep 2019 08:00:58 +0300
+From: catshop@gasikara.mg
+To: man@hayes.co
+Message-ID: <5d71e80aeedf7_16ef2b1f7291f9a812458@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d71e80aed7e2_16ef2b1f7291f9a812323";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d71e80aed7e2_16ef2b1f7291f9a812323
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgbWFuQGhheWVzLmNvIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0K
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1ciBub3RyZSBz
+aXRlIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogbWFuQGhheWVz
+LmNvLg0KIA0KIA0Kw4AgdHLDqHMgdml0ZSBzdXIgQ2F0U2hvcCENCg==
+
+----==_mimepart_5d71e80aed7e2_16ef2b1f7291f9a812323
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut man@hayes.co et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : man@=
+hayes.co.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d71e80aed7e2_16ef2b1f7291f9a812323--
+
+  [1m[35m (83.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "karon@mccullough.io"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "karon@mccullough.io"], ["encrypted_password", "$2a$11$/M/0RfLaDMDYLVRzSzi9FeGkGfMVX9WWp830VW48NECvUTHskdGki"], ["created_at", "2019-09-06 05:00:59.589042"], ["updated_at", "2019-09-06 05:00:59.589042"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 6.6ms
+Delivered mail 5d71e80b9308d_16ef2b1f7291f9a81266f@lenovoe05.mail (173.4ms)
+Date: Fri, 06 Sep 2019 08:00:59 +0300
+From: catshop@gasikara.mg
+To: karon@mccullough.io
+Message-ID: <5d71e80b9308d_16ef2b1f7291f9a81266f@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d71e80b91fa6_16ef2b1f7291f9a812559";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d71e80b91fa6_16ef2b1f7291f9a812559
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQga2Fyb25AbWNjdWxsb3VnaC5pbyBldCBiaWVudmVudWUgY2hleiBu
+b3VzICENCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT0NCiANClR1IHQnZXMgaW5zY3JpdCBzdXIg
+bm90cmUgc2l0ZSBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGth
+cm9uQG1jY3VsbG91Z2guaW8uDQogDQogDQrDgCB0csOocyB2aXRlIHN1ciBD
+YXRTaG9wIQ0K
+
+----==_mimepart_5d71e80b91fa6_16ef2b1f7291f9a812559
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut karon@mccullough.io et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : karo=
+n@mccullough.io.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d71e80b91fa6_16ef2b1f7291f9a812559--
+
+  [1m[35m (32.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luci.kris@hammes.biz"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "luci.kris@hammes.biz"], ["encrypted_password", "$2a$11$BMjLQjj.SLC8TA3PJlRuv.MZLNPqWmJVpGQzcvV4RpdIRrBcW09wy"], ["created_at", "2019-09-06 05:01:00.099683"], ["updated_at", "2019-09-06 05:01:00.099683"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 7.8ms
+Delivered mail 5d71e80c1c044_16ef2b1f7291f9a8128d4@lenovoe05.mail (63.3ms)
+Date: Fri, 06 Sep 2019 08:01:00 +0300
+From: catshop@gasikara.mg
+To: luci.kris@hammes.biz
+Message-ID: <5d71e80c1c044_16ef2b1f7291f9a8128d4@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d71e80c1a6f5_16ef2b1f7291f9a8127b3";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d71e80c1a6f5_16ef2b1f7291f9a8127b3
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgbHVjaS5rcmlzQGhhbW1lcy5iaXogZXQgYmllbnZlbnVlIGNoZXog
+bm91cyAhDQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3Vy
+IG5vdHJlIHNpdGUgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBs
+dWNpLmtyaXNAaGFtbWVzLmJpei4NCiANCiANCsOAIHRyw6hzIHZpdGUgc3Vy
+IENhdFNob3AhDQo=
+
+----==_mimepart_5d71e80c1a6f5_16ef2b1f7291f9a8127b3
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut luci.kris@hammes.biz et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : luci=
+.kris@hammes.biz.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d71e80c1a6f5_16ef2b1f7291f9a8127b3--
+
+  [1m[35m (120.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "claudio_damore@cartwright.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "claudio_damore@cartwright.com"], ["encrypted_password", "$2a$11$6QNOQJIg4SO50T0ySTvFRenIcNGdJXbtojMCw1FZ6GjIYDCllTOmK"], ["created_at", "2019-09-06 05:01:00.559231"], ["updated_at", "2019-09-06 05:01:00.559231"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 4.4ms
+Delivered mail 5d71e80c8ae1d_16ef2b1f7291f9a8130e8@lenovoe05.mail (43.8ms)
+Date: Fri, 06 Sep 2019 08:01:00 +0300
+From: catshop@gasikara.mg
+To: claudio_damore@cartwright.com
+Message-ID: <5d71e80c8ae1d_16ef2b1f7291f9a8130e8@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d71e80c89fdf_16ef2b1f7291f9a8129c2";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d71e80c89fdf_16ef2b1f7291f9a8129c2
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgY2xhdWRpb19kYW1vcmVAY2FydHdyaWdodC5jb20gZXQgYmllbnZl
+bnVlIGNoZXogbm91cyAhDQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09DQogDQpUdSB0J2VzIGlu
+c2NyaXQgc3VyIG5vdHJlIHNpdGUgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1
+aXZhbnQgOiBjbGF1ZGlvX2RhbW9yZUBjYXJ0d3JpZ2h0LmNvbS4NCiANCiAN
+CsOAIHRyw6hzIHZpdGUgc3VyIENhdFNob3AhDQo=
+
+----==_mimepart_5d71e80c89fdf_16ef2b1f7291f9a8129c2
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut claudio_damore@cartwright.com et bienvenue chez nous !</h1>=
+=0D
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : clau=
+dio_damore@cartwright.com.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d71e80c89fdf_16ef2b1f7291f9a8129c2--
+
+  [1m[35m (34.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "emanuel@erdmanconsidine.net"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "emanuel@erdmanconsidine.net"], ["encrypted_password", "$2a$11$cb9DPk0A/1o6HzeAAM1CjekiUvT7DCLPRL34EFVbv7D3NqynMkxw6"], ["created_at", "2019-09-06 05:01:00.940872"], ["updated_at", "2019-09-06 05:01:00.940872"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 6)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 4)
+UserMailer#welcome_email: processed outbound mail in 6.7ms
+Delivered mail 5d71e80ce8edd_16ef2b1f7291f9a8132bf@lenovoe05.mail (276.8ms)
+Date: Fri, 06 Sep 2019 08:01:00 +0300
+From: catshop@gasikara.mg
+To: emanuel@erdmanconsidine.net
+Message-ID: <5d71e80ce8edd_16ef2b1f7291f9a8132bf@lenovoe05.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5d71e80ce799d_16ef2b1f7291f9a813192";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5d71e80ce799d_16ef2b1f7291f9a813192
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgZW1hbnVlbEBlcmRtYW5jb25zaWRpbmUubmV0IGV0IGJpZW52ZW51
+ZSBjaGV6IG5vdXMgIQ0KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNj
+cml0IHN1ciBub3RyZSBzaXRlIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2
+YW50IDogZW1hbnVlbEBlcmRtYW5jb25zaWRpbmUubmV0Lg0KIA0KIA0Kw4Ag
+dHLDqHMgdml0ZSBzdXIgQ2F0U2hvcCENCg==
+
+----==_mimepart_5d71e80ce799d_16ef2b1f7291f9a813192
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut emanuel@erdmanconsidine.net et bienvenue chez nous !</h1>=0D=
+
+    <p>=0D
+      Tu t'es inscrit sur notre site en utilisant l'e-mail suivant : eman=
+uel@erdmanconsidine.net.=0D
+    </p>=0D
+   =0D
+    <p> =C3=80 tr=C3=A8s vite sur CatShop !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5d71e80ce799d_16ef2b1f7291f9a813192--
+
+  [1m[35m (164.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (97.3ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 1], ["created_at", "2019-09-06 05:01:01.398201"], ["updated_at", "2019-09-06 05:01:01.398201"]]
+  [1m[35m (140.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.4ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 2], ["created_at", "2019-09-06 05:01:01.644831"], ["updated_at", "2019-09-06 05:01:01.644831"]]
+  [1m[35m (26.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.5ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 3], ["created_at", "2019-09-06 05:01:01.682341"], ["updated_at", "2019-09-06 05:01:01.682341"]]
+  [1m[35m (53.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.5ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 4], ["created_at", "2019-09-06 05:01:01.742142"], ["updated_at", "2019-09-06 05:01:01.742142"]]
+  [1m[35m (35.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.5ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 5], ["created_at", "2019-09-06 05:01:01.785876"], ["updated_at", "2019-09-06 05:01:01.785876"]]
+  [1m[35m (25.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.4ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 6], ["created_at", "2019-09-06 05:01:01.819283"], ["updated_at", "2019-09-06 05:01:01.819283"]]
+  [1m[35m (42.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.5ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 7], ["created_at", "2019-09-06 05:01:01.869362"], ["updated_at", "2019-09-06 05:01:01.869362"]]
+  [1m[35m (17.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.6ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 8], ["created_at", "2019-09-06 05:01:01.894709"], ["updated_at", "2019-09-06 05:01:01.894709"]]
+  [1m[35m (106.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.7ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 9], ["created_at", "2019-09-06 05:01:02.011010"], ["updated_at", "2019-09-06 05:01:02.011010"]]
+  [1m[35m (40.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Create (0.5ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 10], ["created_at", "2019-09-06 05:01:02.059797"], ["updated_at", "2019-09-06 05:01:02.059797"]]
+  [1m[35m (33.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (4.7ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (4.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.6ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (70.3ms)[0m  [1m[32mINSERT INTO "orders" ("user_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["user_id", 0], ["created_at", "2019-09-06 05:01:03.055099"], ["updated_at", "2019-09-06 05:01:03.055099"]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/mailers/user_mailer.rb:21:in `order_email'
+UserMailer#order_email: processed outbound mail in 4.6ms
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/" for ::1 at 2019-09-06 08:02:58 +0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:36
+  Rendered items/index.html.erb within layouts/application (Duration: 52.8ms | Allocations: 7764)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 10188ms (Views: 9872.6ms | ActiveRecord: 9.3ms | Allocations: 1266113)
+
+
+Started GET "/items/51" for ::1 at 2019-09-06 08:03:28 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mItem Load (1.7ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:7:in `show'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 42.4ms | Allocations: 367)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4546ms (Views: 4469.4ms | ActiveRecord: 2.1ms | Allocations: 11166)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:18:28 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (28.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:40
+  Rendered items/index.html.erb within layouts/application (Duration: 47.4ms | Allocations: 2379)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 12488ms (Views: 12431.4ms | ActiveRecord: 28.9ms | Allocations: 13282)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:19:44 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:42
+  Rendered items/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 2281)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4223ms (Views: 4220.7ms | ActiveRecord: 0.8ms | Allocations: 13150)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:23:47 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:43
+  Rendered items/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 2287)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5236ms (Views: 5232.0ms | ActiveRecord: 2.3ms | Allocations: 13174)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:24:00 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:43
+  Rendered items/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1929)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4160ms (Views: 4158.0ms | ActiveRecord: 0.6ms | Allocations: 11561)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:24:34 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:43
+  Rendered items/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 2284)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4703ms (Views: 4700.7ms | ActiveRecord: 0.6ms | Allocations: 13168)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:27:37 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:43
+  Rendered items/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 2287)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4060ms (Views: 4055.9ms | ActiveRecord: 2.2ms | Allocations: 13174)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:31:52 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:43
+  Rendered items/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2279)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4199ms (Views: 4197.2ms | ActiveRecord: 0.5ms | Allocations: 13155)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:32:36 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:43
+  Rendered items/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 2287)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4610ms (Views: 4607.1ms | ActiveRecord: 0.9ms | Allocations: 13174)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:33:50 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:43
+  Rendered items/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 2279)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4062ms (Views: 4060.3ms | ActiveRecord: 0.6ms | Allocations: 13160)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:34:10 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:43
+  Rendered items/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2279)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4117ms (Views: 4114.5ms | ActiveRecord: 0.7ms | Allocations: 13150)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:35:16 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:44
+  Rendered items/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2280)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 11832ms (Views: 11829.8ms | ActiveRecord: 0.8ms | Allocations: 13168)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:37:29 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (3.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:45
+  Rendered items/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 2281)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4094ms (Views: 4087.6ms | ActiveRecord: 3.4ms | Allocations: 13157)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:38:51 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (3.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:46
+  Rendered items/index.html.erb within layouts/application (Duration: 16.5ms | Allocations: 2282)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4005ms (Views: 3998.0ms | ActiveRecord: 3.1ms | Allocations: 13157)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:39:26 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:47
+  Rendered items/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 2283)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4191ms (Views: 4188.2ms | ActiveRecord: 0.7ms | Allocations: 13183)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:40:10 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:47
+  Rendered items/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 2283)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4003ms (Views: 4000.9ms | ActiveRecord: 0.7ms | Allocations: 13159)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:40:44 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (4.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:47
+  Rendered items/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 2283)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4128ms (Views: 4120.8ms | ActiveRecord: 4.3ms | Allocations: 13155)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:41:57 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:48
+  Rendered items/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 2284)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4027ms (Views: 4023.5ms | ActiveRecord: 0.7ms | Allocations: 13161)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:42:38 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:49
+  Rendered items/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 2285)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4135ms (Views: 4132.3ms | ActiveRecord: 0.8ms | Allocations: 13157)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:42:46 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:49
+  Rendered items/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1929)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4454ms (Views: 4452.6ms | ActiveRecord: 0.6ms | Allocations: 12047)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:43:14 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:49
+  Rendered items/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 2290)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4214ms (Views: 4212.5ms | ActiveRecord: 0.5ms | Allocations: 13171)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:44:24 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:49
+  Rendered items/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1929)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4356ms (Views: 4354.2ms | ActiveRecord: 0.7ms | Allocations: 11557)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:44:34 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:49
+  Rendered items/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 2285)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4152ms (Views: 4148.9ms | ActiveRecord: 1.8ms | Allocations: 13155)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:44:41 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:49
+  Rendered items/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1929)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4043ms (Views: 4041.2ms | ActiveRecord: 0.5ms | Allocations: 11561)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:45:02 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:48
+  Rendered items/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2284)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4019ms (Views: 4017.2ms | ActiveRecord: 0.7ms | Allocations: 13158)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:45:47 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:48
+  Rendered items/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2284)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3978ms (Views: 3976.2ms | ActiveRecord: 0.5ms | Allocations: 13160)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:46:27 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:48
+  Rendered items/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2284)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4044ms (Views: 4042.0ms | ActiveRecord: 0.5ms | Allocations: 13157)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:47:18 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:48
+  Rendered items/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 2283)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4407ms (Views: 4403.9ms | ActiveRecord: 0.7ms | Allocations: 13183)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:47:41 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:48
+  Rendered items/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 2284)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4252ms (Views: 4250.2ms | ActiveRecord: 0.5ms | Allocations: 13168)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:47:57 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:48
+  Rendered items/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 2284)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4148ms (Views: 4145.5ms | ActiveRecord: 0.6ms | Allocations: 13164)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:50:04 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:48
+  Rendered items/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2284)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4122ms (Views: 4118.7ms | ActiveRecord: 0.5ms | Allocations: 13156)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:51:03 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:48
+  Rendered items/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 2284)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4469ms (Views: 4466.0ms | ActiveRecord: 0.8ms | Allocations: 13158)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:51:21 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:48
+  Rendered items/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2284)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4122ms (Views: 4119.5ms | ActiveRecord: 0.6ms | Allocations: 13157)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:52:11 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:48
+  Rendered items/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 2284)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4211ms (Views: 4207.1ms | ActiveRecord: 0.7ms | Allocations: 13159)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:52:52 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:48
+  Rendered items/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 2284)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4317ms (Views: 4314.5ms | ActiveRecord: 0.8ms | Allocations: 13156)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:53:26 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:48
+  Rendered items/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2289)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4333ms (Views: 4330.4ms | ActiveRecord: 0.5ms | Allocations: 13171)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:54:55 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:49
+  Rendered items/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 2285)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5430ms (Views: 5426.3ms | ActiveRecord: 2.1ms | Allocations: 13161)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:56:34 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:49
+  Rendered items/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 2285)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6413ms (Views: 6410.8ms | ActiveRecord: 0.6ms | Allocations: 13166)
+
+
+Started GET "/" for ::1 at 2019-09-06 08:56:57 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:49
+  Rendered items/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2285)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4159ms (Views: 4156.6ms | ActiveRecord: 0.5ms | Allocations: 13161)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:00:17 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:50
+  Rendered items/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 2286)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 12453ms (Views: 12449.1ms | ActiveRecord: 1.9ms | Allocations: 13179)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:01:26 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:52
+  Rendered items/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 2288)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 9384ms (Views: 9380.4ms | ActiveRecord: 1.1ms | Allocations: 13177)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:03:13 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:52
+  Rendered items/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 2288)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4553ms (Views: 4548.9ms | ActiveRecord: 0.6ms | Allocations: 13168)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:04:20 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:52
+  Rendered items/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 2288)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6411ms (Views: 6408.5ms | ActiveRecord: 0.8ms | Allocations: 13165)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:05:58 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:53
+  Rendered items/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2289)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4291ms (Views: 4286.9ms | ActiveRecord: 0.5ms | Allocations: 13157)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:07:33 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:54
+  Rendered items/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2290)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4704ms (Views: 4701.5ms | ActiveRecord: 0.6ms | Allocations: 13165)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:07:58 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:54
+  Rendered items/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 2290)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4280ms (Views: 4278.7ms | ActiveRecord: 0.5ms | Allocations: 13159)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:08:48 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (3.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:54
+  Rendered items/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 2290)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4382ms (Views: 4376.5ms | ActiveRecord: 3.4ms | Allocations: 13186)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:09:07 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:54
+  Rendered items/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 2290)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4294ms (Views: 4291.5ms | ActiveRecord: 1.5ms | Allocations: 13166)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:09:32 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:54
+  Rendered items/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 2290)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4507ms (Views: 4504.8ms | ActiveRecord: 0.6ms | Allocations: 13161)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:10:02 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (3.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:54
+  Rendered items/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 2290)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4598ms (Views: 4592.6ms | ActiveRecord: 3.2ms | Allocations: 13165)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:10:27 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:54
+  Rendered items/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 2295)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4362ms (Views: 4359.3ms | ActiveRecord: 0.5ms | Allocations: 13179)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:11:06 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:55
+  Rendered items/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2291)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4518ms (Views: 4516.5ms | ActiveRecord: 0.5ms | Allocations: 13168)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:11:54 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:55
+  Rendered items/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 2291)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4468ms (Views: 4466.0ms | ActiveRecord: 0.5ms | Allocations: 13170)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:12:23 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:55
+  Rendered items/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 2291)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4313ms (Views: 4310.9ms | ActiveRecord: 0.5ms | Allocations: 13161)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:13:09 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:55
+  Rendered items/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 2291)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4580ms (Views: 4576.6ms | ActiveRecord: 2.2ms | Allocations: 13164)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:13:36 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:55
+  Rendered items/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2291)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4300ms (Views: 4297.8ms | ActiveRecord: 0.5ms | Allocations: 13167)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:14:49 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 2292)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4500ms (Views: 4496.3ms | ActiveRecord: 1.1ms | Allocations: 13166)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:17:34 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 1036.0ms | Allocations: 2296)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 15291ms (Views: 15285.2ms | ActiveRecord: 0.7ms | Allocations: 13259)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:18:09 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (5.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 2292)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4429ms (Views: 4421.6ms | ActiveRecord: 5.3ms | Allocations: 13164)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:18:48 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 2303)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4935ms (Views: 4932.1ms | ActiveRecord: 0.9ms | Allocations: 13191)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:18:56 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1929)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4723ms (Views: 4721.9ms | ActiveRecord: 0.5ms | Allocations: 11564)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:20:48 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 2292)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4787ms (Views: 4784.3ms | ActiveRecord: 0.8ms | Allocations: 13169)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:20:56 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1929)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4290ms (Views: 4288.3ms | ActiveRecord: 0.6ms | Allocations: 11562)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:21:10 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 2292)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4359ms (Views: 4352.2ms | ActiveRecord: 1.1ms | Allocations: 13171)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:22:39 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 65.1ms | Allocations: 2292)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 21478ms (Views: 21475.6ms | ActiveRecord: 0.9ms | Allocations: 13210)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:23:05 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1929)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6524ms (Views: 6521.7ms | ActiveRecord: 0.6ms | Allocations: 11576)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:25:23 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 2297)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5065ms (Views: 5062.4ms | ActiveRecord: 0.5ms | Allocations: 13180)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:26:22 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 18.1ms | Allocations: 2292)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4744ms (Views: 4740.9ms | ActiveRecord: 0.7ms | Allocations: 13163)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:27:58 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 2292)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4277ms (Views: 4275.6ms | ActiveRecord: 0.5ms | Allocations: 13160)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:29:29 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2292)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4430ms (Views: 4427.4ms | ActiveRecord: 0.5ms | Allocations: 13171)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:29:36 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1929)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4416ms (Views: 4413.6ms | ActiveRecord: 0.6ms | Allocations: 11557)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:30:00 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:55
+  Rendered items/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 2291)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4969ms (Views: 4964.9ms | ActiveRecord: 2.1ms | Allocations: 13166)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:31:02 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:55
+  Rendered items/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2291)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4487ms (Views: 4485.3ms | ActiveRecord: 0.5ms | Allocations: 13171)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:31:10 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:55
+  Rendered items/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1929)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4625ms (Views: 4623.8ms | ActiveRecord: 0.5ms | Allocations: 11564)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:32:58 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:55
+  Rendered items/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2290)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4116ms (Views: 4113.7ms | ActiveRecord: 0.5ms | Allocations: 13167)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:33:49 +0300
+  [1m[35m (18.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (9.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:55
+  Rendered items/index.html.erb within layouts/application (Duration: 52.0ms | Allocations: 7787)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 6495ms (Views: 6386.9ms | ActiveRecord: 27.9ms | Allocations: 1266129)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:35:02 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:55
+  Rendered items/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2306)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4320ms (Views: 4316.0ms | ActiveRecord: 0.5ms | Allocations: 13208)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:35:14 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:55
+  Rendered items/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 2299)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4222ms (Views: 4219.7ms | ActiveRecord: 0.7ms | Allocations: 13190)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:35:44 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 2300)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4529ms (Views: 4526.8ms | ActiveRecord: 0.5ms | Allocations: 13192)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:42:36 +0300
+  [1m[35m (16.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 36.4ms | Allocations: 7788)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 9570ms (Views: 9474.7ms | ActiveRecord: 8.3ms | Allocations: 1266132)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:43:09 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 17.5ms | Allocations: 2307)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4579ms (Views: 4575.1ms | ActiveRecord: 0.5ms | Allocations: 13204)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:43:36 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 26.8ms | Allocations: 2300)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4341ms (Views: 4337.6ms | ActiveRecord: 0.9ms | Allocations: 13189)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:43:42 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1929)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4242ms (Views: 4238.4ms | ActiveRecord: 1.4ms | Allocations: 11563)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:44:17 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 2297)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4433ms (Views: 4431.2ms | ActiveRecord: 0.7ms | Allocations: 13179)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:44:26 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1937)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4376ms (Views: 4374.2ms | ActiveRecord: 0.7ms | Allocations: 11575)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:44:54 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 2292)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4233ms (Views: 4230.2ms | ActiveRecord: 0.7ms | Allocations: 13161)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:45:21 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 2295)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4427ms (Views: 4423.3ms | ActiveRecord: 1.2ms | Allocations: 13171)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:45:28 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 14.2ms | Allocations: 1929)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4343ms (Views: 4340.4ms | ActiveRecord: 1.4ms | Allocations: 11556)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:45:41 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 2291)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4246ms (Views: 4243.8ms | ActiveRecord: 0.6ms | Allocations: 13163)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:47:16 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 2300)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4383ms (Views: 4380.2ms | ActiveRecord: 0.8ms | Allocations: 13188)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:47:59 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 12.1ms | Allocations: 2292)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4279ms (Views: 4277.4ms | ActiveRecord: 0.6ms | Allocations: 13166)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:48:14 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1929)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4185ms (Views: 4183.1ms | ActiveRecord: 0.5ms | Allocations: 11563)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:49:05 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.0ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 2292)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 5600ms (Views: 5597.4ms | ActiveRecord: 1.0ms | Allocations: 13168)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:49:39 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 2292)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4587ms (Views: 4584.6ms | ActiveRecord: 0.6ms | Allocations: 13165)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:50:34 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (4.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 16.0ms | Allocations: 2292)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4566ms (Views: 4560.2ms | ActiveRecord: 4.4ms | Allocations: 13166)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:56:06 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 2292)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4668ms (Views: 4665.3ms | ActiveRecord: 0.7ms | Allocations: 13173)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:56:46 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (4.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 14.9ms | Allocations: 2292)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4298ms (Views: 4290.8ms | ActiveRecord: 4.9ms | Allocations: 13164)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:57:24 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 2292)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4608ms (Views: 4603.7ms | ActiveRecord: 2.3ms | Allocations: 13170)
+
+
+Started GET "/" for ::1 at 2019-09-06 09:57:52 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 2291)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 4622ms (Views: 4619.0ms | ActiveRecord: 1.2ms | Allocations: 13168)
+
+

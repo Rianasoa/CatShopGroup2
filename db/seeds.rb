@@ -15,7 +15,7 @@ Order.destroy_all
 OrderItem.destroy_all
 cart =["https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_960_720.jpg","https://cdn.pixabay.com/photo/2017/07/25/01/22/cat-2536662_960_720.jpg","https://cdn.pixabay.com/photo/2018/03/29/21/51/cute-3273789_960_720.jpg","https://cdn.pixabay.com/photo/2015/06/09/09/35/animal-children-803123_960_720.jpg","https://cdn.pixabay.com/photo/2016/09/05/21/37/cat-1647775_960_720.jpg",
 	"https://cdn.pixabay.com/photo/2017/04/04/14/29/cat-2201460_960_720.jpg","https://cdn.pixabay.com/photo/2018/03/28/16/37/cat-3269765_960_720.jpg","https://cdn.pixabay.com/photo/2013/12/12/03/08/kitten-227009_960_720.jpg",
-	"https://cdn.pixabay.com/photo/2018/05/30/19/29/cat-3442257__340.jpg"]
+	"https://cdn.pixabay.com/photo/2018/05/30/19/29/cat-3442257__340.jpg","https://www.photos-de-chat.fr/wp-content/uploads/2019/03/15801875_1821881761392490_5905951903153389568_n1-24.jpg","https://www.photos-de-chat.fr/wp-content/uploads/2019/03/photo-de-chat-trop-mignon-1-3.jpg","https://www.photos-de-chat.fr/wp-content/uploads/2019/03/100-chats-1662099-6-1.jpg","https://www.photos-de-chat.fr/wp-content/uploads/2019/03/ebcac5efaad7b29f4171e3384baad92a-21.jpg","https://www.photos-de-chat.fr/wp-content/uploads/2019/03/Photo-chaton-trop-mignon-tigr25C325A9-1-9.jpg","https://www.photos-de-chat.fr/wp-content/uploads/2019/03/image-les-chatons-mignons-chaton-trop-mignon-chat-adorable-le-vol-3.jpg"]
 for i in (0..cart.length-1)
 	Item.create!(title: Faker::Creature::Cat.name,
 				description: Faker::Creature::Cat.breed,
