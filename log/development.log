@@ -24411,3 +24411,16 @@ Processing by ItemsController#index as HTML
 Completed 200 OK in 4622ms (Views: 4619.0ms | ActiveRecord: 1.2ms | Allocations: 13168)
 
 
+Started GET "/" for ::1 at 2019-09-06 10:46:25 +0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:56
+  Rendered items/index.html.erb within layouts/application (Duration: 42.3ms | Allocations: 7788)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 8093ms (Views: 8049.1ms | ActiveRecord: 10.3ms | Allocations: 1266130)
+
+
